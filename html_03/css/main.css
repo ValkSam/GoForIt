@@ -5,7 +5,8 @@
 
 #container {
     padding: 47px;
-    width: 68%;
+/*    width: 68%;*/
+    width: 963px;
     margin: auto;
     box-shadow: 0px 0px 5px 0px;
 }
@@ -52,7 +53,7 @@
 /*left-menu*/
 
 #left-menu {
-    position: fixed;
+/*    position: fixed;*/
     float: left;
     margin-top: 40px;
     width: 240px;
