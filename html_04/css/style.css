@@ -112,26 +112,5 @@ footer {
 
 /*columns area*/
 
-#blocks-panel {
-    display: flex;
-    -webkit-flex-flow: row;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: stretch;
-}
-
-.blocks-panel-column {
-    //border: 1px solid black;
-}
-
-#left-column {
-    flex: 1;
-}
-#center-column {
-    flex: 3;
-}
-#right-column {
-    flex: 1;
-}
 
 
