@@ -16,17 +16,15 @@ body {
 }
 
 footer {
-    text-align: center;
-    width: 100%;
-}
-
-#copyright {
     position: fixed;
+    float: left;
     left: 0;
     right: 0;
-    bottom: 0px;
+    bottom: 0;
     color: white;
     margin: 5px;
+    text-align: center;
+    width: 100%;
 }
 
 .clearfix:after {
