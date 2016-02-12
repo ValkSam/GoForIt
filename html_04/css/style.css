@@ -1,0 +1,116 @@
+html {
+    background: url(../img/background.png);
+    height: 100%;
+}
+
+body {
+    height: 97%;
+}
+
+#page {
+    width: 69.5%;
+    height: 100%;
+    background: white;
+    margin: auto;
+    overflow: auto;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+#copyright {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    color: white;
+    margin: 5px;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/*countries*/
+
+#country-menu-buttons {
+    height: 100%;
+    float: right;
+}
+
+#country-menu-buttons a {
+    text-align: center;
+    float: left;
+    width: 60px;
+}
+
+#country-menu-buttons a img {
+    width: 42px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*contents*/
+
+/*photo*/
+
+#foto {
+    background: url(../img/photo.png);
+    height: 237px;
+}
+
+/*central-panel*/
+
+#central-panel {
+    position: relative;
+    height: 34px;
+    background: linear-gradient(to bottom, #373737, #303030);
+    border-top: 1px solid #cacbcb;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 4px 4px 0px #4f4f50;
+}
+
+#central-panel-items {
+    position: absolute;
+    display: table;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+}
+
+#central-panel a {
+    float: left;
+    text-decoration: none;
+    color: white;
+    margin-right: 2%
+}
+
+#central-panel a img {
+    margin-left: 3px;
+}
+
+#dropdown-panel {
+    position: relative;
+}
+
+#dropdown-travel {
+    position: absolute;
+    left: 300px;
+    width: 140px;
+    background: #303030;
+    color: white;
+    border: 1px solid #575757;
+    box-shadow: 0px 4px 4px 1px #4f4f50;
+}
+
+#dropdown-travel li {
+    padding: 4px 10px;
+}
+
+
+
