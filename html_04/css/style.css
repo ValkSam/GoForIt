@@ -1,30 +1,55 @@
 html {
     background: url(../img/background.png);
-    height: 100%;
 }
 
 body {
-    height: 90%;
+    font-family: Tahoma, sans-serif;
+}
+
+/*вертикальное размещение ... */
+#container {
+    display: flex;
+    flex-flow: column;
 }
 
 #page {
-    width: 69.5%;
+    width: 70.2%;
     height: 100%;
     background: white;
     margin: auto;
-    overflow: auto;
+    box-shadow: 0 3px 10px 1px #383636;
 }
 
 footer {
-    position: fixed;
-    float: left;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: white;
-    margin: 5px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
     text-align: center;
+    color: white;
+    font-size: 12px;
     width: 100%;
+}
+
+/*... вертикальное размещение*/
+
+/*HEADER*/
+#logo {
+    float: left;
+    margin-top: 1.1%;
+    margin-left: 2.8%;
+}
+
+#contacts-items {
+    float: right;
+    font-size: 12px;
+    padding: 0;
+    line-height: 19px;
+    margin-top: 0.5%;
+    margin-right: 3.3%;
+    color: #128aa7;
+}
+
+#contacts-items p:first-child {
+    font-weight: bold;
 }
 
 .clearfix:after {
@@ -36,14 +61,18 @@ footer {
 /*countries*/
 
 #country-menu-buttons {
+    margin-top: -6.4%;
+    margin-right: 2.75%;
     height: 100%;
     float: right;
 }
 
 #country-menu-buttons a {
     text-align: center;
+    font-size: 10px;
+    color: #128aa7;
     float: left;
-    width: 60px;
+    width: 56px;
 }
 
 #country-menu-buttons a img {
@@ -52,7 +81,11 @@ footer {
     margin: 0 auto;
 }
 
-/*contents*/
+/*CONTENT*/
+
+#content {
+    font-size: 14px;
+}
 
 /*photo*/
 
@@ -61,15 +94,15 @@ footer {
     height: 237px;
 }
 
-/*central-panel*/
+/*central-panel (menu)*/
 
 #central-panel {
     position: relative;
-    height: 34px;
+    height: 28px;
     background: linear-gradient(to bottom, #373737, #303030);
     border-top: 1px solid #cacbcb;
     border-bottom: 1px solid black;
-    box-shadow: 0px 4px 4px 0px #4f4f50;
+    box-shadow: 0 2px 4px 0 #4f4f50;
 }
 
 #central-panel-items {
@@ -78,14 +111,24 @@ footer {
     top: 0;
     bottom: 0;
     width: 100%;
-    margin: auto;
+    padding-bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #central-panel a {
     float: left;
     text-decoration: none;
     color: white;
-    margin-right: 2%
+    margin-right: 6%;
+}
+
+#central-panel-items a:first-child {
+    margin-left: 6.7%;
+}
+
+#central-panel-items a:last-child {
+    margin-right: 0;
 }
 
 #central-panel a img {
@@ -98,19 +141,64 @@ footer {
 
 #dropdown-travel {
     position: absolute;
-    left: 300px;
-    width: 140px;
+    left: 17.4%;
+    width: 150px;
     background: #303030;
     color: white;
     border: 1px solid #575757;
-    box-shadow: 0px 4px 4px 1px #4f4f50;
+    box-shadow: 0 4px 4px 1px #4f4f50;
 }
 
 #dropdown-travel li {
-    padding: 4px 10px;
+    padding: 5px 10px;
 }
 
 /*columns area*/
 
+#blocks-panel {
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.blocks-panel-column {
+    line-height: 24px;
+    color: #424c43;
+}
+
+.column-segment {
+    padding: 0.7% 7%;
+    border-bottom: 1px solid #c7cacf;
+}
+
+#left-column {
+    flex: 21;
+    background: #edeef0;
+    border-right: 1px solid #c7cacf;
+}
+
+#center-column {
+    background: #fffdfd;
+    flex: 58;
+    padding: 1%;
+    min-height: 35vh;
+}
+
+#right-column {
+    flex: 21;
+    background: #edeef0;
+    border-left: 1px solid #c7cacf;
+    border-bottom: 1px solid #c7cacf;
+}
+
+.column-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 3%;
+    margin-bottom: 0.8%;
+}
 
 
