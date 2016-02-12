@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    height: 97%;
+    height: 90%;
 }
 
 #page {
@@ -16,17 +16,15 @@ body {
 }
 
 footer {
-    text-align: center;
-    width: 100%;
-}
-
-#copyright {
     position: fixed;
+    float: left;
     left: 0;
     right: 0;
-    bottom: 0px;
+    bottom: 0;
     color: white;
     margin: 5px;
+    text-align: center;
+    width: 100%;
 }
 
 .clearfix:after {
@@ -112,5 +110,28 @@ footer {
     padding: 4px 10px;
 }
 
+/*columns area*/
+
+#blocks-panel {
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.blocks-panel-column {
+    //border: 1px solid black;
+}
+
+#left-column {
+    flex: 1;
+}
+#center-column {
+    flex: 3;
+}
+#right-column {
+    flex: 1;
+}
 
 
