@@ -112,5 +112,50 @@ footer {
     padding: 4px 10px;
 }
 
+#blocks-panel {
+    position: relative;
+}
+
+#left-block {
+    width: 100%;
+    border: 1px solid blue;
+    float: left;
+    position: relative;
+    right: 60%;
+}
+
+#centre-block {
+    width: 100%;
+    border: 1px solid red;
+    float: left;
+    position: relative;
+    right: 20%;
+}
+
+#right-block {
+    width: 100%;
+    border: 1px solid yellow;
+    float: left;
+}
+
+#left-column {
+    position: relative;
+    float: left;
+    left: 80%;
+    width: 20%;
+}
+#center-column {
+    position: relative;
+    float: left;
+    left: 80%;
+    width: 60%;
+}
+#right-column {
+    position: relative;
+    float: left;
+    left: 80%;
+    width: 20%;
+}
+
 
 
