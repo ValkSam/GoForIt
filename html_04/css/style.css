@@ -62,7 +62,7 @@ footer {
 
 #country-menu-buttons {
     margin-top: -6.4%;
-    margin-right: 2.75%;
+    margin-right: 2.95%;
     height: 100%;
     float: right;
 }
@@ -96,31 +96,21 @@ footer {
 
 /*central-panel (menu)*/
 
-#central-panel {
+#central-panel-items {
     position: relative;
-    height: 28px;
     background: linear-gradient(to bottom, #373737, #303030);
     border-top: 1px solid #cacbcb;
     border-bottom: 1px solid black;
     box-shadow: 0 2px 4px 0 #4f4f50;
 }
 
-#central-panel-items {
-    position: absolute;
-    display: table;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    padding-bottom: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-#central-panel a {
+#central-panel-items a {
     float: left;
     text-decoration: none;
     color: white;
     margin-right: 6%;
+    line-height: 28px;
+    position: relative;
 }
 
 #central-panel-items a:first-child {
@@ -131,26 +121,37 @@ footer {
     margin-right: 0;
 }
 
-#central-panel a img {
+#central-panel-items a img {
     margin-left: 3px;
 }
 
-#dropdown-panel {
-    position: relative;
-}
-
-#dropdown-travel {
+/*.central-panel-dropdown-menu*/
+#central-panel-items ul {
     position: absolute;
-    left: 17.4%;
+    left: -9999px;
     width: 150px;
     background: #303030;
     color: white;
     border: 1px solid #575757;
     box-shadow: 0 4px 4px 1px #4f4f50;
+    margin-top: 1px;
 }
 
-#dropdown-travel li {
+#central-panel-items ul li {
     padding: 5px 10px;
+    line-height: 14px;
+}
+
+#central-panel-items a:hover ul {
+    left: -10px;
+}
+
+#central-panel-items a:hover ul:hover {
+    left: -10px;
+}
+
+#central-panel-items a ul li:hover {
+    background: #4d4d4d;
 }
 
 /*columns area*/
