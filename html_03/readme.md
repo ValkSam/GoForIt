@@ -16,6 +16,3 @@
 12. [Популярно о псевдоэлементах :before и :after](http://habrahabr.ru/post/154319/)
 13. [О порядке разсположения css-свойств](https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/)
 
-Бонусное задание:
-
-Сверстать [макет Asia holidays](/lesson_03/homework3_bonus.psd). Это делать не обязательно, но опыт никогда не лишний :wink:
