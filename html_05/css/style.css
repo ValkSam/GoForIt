@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'helvetica_neue';
+    src: url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+html {
+    background: rgba(255, 255, 255, 0);
+    font-family: Helvetica_neue, Tahoma, sans-serif;
+}
+
+#page {
+    margin: auto;
+    width: 1215px;
+}
+
+#top-menu-container {
+    background: url(../img/top-background.png);
+    font-size: 14px;
+}
+
+#top-menu-container li {
+    float: right;
+    line-height: 35px;
+}
+
+#main-menu > li a {
+    display: block;
+    /*padding: 0 15px;*/
+    height: 35px;
+    text-align: center;
+    color: #60b5ed;
+    text-decoration: none;
+}
+
+#main-menu > li a:hover {
+    background: #4eabda;
+    color: white;
+    font-weight: bold;
+}
+
+#top-menu-vertical-splitter {
+    float: right;
+    margin: 0 0 0 7px;
+}
+
+#menu > li a {
+    display: block;
+    padding: 0 20px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+#flag {
+    vertical-align: middle;
+    margin: -5px 10px 0 0;
+
+}
+
+#menu > li:first-child {
+    margin-right: 15px;
+}
+
+#menu > li a:hover {
+    background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
+    border: 1px solid transparent;
+    border-top: 0;
+    border-image: linear-gradient(to bottom, #64a8e3, #4299d2) 1;
+    text-decoration: none;
+    padding-left: 19px;
+    padding-right: 19px;
+    height: 34px;
+}
+
+#reg-dialog {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: -9999px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 99999;
+    opacity: 0;
+}
+
+#reg-dialog:target {
+    left: 0;
+    opacity: 1;
+}
+
+.reg-form {
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reg-form-title {
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 62px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 2px;
+    color: white;
+    font-size: 24px;
+}
+
+#reg-form-body {
+    height: 549px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 14px;
+}
+
+#gap {
+    visibility: hidden;
+}
+
+#reg-facebook {
+    width: 276px;
+    margin: 10px auto;
+    height: 35px;
+    background: url(../img/fbook.png) no-repeat;
+}
+
+#OU-block {
+    /*margin-bottom must be not less then 8px to prevent marging collapse with margin-top of first next hovered input*/
+    margin-bottom: 18px;
+}
+
+#OU-block>div {
+    display: inline-block;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+#OU {
+    display: inline-block;
+    color: #999999;
+    padding: 0 4px;
+    vertical-align: bottom;
+    font-variant: small-caps;
+    font-size: 18px;
+}
+
+.OU-line {
+    vertical-align: middle;
+}
+
+.reg-input {
+    display: block;
+    border: none;
+    width: 258px;
+    padding-left: 18px;
+    height: 36px;
+    margin: 8px auto;
+    background: url(../img/input.png) no-repeat;
+    color: white;
+}
+
+.reg-input:hover {
+    margin: -7.5px auto;
+    width: 267px;
+    padding-left: 27px;
+    height: 51px;
+    background: url(../img/selected-input.png) no-repeat;
+}
+
+#send-tips-block {
+    display: block;
+    width: 282px;
+    margin: 16px auto;
+    line-height: 20px;
+}
+
+#send-tips-block input,
+#send-tips-block label {
+    vertical-align: middle;
+}
+
+label {
+    color: white;
+}
+
+#reg-submit {display: block;
+    border: none;
+    width: 151px;
+    height: 37px;
+    margin: 8px auto;
+    color: white;
+    background: url(../img/submit.png);
+}
+
+#agreement-block {
+    width: 100%;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    line-height: 16px;
+}

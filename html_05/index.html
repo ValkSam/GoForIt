@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="page">
+    <div id="top-menu-container" class="clearfix">
+        <ul id="menu">
+            <li><a href="#reg-dialog">Ola! Entrar ou Cadastre-se</a></li>
+            <li><a href=""><img id="flag" src="img/flag.png" alt="~">Minhas Ofertas</a></li>
+        </ul>
+        <img id="top-menu-vertical-splitter" src="img/top-menu-vertical-splitter.png" alt="|">
+        <ul id="main-menu">
+            <li><a style="width: 67px" href="">Ajuda</a></li>
+            <li><a style="width: 78px" href="">Contato</a></li>
+            <li><a style="width: 67px" href="">Forum</a></li>
+            <li><a style="width: 70px" href="">Vender</a></li>
+            <li><a style="width: 105px" href="">Meu YouBike</a></li>
+        </ul>
+    </div>
+    <div>
+        <img id="rest-backgroud" src="img/rest-background.png" alt="bikers was here">
+    </div>
+    <div id="reg-dialog" class="modalDialog">
+        <div id="reg-form-title" class="reg-form">
+            <p>Cadastre-se</p>
+        </div>
+        <form id="reg-form-body" class="reg-form" action="#" method="post">
+            <div id="gap">to avoid margin collapse</div>
+            <input id="reg-facebook" class="reg-input" type="button">
+
+            <div id="OU-block">
+                <div>
+                    <img class="OU-line" src="img/half-OU.png" alt=""><span id="OU">ou</span><img class="OU-line"
+                                                                                                  src="img/half-OU.png"
+                                                                                                  alt="">
+                </div>
+            </div>
+            <input class="reg-input" type="text" name="first-name" placeholder="First Name">
+            <input class="reg-input" type="text" name="last-name" placeholder="Last Name">
+            <input class="reg-input" type="email" name="email" placeholder="Email Address">
+            <input class="reg-input" type="password" name="password" placeholder="Choose Password">
+            <input class="reg-input" type="password" name="password-confirm" placeholder="Password Confirm">
+            <div id="send-tips-block">
+                <input id="send-tips" type="checkbox" name="send-tips">
+                <label for="send-tips">Send me Youbike updates and tips</label>
+            </div>
+            <input id="reg-submit" type="submit" value="Create my Account">
+            <div id="agreement-block">
+                <p>By clicking the button above, you agree to the Terms of Service</p>
+                <p>Xiew our Privacy Policy.</p>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
