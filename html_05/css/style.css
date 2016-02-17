@@ -98,7 +98,7 @@ html {
     bottom: 0;
     left: -9999px;
     background: rgba(0, 0, 0, 0);
-    z-index: 99999;
+    z-index: 99998;
     opacity: 0;
 }
 
@@ -109,17 +109,17 @@ html {
 
 .reg-form {
     width: 560px;
-    margin-left: 457px; /*for adjustment with etalon*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
+    /*margin-left: 457px; !*for adjustment with etalon*!*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #reg-form-title {
     background: rgba(0, 0, 0, 0.5);
     line-height: 62px;
     text-align: center;
-    margin-top: 248px; /*for adjustment with etalon*/
-    /*margin-top: 90px;*/
+    /*margin-top: 248px; !*for adjustment with etalon*!*/
+    margin-top: 90px;
     margin-bottom: 2px;
     color: white;
     font-size: 24px;
@@ -227,4 +227,101 @@ html {
     font-size: 11px;
     text-align: center;
     line-height: 16px;
+}
+
+/*modal window for squares*/
+#squares {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: -9999px;
+    background: rgba(0, 0, 0, 0);
+    z-index: 99999;
+    opacity: 0;
+}
+
+#squares:target {
+    left: 0;
+    opacity: 1;
+}
+
+#main-field {
+    position: relative;
+    width: 550px;
+    height: 580px;
+    margin: 100px auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    width: 24px;
+    border-radius: 100%;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#noise {
+    opacity: 0.4;
+}
+
+#square-field, #noise {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 530px;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    width: 500px;
+    height: 50px;
+    border: 10px solid #3f403a;
+}
+
+table tr:last-child td {
+    height: 0;
+    border: 0;
+}
+
+.white {
+    background: white;
+}
+
+.yellow {
+    background: #fff867;
+}
+
+.red {
+    background: #ff6233;
+}
+
+.black {
+    background: #1e1d1e;
+}
+
+.blue {
+    background: #0b4c91;
+}
+
+#tip {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    opacity: 0.6;
 }

@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div id="tip" onClick="closeTip()">
+    <img src="img/tip.png" alt="">
+</div>
 <div id="page">
     <div id="top-menu-container" class="clearfix">
         <ul id="menu">
             <li><a href="#reg-dialog">Ola! <span>Entrar</span> ou <span>Cadastre-se</span></a></li>
-            <li><a href=""><img id="flag" src="img/flag.png" alt="~"><span>Minhas</span> <span>Ofertas</span></a></li>
+            <li><a href="#squares"><img id="flag" src="img/flag.png" alt="~"><span>Minhas</span>
+                <span>Ofertas</span></a></li>
         </ul>
         <img id="top-menu-vertical-splitter" src="img/top-menu-vertical-splitter.png" alt="|">
         <ul id="main-menu">
@@ -25,7 +29,8 @@
     <div>
         <img id="rest-backgroud" src="img/rest-background.png" alt="bikers was here">
     </div>
-    <div id="reg-dialog" class="modalDialog">
+    <!--modal window for reg form-->
+    <div id="reg-dialog">
         <div id="reg-form-title" class="reg-form">
             <p>Cadastre-se</p>
         </div>
@@ -59,8 +64,73 @@
             </div>
 
         </form>
-
+    </div>
+    <!--modal window for second task (squares)-->
+    <div id="squares">
+        <div id="main-field">
+            <div id="square-field">
+                <table>
+                    <tr id="tr1">
+                        <td colspan="2" class="white"></td>
+                        <td colspan="3" class="white"></td>
+                        <td colspan="2" class="yellow"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1" style="border-bottom: none" class="white"></td>
+                        <td colspan="4" rowspan="4" class="red"></td>
+                        <td colspan="2" rowspan="2" class="yellow"></td>
+                    </tr>
+                    <tr>
+                        <td style="border-top: none" class="white"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="white"></td>
+                        <td rowspan="2" class="white"></td>
+                        <td rowspan="1" style="border-bottom: none" class="white"></td>
+                    </tr>
+                    <tr>
+                        <td style="border-top: none" class="white"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="2" class="black"></td>
+                        <td colspan="2" class="white"></td>
+                        <td colspan="2" class="white"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="yellow"></td>
+                        <td colspan="2" class="white"></td>
+                        <td colspan="2" rowspan="2" class="blue"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="2" class="white"></td>
+                        <td colspan="2" class="black"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="white"></td>
+                    </tr>
+                    <tr style="border: none">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="noise">
+                <img src="img/noise.png" alt="">
+            </div>
+            <a href="#" id="close">X</a>
+        </div>
     </div>
 </div>
+<script>
+    function closeTip() {
+        document.querySelector("#tip").style.display = "none";
+    }
+</script>
 </body>
+
 </html>
