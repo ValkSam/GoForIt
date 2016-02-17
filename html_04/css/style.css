@@ -105,24 +105,27 @@ footer {
     box-shadow: 0 2px 4px 0 #4f4f50;
 }
 
-#central-panel-items a {
+#central-panel-items>li {
     float: left;
-    text-decoration: none;
-    color: white;
     margin-right: 6%;
     line-height: 28px;
     position: relative;
 }
 
-#central-panel-items a:first-child {
+#central-panel-items li a {
+    text-decoration: none;
+    color: white;
+}
+
+#central-panel-items>li:first-child {
     margin-left: 6.7%;
 }
 
-#central-panel-items a:last-child {
+#central-panel-items>li:last-child {
     margin-right: 0;
 }
 
-#central-panel-items a img {
+#central-panel-items li a img {
     margin-left: 3px;
 }
 
@@ -143,15 +146,15 @@ footer {
     line-height: 14px;
 }
 
-#central-panel-items a:hover ul {
+#central-panel-items li:hover ul {
     left: -10px;
 }
 
-#central-panel-items a:hover ul:hover {
+#central-panel-items li:hover ul:hover {
     left: -10px;
 }
 
-#central-panel-items a ul li:hover {
+#central-panel-items ul li:hover {
     background: #4d4d4d;
 }
 
