@@ -1,6 +1,10 @@
 @font-face {
-    font-family: 'helvetica_neue';
-    src: url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-family: 'helvetica_neueregular';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+    url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+    url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,13 +21,29 @@ html {
 }
 
 #page {
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom:0;
+    width: 84.4%;
+    /*width: 1215px; !*acording to etalon*! */
+    overflow: hidden;
     margin: auto;
-    width: 1215px;
+    min-width: 760px;
 }
+
+/*
+!*if we want the image would be scalable*!
+#rest-backgroud {
+    width: 100%;
+    margin: auto;
+}*/
 
 /*top menu*/
 
 #top-menu-container {
+    width: 100%;
     background: url(../img/top-background.png);
     font-size: 14px;
 }
