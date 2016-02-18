@@ -188,6 +188,10 @@ html {
     background: url(../img/selected-input.png) no-repeat;
 }
 
+.reg-input:focus {
+    outline: none;
+}
+
 #send-tips-block {
     display: block;
     width: 282px;
