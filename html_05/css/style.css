@@ -31,6 +31,7 @@ html {
     overflow: hidden;
     margin: auto;
     min-width: 760px;
+    z-index: 0;
 }
 
 /*
@@ -348,4 +349,5 @@ table tr:last-child td {
     top: 50px;
     right: 100px;
     opacity: 0.6;
+    z-index: 1;
 }
