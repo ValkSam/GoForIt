@@ -1,0 +1,724 @@
+@font-face {
+    font-family: 'Lucida';
+    src: url('../fonts/Lucida Sans Unicode Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: gray;
+}
+
+#page {
+    background: white;
+    font-family: Arial sans-serif;
+    width: 1000px;
+    min-width: 1000px;
+    margin: auto;
+}
+
+#container {
+    margin: 0 4.5%;
+}
+
+#topline {
+    margin: 1.6rem 0 0 0.7rem;
+    line-height: 3rem;
+}
+
+#telephone {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.8rem;
+    color: #5e696d;
+    background: url("../img/telefon.png") no-repeat left center;
+    padding-left: 3rem;
+}
+
+#login-form {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../img/login.png") no-repeat 1% center, linear-gradient(to bottom, #1f6787, #0c3357);
+    font-family: Lucida Arial sans-serif;
+    font-size: 1.1rem;
+    border-left: 1px solid #d4dde3;
+    border-top: 1px solid #a6c3cf;
+    border-bottom: 1px solid #4e647a;
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding-left: 3rem;
+}
+
+#login-form input, button:focus {
+    outline: none;
+}
+
+#login-form input {
+    width: 11.3rem;
+    margin-right: 1rem;
+    padding: 0;
+    border: 1px solid #d7d9da;
+    box-shadow: 0 0 1px 1px #637787;
+    border-radius: 2px;
+    background: white;
+    color: black;
+    font-size: 1.09rem;
+}
+
+#login, span {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 1.09rem;
+}
+
+#registration {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+}
+
+#forgottenpassword,
+#forgottenpassword:link,
+#forgottenpassword:visited {
+    margin: 0 2rem 0 1rem;
+    color: #bdc4c7;
+    font-size: 1.2rem;
+}
+
+#navi-container {
+    float: right;
+}
+
+#navi-button-container {
+    display: inline-block;
+    vertical-align: middle;
+    width: 7.6rem;
+    border: 1px solid #bdc4c7;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 1px 0 #bdc4c7;
+    background: white;
+    line-height: 2.3rem;
+}
+
+#navi-button-container a,
+#navi-button-container a:link,
+#navi-button-container a:visited {
+    color: #bdc4c7;
+    text-decoration: none;
+    padding: 0;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+}
+
+#navi-button-home {
+    float: left;
+    margin-left: 8px;
+}
+
+#navi-middle-button-container {
+    overflow: hidden;
+}
+
+#navi-button-tree {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+#navi-button-mail {
+    float: right;
+    margin-right: 8px;
+}
+
+#navi-form button:focus {
+    outline: none;
+}
+
+#zazor {
+    margin: 10px 0 10px 0;
+}
+
+#menu-bar {
+    /*background: linear-gradient(to bottom, rgba(80,88,96,0.65) 0%,rgba(58,64,70,0.68) 9%,rgba(38,42,45,0.69) 11%,rgba(1,1,1,1) 99%,rgba(1,1,1,1) 100%);*/
+    background: linear-gradient(to bottom, rgba(80, 88, 96, 0.65) 0%, rgba(58, 64, 70, 0.68) 9%, rgba(21, 23, 25, 0.69) 11%, rgba(1, 1, 1, 1) 99%, rgba(1, 1, 1, 1) 100%);
+    border: 1px solid #0d1642;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    Line-height: 2.91rem;
+}
+
+#koshyk {
+    float: right;
+    color: #929b9f;
+    font-size: 1em;
+    background: url("../img/koshik.png") no-repeat 1% center;
+}
+
+#koshyk span {
+    display: inline-block;
+    color: #0d5a8f;
+    font-size: 1.09em;
+}
+
+#bascket {
+    width: 3rem;
+    text-align: left;
+}
+
+#goods-count {
+    width: 5rem;
+    text-align: left;
+}
+
+#goods-cost {
+    width: 6rem;
+    text-align: right;
+}
+
+#menu {
+    float: right;
+    font-size: 1.4em;
+    font-family: Lucida Arial sans-serif;
+    color: #b1bcc0;
+}
+
+#menu ul {
+}
+
+#menu li {
+    display: inline-block;
+    padding: 0 1em 0 1em;
+    line-height: 2rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+}
+
+#menu li:hover {
+    background: linear-gradient(to bottom, #1f6787, #0d3458);
+    border: 1px solid #0c3357;
+    box-shadow: 0 1px 0 0 #092036;
+}
+
+/*filter-form-container*/
+#filter-form-container {
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    /*flex*/
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 17.5rem;
+}
+
+#filter-form-container form {
+    position: relative;
+    border: 1px solid #b0b0b1;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px 0px #b0b0b1;
+}
+
+#filter-form-container label {
+    vertical-align: middle;
+    font-size: 1rem;
+    color: black;
+}
+
+#filter-form-container select {
+    vertical-align: middle;
+}
+
+.dropdown-block {
+    margin: 0;
+    height: 3rem;
+}
+
+#filter-form-container label span {
+    font-size: 0.8rem;
+    color: #77858b;
+}
+
+/*find-po-avto*/
+#find-po-avto {
+    float: left;
+    margin: 0 0 0 0;
+    width: 41rem;
+}
+
+#find-po-avto .header {
+    margin: 1rem 0 0 0;
+    font-size: 1.2rem;
+    color: #154468;
+    text-align: center;
+}
+
+#find-po-avto-filter-block {
+    margin: -2rem 0 0 0;
+}
+
+/*find-po-avto-disk-side*/
+#find-po-avto-disk-side {
+    float: left;
+    width: 18rem;
+    margin: 0 0 0 1rem;
+}
+
+#find-po-avto-disk-side .header {
+    font-size: 1rem;
+    text-align: left;
+    margin: 1rem 0 1rem 0;
+}
+
+#find-po-avto-disk-side label {
+    display: inline-block;
+    width: 7.5rem;
+}
+
+#disk-marka-avto,
+#disk-model-avto,
+#disk-complectaciya {
+    width: 10.1rem;
+}
+
+#disk-god-vipuska {
+    width: 6rem;
+}
+
+/*find-po-avto-tire-side*/
+#find-po-avto-tire-side {
+    float: right;
+    width: 18rem;
+    margin: 0 1rem 0 0;
+}
+
+#find-po-avto-tire-side .header {
+    font-size: 1rem;
+    color: #154468;
+    text-align: right;
+    margin: 1rem 0 1rem 0;
+}
+
+#find-po-avto-tire-side label {
+    display: inline-block;
+    width: 7.5rem;
+}
+
+#tire-marka-avto,
+#tire-model-avto,
+#tire-complectaciya {
+    width: 10.1rem;
+}
+
+#tire-god-vipuska {
+    width: 6rem;
+}
+
+#filter-form-container .submit {
+    display: inline-block;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    font-size: 1.4rem;
+    color: #154467;
+    font-style: italic;
+    text-decoration: underline;
+    border: none;
+    background: transparent;
+    text-align: right;
+}
+
+/*==*/
+/*find-tire*/
+#find-tire {
+    float: left;
+    margin: 0 0 0 1rem;
+    width: 20rem;
+}
+
+#find-tire .header {
+    margin: 1rem 0 0 1rem;
+    font-size: 1.2rem;
+    color: #154468;
+    text-align: left;
+}
+
+#find-tire-filter-block {
+    margin: 1rem 0 0 1rem;
+}
+
+#tire-size-1,
+#tire-size-2 {
+    width: 5rem;
+}
+
+#tire-radius {
+    width: 4.4rem;
+}
+
+#tire-radius-label {
+    display: inline-block;
+    width: 3.7rem;
+}
+
+label[for="tire-radius"] {
+    text-align: right;
+    margin-left: -0.2rem;
+    margin-right: 0.2rem;
+}
+
+/*.checkbox-block ...*/
+.checkbox-block {
+    margin: 0;
+    height: 2rem;
+}
+
+.checkbox-block input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.checkbox-block label {
+    vertical-align: baseline;
+}
+
+/*....checkbox-block*/
+
+p[for="tire-season"] {
+    display: inline-block;
+    width: 3.7rem;
+    vertical-align: top;
+}
+
+#tire-season {
+    display: inline-block;
+}
+
+#tire-season label {
+    vertical-align: baseline;
+}
+
+/*==*/
+/*find-disk*/
+#find-disk {
+    float: right;
+    margin: 0 0 0 1rem;
+    width: 27rem;
+}
+
+#find-disk .header {
+    margin: 1rem 0 0 1rem;
+    font-size: 1.2rem;
+    color: #154468;
+    text-align: left;
+}
+
+#find-disk-filter-block {
+    margin: 1rem 0 0 1rem;
+}
+
+/*find-disk-left-side*/
+
+#find-disk-left-side {
+    float: left;
+    width: 15rem;
+    margin: 0 0 0 1rem;
+}
+
+#find-disk label {
+    display: inline-block;
+    width: 7.0rem;
+}
+
+#disk-diameter,
+#disk-place-diameter {
+    width: 5.8rem;
+}
+
+#disk-hole-count {
+    width: 5rem;
+}
+
+#find-disk-left-side .dropdown-block {
+    margin: 0;
+    height: 3.5rem;
+}
+
+/*find-disk-right-side*/
+
+#find-disk-right-side {
+    float: right;
+    margin: -2rem 0 2rem 1rem;
+}
+
+label[for="disk-dco"] {
+    display: inline-block;
+    margin: 0 0 0.8rem 0;;
+}
+
+label[for="disk-et"] {
+    display: inline-block;
+    margin: 0.9rem 0 0.8rem 0;
+}
+
+/*content-container*/
+#content-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    font-family: Lucida Arial sans-serif;
+}
+
+#content-container .header {
+    line-height: 2.5rem;
+    padding: 0 0 0 3rem;
+    border: 1px solid #b0b0b1;
+    border-radius: 1.4rem;
+    box-shadow: 2px 4px 6px 0px #b0b0b1;
+    vertical-align: middle;
+    font-size: 1.273rem;
+    color: #114165;
+    background: url("../img/circle-with-page.png") no-repeat 1% center;
+}
+
+.sidebar-main-menu-item-container {
+    position: relative;
+    margin: 1rem 0 1rem 0;
+}
+
+.sidebar-main-menu-item-facade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8.5rem;
+    line-height: 2.5rem;
+    padding: 0 1rem 0 3rem;
+    border: 1px solid #b0b0b1;
+    border-radius: 1.4rem;
+    vertical-align: middle;
+    font-size: 1.273rem;
+    color: #114165;
+    background: url("../img/circle.png") no-repeat 1% center;
+    z-index: 0;
+}
+
+.sidebar-main-menu-item {
+    position: relative; /* для z-index: 1*/
+    float: left;
+    top: 0;
+    left: 0;
+    min-width: 12rem;
+    z-index: 1;
+}
+
+/*katalog-sidebar*/
+#katalog-sidebar {
+    order: 1;
+    flex-basis: 18.6rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.submenu {
+    margin: 3rem 0 0 0; /*выполняет две функции: создаем высоту ...*/
+    height: 0;
+    visibility: hidden;
+}
+
+.sidebar-main-menu-item:hover .submenu,
+.sidebar-main-menu-item.active .submenu {
+    height: 100%;
+    visibility: visible;
+}
+
+.sidebar-submenu-item {
+    background: url("../img/circle-menu-marker.png") no-repeat left center;
+    padding: 0 0 0 1rem;
+    margin-left: 2rem;
+}
+
+.sidebar-submenu-item a {
+    font-size: 1.273rem;
+    line-height: 3rem;
+    color: #465961;
+    text-decoration: none;
+}
+
+.sidebar-submenu-item a:hover,
+.sidebar-submenu-item.active a {
+    font-size: 1.4rem;
+    color: #0c3256;
+    text-decoration: underline;
+}
+
+/*brand-sidebar*/
+#brand-sidebar {
+    order: 3;
+    flex-basis: 18.6rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#brand-sidebar .sidebar-main-menu-item-facade {
+    margin-left: 1.2rem;
+}
+
+.sidebar-main-menu-item {
+    margin-left: 1.2rem;
+}
+
+.checked-submenu {
+    margin: 3rem 0 0 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.sidebar-main-menu-item:hover .checked-submenu,
+.sidebar-main-menu-item.active .checked-submenu {
+    height: 100%;
+    visibility: visible;
+}
+
+.sidebar-checked-submenu-item {
+    margin-left: 0.8rem;
+    font-size: 1.273rem;
+    color: #465961;
+    height: 3rem;
+}
+
+.sidebar-checked-submenu-item label {
+    line-height: 3rem;
+}
+
+#submit {
+    margin: 1rem 0 0 2rem;
+    background: linear-gradient(to bottom, #1f6787, #0c3357);
+    border-radius: 5rem;
+    border: 1px solid #697b8b;
+    height: 2.4rem;
+    width: 8rem;
+    font-size: 1.1rem;
+    color: #e5e9ea;
+    box-shadow: 1px 2px 4px 0 #bec0c1, 0 -1px 0 0 #dcdddf;
+    outline: none;
+}
+
+/*goods-sidebar*/
+#goods-sidebar {
+    order: 2;
+    margin: 0 6px;
+    padding: 15px 20px 10px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(to bottom, #e5e7e8, #93a7b0);
+}
+
+.goods-item {
+    width: 136px;
+    margin: 15px 0 10px 0;
+}
+
+.goods-item header p:nth-child(1) {
+    font-size: 1.459rem;
+    color: #206988;
+    text-align: center;
+}
+
+.goods-item header p:nth-child(2) {
+    font-size: 1.277rem;
+    color: #1f2528;
+    text-align: center;
+}
+
+.goods-item-field {
+    position: relative;
+    height: 127px;
+    background: white;
+    border: 1px solid #a7b1b4;
+    border-radius: 10px;
+}
+
+.goods-item-field img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.goods-item-price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #114165;
+    text-align: center;
+}
+
+/*brand-logos*/
+#brand-logos {
+    line-height: 60px;
+    height: 75px;
+    overflow: auto;
+}
+
+#brand-logos-container {
+    padding-top: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#brand-logos-container img {
+    margin: 0 10px;
+}
+
+/*footer*/
+footer {
+    background: #213a4d;
+    height: 100px;
+    border: 1px solid #232d3f;
+    border-bottom: none;
+    box-shadow: 0 -1px 0 0 #d3d4d8;
+}
+
+footer>a {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+    color: #7f4740;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#footer-menu {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #bec6c9;
+}
+
+#footer-menu a {
+    color: #bec6c9;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+#footer-menu a:first-child {
+    color: #52abcb;
+}
