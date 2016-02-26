@@ -25,7 +25,7 @@
                         <a id="forgottenpassword" href="#">забыли пароль?</a>
                     </div>
                 </form>
-                <div id="navi-container">
+                <nav id="navi-container">
                     <div id="navi-button-container">
                         <a id="navi-button-home" href="#"><img src="img/home.png" alt="H"></a>
                         <a id="navi-button-mail" href="#"><img src="img/letter.png" alt="M"></a>
@@ -34,20 +34,20 @@
                             <a id="navi-button-tree" href="#"><img src="img/map.png" alt="T"></a>
                         </div>
                     </div>
-                </div>
+                </nav>
             </div>
             <div id="zazor">
                 <img src="img/zazor.png" alt="">
             </div>
         </header>
-        <div id="menu-bar" class="clearfix">
+        <section id="menu-bar" class="clearfix">
             <div id="koshyk">
                 <span id="goods-count-text" class="text">товаров:</span>
                 <span id="goods-count" class="digit">0</span>
                 <span class="text">на сумму:</span>
                 <span id="goods-cost" class="digit">0,00 грн.</span>
             </div>
-            <div id="menu">
+            <nav id="menu">
                 <ul>
                     <li>О КОМПАНИИ</li>
                     <li>ОПЛАТА</li>
@@ -55,9 +55,9 @@
                     <li>СТАТЬИ</li>
                     <li>КОНТАКТЫ</li>
                 </ul>
-            </div>
-        </div>
-        <div id="filter-form-container" class="clearfix">
+            </nav>
+        </section>
+        <section id="filter-form-container" class="clearfix">
             <form id="find-po-avto" action="#">
                 <div class="header">
                     Поиск по автомобилю
@@ -154,7 +154,7 @@
                     </div>
 
                     <div id="tire-season-block">
-                        <p for="tire-season">Сезон:</p>
+                        <p id="tire-season-label">Сезон:</p>
 
                         <div id="tire-season">
                             <div class="checkbox-block">
@@ -204,8 +204,13 @@
                     <div id="find-disk-right-side">
                         <div id="disk-dco-block" class="dropdown-block">
                             <div>
-                                <label id="disk-dco-label" for="disk-dco">ДЦО
-                                    <br/><span>(диаметр<br/>центрального<br/>отверстия):</span></label>
+                                <label id="disk-dco-label" for="disk-dco">ДЦО</label>
+                                <!--<br/><span>(диаметр<br/>центрального<br/>отверстия):</span></label>-->
+                                <p><span>(диаметр</span></p>
+
+                                <p><span>центрального</span></p>
+
+                                <p><span>отверстия):</span></p>
                             </div>
                             <select name="disk-dco" id="disk-dco">
                                 <option value="12">12</option>
@@ -220,12 +225,15 @@
                             </select>
                         </div>
                     </div>
+
+                    <div id="find-disk-splitter"><img src="img/disk-search-splitter.png" alt=""></div>
+                    <!--<img id="find-disk-splitter" src="img/disk-search-splitter.png" alt="">-->
                 </div>
                 <input class="submit" type="submit" value="поиск...">
             </form>
-        </div>
-        <div id="content-container">
-            <div id="katalog-sidebar">
+        </section>
+        <section id="content-container">
+            <aside id="katalog-sidebar">
                 <div class="header">
                     <span></span>КАТАЛОГ ПРОДУКЦИИ:
                 </div>
@@ -235,10 +243,10 @@
                         </div>
                         <div class="sidebar-main-menu-item" onclick="setMenuActive(this)">
                             <ul class="submenu">
-                                <li type="none" class="sidebar-submenu-item"><a href="">Наименование 1</a></li>
-                                <li type="none" class="sidebar-submenu-item active"><a href="">Наименование 2</a></li>
-                                <li type="none" class="sidebar-submenu-item"><a href="">Наименование 3</a></li>
-                                <li type="none" class="sidebar-submenu-item"><a href="">Наименование 4</a></li>
+                                <li class="sidebar-submenu-item"><a href="">Наименование 1</a></li>
+                                <li class="sidebar-submenu-item"><a href="">Наименование 2</a></li>
+                                <li class="sidebar-submenu-item"><a href="">Наименование 3</a></li>
+                                <li class="sidebar-submenu-item"><a href="">Наименование 4</a></li>
                             </ul>
                         </div>
                     </li>
@@ -247,10 +255,10 @@
                         </div>
                         <div class="sidebar-main-menu-item" onclick="setMenuActive(this)">
                             <ul class="submenu">
-                                <li type="none" class="sidebar-submenu-item"><a href="">Наименование 1</a></li>
-                                <li type="none" class="sidebar-submenu-item"><a href="">Наименование 2</a></li>
-                                <li type="none" class="sidebar-submenu-item"><a href="">Наименование 3</a></li>
-                                <li type="none" class="sidebar-submenu-item"><a href="">Наименование 4</a></li>
+                                <li class="sidebar-submenu-item"><a href="">Наименование 1</a></li>
+                                <li class="sidebar-submenu-item"><a href="">Наименование 2</a></li>
+                                <li class="sidebar-submenu-item"><a href="">Наименование 3</a></li>
+                                <li class="sidebar-submenu-item"><a href="">Наименование 4</a></li>
                             </ul>
                         </div>
                     </li>
@@ -259,17 +267,17 @@
                         </div>
                         <div class="sidebar-main-menu-item" onclick="setMenuActive(this)">
                             <ul class="submenu">
-                                <li type="none" class="sidebar-submenu-item"><a href="">Наименование 1</a></li>
-                                <li type="none" class="sidebar-submenu-item"><a href="">Наименование 2</a></li>
-                                <li type="none" class="sidebar-submenu-item"><a href="">Наименование 3</a></li>
-                                <li type="none" class="sidebar-submenu-item"><a href="">Наименование 4</a></li>
+                                <li class="sidebar-submenu-item"><a href="">Наименование 1</a></li>
+                                <li class="sidebar-submenu-item"><a href="">Наименование 2</a></li>
+                                <li class="sidebar-submenu-item"><a href="">Наименование 3</a></li>
+                                <li class="sidebar-submenu-item"><a href="">Наименование 4</a></li>
                             </ul>
                         </div>
                     </li>
                 </ul>
-            </div>
+            </aside>
 
-            <div id="brand-sidebar">
+            <aside id="brand-sidebar">
                 <div class="header">
                     <span></span>БРЕНДЫ:
                 </div>
@@ -318,129 +326,129 @@
                     </ul>
                     <input id="submit" type="submit" value="ВЫБРАТЬ">
                 </form>
-            </div>
+            </aside>
 
-            <div id="goods-sidebar">
-                <div class="goods-item">
-                    <header>
+            <main id="goods-sidebar">
+                <figure class="goods-item">
+                    <figcaption>
                         <p>Goodyear</p>
 
                         <p>Ultra Grip Extreme</p>
-                    </header>
+                    </figcaption>
                     <div class="goods-item-field">
                         <img src="img/g01.png" alt="cartwheel was here">
                     </div>
                     <div class="goods-item-price">
                         90.00 грн.
                     </div>
-                </div>
-                <div class="goods-item">
-                    <header>
+                </figure>
+                <figure class="goods-item">
+                    <figcaption>
                         <p>Nokian</p>
 
                         <p>Hakkapeliitta R</p>
-                    </header>
+                    </figcaption>
                     <div class="goods-item-field">
                         <img src="img/g02.png" alt="cartwheel was here">
                     </div>
                     <div class="goods-item-price">
                         115.00 грн.
                     </div>
-                </div>
-                <div class="goods-item">
-                    <header>
+                </figure>
+                <figure class="goods-item">
+                    <figcaption>
                         <p>Hankook</p>
 
                         <p>K 708 155/65 R14</p>
-                    </header>
+                    </figcaption>
                     <div class="goods-item-field">
                         <img src="img/g03.png" alt="cartwheel was here">
                     </div>
                     <div class="goods-item-price">
                         393.00 грн.
                     </div>
-                </div>
-                <div class="goods-item">
-                    <header>
+                </figure>
+                <figure class="goods-item">
+                    <figcaption>
                         <p>Goodyear</p>
 
                         <p>Ultra Grip Extreme</p>
-                    </header>
+                    </figcaption>
                     <div class="goods-item-field">
                         <img src="img/g01.png" alt="cartwheel was here">
                     </div>
                     <div class="goods-item-price">
                         90.00 грн.
                     </div>
-                </div>
-                <div class="goods-item">
-                    <header>
+                </figure>
+                <figure class="goods-item">
+                    <figcaption>
                         <p>Nokian</p>
 
                         <p>Hakkapeliitta R</p>
-                    </header>
+                    </figcaption>
                     <div class="goods-item-field">
                         <img src="img/g02.png" alt="cartwheel was here">
                     </div>
                     <div class="goods-item-price">
                         115.00 грн.
                     </div>
-                </div>
-                <div class="goods-item">
-                    <header>
+                </figure>
+                <figure class="goods-item">
+                    <figcaption>
                         <p>Hankook</p>
 
                         <p>K 708 155/65 R14</p>
-                    </header>
+                    </figcaption>
                     <div class="goods-item-field">
                         <img src="img/g03.png" alt="cartwheel was here">
                     </div>
                     <div class="goods-item-price">
                         393.00 грн.
                     </div>
-                </div>
-                <div class="goods-item">
-                    <header>
+                </figure>
+                <figure class="goods-item">
+                    <figcaption>
                         <p>Goodyear</p>
 
                         <p>Ultra Grip Extreme</p>
-                    </header>
+                    </figcaption>
                     <div class="goods-item-field">
                         <img src="img/g01.png" alt="cartwheel was here">
                     </div>
                     <div class="goods-item-price">
                         90.00 грн.
                     </div>
-                </div>
-                <div class="goods-item">
-                    <header>
+                </figure>
+                <figure class="goods-item">
+                    <figcaption>
                         <p>Nokian</p>
 
                         <p>Hakkapeliitta R</p>
-                    </header>
+                    </figcaption>
                     <div class="goods-item-field">
                         <img src="img/g02.png" alt="cartwheel was here">
                     </div>
                     <div class="goods-item-price">
                         115.00 грн.
                     </div>
-                </div>
-                <div class="goods-item">
-                    <header>
+                </figure>
+                <figure class="goods-item">
+                    <figcaption>
                         <p>Hankook</p>
 
                         <p>K 708 155/65 R14</p>
-                    </header>
+                    </figcaption>
                     <div class="goods-item-field">
                         <img src="img/g03.png" alt="cartwheel was here">
                     </div>
                     <div class="goods-item-price">
                         393.00 грн.
                     </div>
-                </div>
-            </div>
-        </div>
-        <div id="brand-logos">
+                </figure>
+            </main>
+        </section>
+        <section id="brand-logos">
             <div id="brand-logos-container">
                 <img src="img/brand-logo8.png" alt="brand-logo was here">
                 <img src="img/brand-logo7.png" alt="brand-logo was here">
@@ -451,9 +459,9 @@
                 <img src="img/brand-logo2.png" alt="brand-logo was here">
                 <img src="img/brand-logo1.png" alt="brand-logo was here">
             </div>
-        </div>
+        </section>
         <footer>
-            <div id="footer-menu">
+            <nav id="footer-menu">
                 <a href="#">О компании</a>
                 |
                 <a href="#">Доставка</a>
@@ -461,12 +469,11 @@
                 <a href="#">Статьи</a>
                 |
                 <a href="#">Контакты</a>
-            </div>
+            </nav>
             <a href="#"> Создание сайта &copy; Global Vision</a>
         </footer>
     </div>
 </div>
-</body>
 <script>
     function setMenuActive(el) {
         if (!el.getAttribute("active")) {
@@ -477,4 +484,5 @@
         }
     }
 </script>
+</body>
 </html>
