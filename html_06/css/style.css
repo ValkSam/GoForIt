@@ -13,18 +13,19 @@
 
 html {
     font-size: 10px;
+    font-family: Arial, sans-serif;
+    background: gray;
 }
 
 body {
-    background: gray;
 }
 
 #page {
     background: white;
-    font-family: Arial sans-serif;
     width: 1000px;
     min-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 1.4rem 0;
 }
 
 #container {
@@ -32,31 +33,43 @@ body {
 }
 
 #topline {
-    margin: 1.6rem 0 0 0.7rem;
-    line-height: 3rem;
+    margin: 3px 0 2px 7px;
+    line-height: 2.3rem;
 }
 
 #telephone {
-    display: inline-block;
-    vertical-align: middle;
+    float: left;
+    letter-spacing: 0.05rem;
     font-size: 1.8rem;
     color: #5e696d;
-    background: url("../img/telefon.png") no-repeat left center;
-    padding-left: 3rem;
+    background: url("../img/telefon.png") no-repeat left 55%;
+    padding: 0 0 0 2.5rem;
+    margin: 0.4rem 1.4rem 0 0;
 }
 
 #login-form {
+    position: relative;
     display: inline-block;
-    vertical-align: middle;
-    background: url("../img/login.png") no-repeat 1% center, linear-gradient(to bottom, #1f6787, #0c3357);
-    font-family: Lucida Arial sans-serif;
+    height: 2.5rem;
+    background: url("../img/login.png") no-repeat 1.4% center, linear-gradient(to bottom, #1f6787, #0c3357);
+    font-family: Lucida, Arial, sans-serif;
     font-size: 1.1rem;
     border-left: 1px solid #d4dde3;
     border-top: 1px solid #a6c3cf;
     border-bottom: 1px solid #4e647a;
-    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    padding-left: 3rem;
+    box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    width:49.5rem;
+}
+
+#auth-block{
+    display: inline-block;
+    position: absolute;
+    width: 48rem;
+    top: 0.1rem;
+    left: 2.4rem;
+    right: 0;
+    line-height: 2rem;
 }
 
 #login-form input, button:focus {
@@ -64,19 +77,19 @@ body {
 }
 
 #login-form input {
-    width: 11.3rem;
-    margin-right: 1rem;
-    padding: 0;
+    width: 10.8rem;
+    margin: 0 0.5rem 0 0;
+    padding: 0 0 0 0.3rem;
     border: 1px solid #d7d9da;
     box-shadow: 0 0 1px 1px #637787;
-    border-radius: 2px;
+    border-radius: 1px;
     background: white;
     color: black;
     font-size: 1.09rem;
 }
 
-#login, span {
-    margin: 0;
+#login, #login-form span {
+    margin: 0 0.1rem 0 0;
     padding: 0;
     border: none;
     background: rgba(0, 0, 0, 0);
@@ -85,39 +98,39 @@ body {
 }
 
 #registration {
-    margin: 0;
+    margin: 0 1.8rem 0 0;
     padding: 0;
     color: white;
     text-decoration: none;
+    letter-spacing: -0.03rem;
 }
 
-#forgottenpassword,
-#forgottenpassword:link,
-#forgottenpassword:visited {
-    margin: 0 2rem 0 1rem;
-    color: #bdc4c7;
+#forgottenpassword {
+    margin: 0 1rem 0 0;
+    color: #bfbfbf;
     font-size: 1.2rem;
+    letter-spacing: -0.01rem;
 }
 
 #navi-container {
     float: right;
+    margin: 0 0.8rem 0 0;
 }
 
 #navi-button-container {
     display: inline-block;
     vertical-align: middle;
-    width: 7.6rem;
+    width: 7.4rem;
     border: 1px solid #bdc4c7;
     border-radius: 10px;
     font-size: 1.2rem;
-    box-shadow: 1px 1px 1px 0 #bdc4c7;
+    box-shadow: 1px 1px 3px 0 #bdc4c7;
     background: white;
-    line-height: 2.3rem;
+    height: 1.9rem;
+    line-height: 1.8rem;
 }
 
-#navi-button-container a,
-#navi-button-container a:link,
-#navi-button-container a:visited {
+#navi-button-container a {
     color: #bdc4c7;
     text-decoration: none;
     padding: 0;
@@ -142,7 +155,7 @@ body {
 
 #navi-button-mail {
     float: right;
-    margin-right: 8px;
+    margin-right: 11px;
 }
 
 #navi-form button:focus {
@@ -150,50 +163,56 @@ body {
 }
 
 #zazor {
-    margin: 10px 0 10px 0;
+    margin: 0 0 4px 0;
 }
 
 #menu-bar {
-    /*background: linear-gradient(to bottom, rgba(80,88,96,0.65) 0%,rgba(58,64,70,0.68) 9%,rgba(38,42,45,0.69) 11%,rgba(1,1,1,1) 99%,rgba(1,1,1,1) 100%);*/
     background: linear-gradient(to bottom, rgba(80, 88, 96, 0.65) 0%, rgba(58, 64, 70, 0.68) 9%, rgba(21, 23, 25, 0.69) 11%, rgba(1, 1, 1, 1) 99%, rgba(1, 1, 1, 1) 100%);
     border: 1px solid #0d1642;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-    Line-height: 2.91rem;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.75);
+    line-height: 3.1rem;
 }
 
 #koshyk {
     float: right;
+    width: 22.6rem;
+    font-family: Arial, sans-serif;
+    background: url("../img/koshik.png") no-repeat 0.2% 45%;
+}
+
+.text {
     color: #929b9f;
-    font-size: 1em;
-    background: url("../img/koshik.png") no-repeat 1% center;
+    font-size: 1.1rem;
 }
 
-#koshyk span {
+.digit {
     display: inline-block;
+    font-size: 1.2rem;
     color: #0d5a8f;
-    font-size: 1.09em;
 }
 
-#bascket {
-    width: 3rem;
+#goods-count-text {
+    margin: 0 0 0 2.8rem;
     text-align: left;
 }
 
 #goods-count {
-    width: 5rem;
+    width: 1.9rem;
     text-align: left;
 }
 
 #goods-cost {
-    width: 6rem;
+    width: 5.7rem;
     text-align: right;
 }
 
 #menu {
     float: right;
+    margin: 0 6.0rem 0 0;
     font-size: 1.4em;
-    font-family: Lucida Arial sans-serif;
+    letter-spacing: -0.01rem;
+    font-family: Lucida, Arial, sans-serif;
     color: #b1bcc0;
 }
 
@@ -202,10 +221,10 @@ body {
 
 #menu li {
     display: inline-block;
-    padding: 0 1em 0 1em;
-    line-height: 2rem;
+    padding: 0 1.0rem 0 1.0rem;
+    line-height: 2.2rem;
     border: 1px solid transparent;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
 }
 
 #menu li:hover {
@@ -216,19 +235,18 @@ body {
 
 /*filter-form-container*/
 #filter-form-container {
-    margin: 1rem 0.5rem 1rem 0.5rem;
-    /*flex*/
+    margin: 1.3rem 0.5rem 1.8rem 0.4rem;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    height: 17.5rem;
+    height: 13.3rem;
 }
 
 #filter-form-container form {
     position: relative;
     border: 1px solid #b0b0b1;
-    border-radius: 10px;
-    box-shadow: 2px 4px 6px 0px #b0b0b1;
+    border-radius: 19px;
+    box-shadow: 2px 4px 4px 0 #b0b0b1;
 }
 
 #filter-form-container label {
@@ -237,29 +255,48 @@ body {
     color: black;
 }
 
-#filter-form-container select {
-    vertical-align: middle;
-}
-
 .dropdown-block {
-    margin: 0;
-    height: 3rem;
+    height: 2.2rem;
 }
 
-#filter-form-container label span {
+.dropdown-block select {
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    vertical-align: middle;
+    border-top: 2px solid #a9a9a9;
+    border-left: 2px solid #a9a9a9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../img/chekbox-button.png") no-repeat right;
+    outline: none;
+    padding: 0 0 0 0.2rem;
+}
+
+.dropdown-block label {
+    display: inline-block;
+    line-height: 0.8rem;
+    letter-spacing: 0.02rem;
+}
+
+.dropdown-block label span {
     font-size: 0.8rem;
     color: #77858b;
+    letter-spacing: 0.11rem;
 }
 
 /*find-po-avto*/
 #find-po-avto {
-    float: left;
+    flex-shrink: 0;
     margin: 0 0 0 0;
-    width: 41rem;
+    width: 41.3rem;
 }
 
 #find-po-avto .header {
-    margin: 1rem 0 0 0;
+    padding: 0.1rem 0.8rem 0 0.5rem;
+    letter-spacing: 0.15rem;
+    font-weight: bolder;
     font-size: 1.2rem;
     color: #154468;
     text-align: center;
@@ -273,53 +310,64 @@ body {
 #find-po-avto-disk-side {
     float: left;
     width: 18rem;
-    margin: 0 0 0 1rem;
+    margin: 0 0 0 1.6rem;
 }
 
 #find-po-avto-disk-side .header {
+    padding: 0.1rem 0 0 0.1rem;
+    letter-spacing: 0.12rem;
     font-size: 1rem;
     text-align: left;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0 0.5rem 0.3rem;
 }
 
 #find-po-avto-disk-side label {
     display: inline-block;
-    width: 7.5rem;
+    width: 7.4rem;
+}
+
+#find-po-avto-disk-side .dropdown-block:nth-child(2) label {
+    margin: 0.4rem 0 0 0;
 }
 
 #disk-marka-avto,
 #disk-model-avto,
 #disk-complectaciya {
-    width: 10.1rem;
+    width: 10.3rem;
 }
 
 #disk-god-vipuska {
-    width: 6rem;
+    width: 5.9rem;
 }
 
 /*find-po-avto-tire-side*/
 #find-po-avto-tire-side {
     float: right;
     width: 18rem;
-    margin: 0 1rem 0 0;
+    margin: 0.1rem 1.2rem 0 0;
 }
 
 #find-po-avto-tire-side .header {
+    padding: 0 0.6rem 0 0;
+    letter-spacing: 0.12rem;
     font-size: 1rem;
     color: #154468;
     text-align: right;
-    margin: 1rem 0 1rem 0;
+    margin: 0.8rem 0 0.5rem 0;
 }
 
 #find-po-avto-tire-side label {
-    display: inline-block;
-    width: 7.5rem;
+    width: 7.4rem;
+}
+
+#find-po-avto-tire-side .dropdown-block:nth-child(2) label {
+    margin: 0.4rem 0 0 0;
 }
 
 #tire-marka-avto,
 #tire-model-avto,
 #tire-complectaciya {
-    width: 10.1rem;
+    width: 10.3rem;
 }
 
 #tire-god-vipuska {
@@ -329,7 +377,7 @@ body {
 #filter-form-container .submit {
     display: inline-block;
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.9rem;
     width: 100%;
     font-size: 1.4rem;
     color: #154467;
@@ -338,68 +386,88 @@ body {
     border: none;
     background: transparent;
     text-align: right;
+    padding-right: 1.9rem;
 }
 
 /*==*/
 /*find-tire*/
 #find-tire {
-    float: left;
-    margin: 0 0 0 1rem;
-    width: 20rem;
+    flex-shrink: 0;
+    margin: -0.1rem 0 0 1.1rem;
+    width: 19.3rem;
 }
 
 #find-tire .header {
-    margin: 1rem 0 0 1rem;
+    margin: 0.2rem 0 0 1rem;
     font-size: 1.2rem;
+    font-weight: bolder;
+    letter-spacing: 0.14rem;
     color: #154468;
     text-align: left;
 }
 
 #find-tire-filter-block {
-    margin: 1rem 0 0 1rem;
+    margin: 0.6rem 0 0 1.2rem;
+}
+
+#find-tire-filter-block label {
+    display: inline-block;
+    margin: 0.8rem 0 0 0;
+    width: 4.4rem;
 }
 
 #tire-size-1,
 #tire-size-2 {
-    width: 5rem;
+    margin: 1px 0 0 0;
+    width: 5.4rem;
+}
+
+#separ {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: black;
+    padding: 0 0.1rem;
+    vertical-align: bottom;
 }
 
 #tire-radius {
-    width: 4.4rem;
+    margin: 0.3rem 0 0 0;
+    width: 4.7rem;
 }
 
-#tire-radius-label {
-    display: inline-block;
-    width: 3.7rem;
-}
-
-label[for="tire-radius"] {
+.dropdown-block #tire-radius-label {
+    width: 4.2rem;
     text-align: right;
     margin-left: -0.2rem;
     margin-right: 0.2rem;
 }
 
 /*.checkbox-block ...*/
-.checkbox-block {
-    margin: 0;
-    height: 2rem;
+#tire-season .checkbox-block {
+    height: 1.4rem;
 }
 
-.checkbox-block input {
-    display: inline-block;
-    margin: 0;
-    vertical-align: middle;
+#tire-season .checkbox-block input {
+    display: none;
 }
 
-.checkbox-block label {
-    vertical-align: baseline;
+#tire-season .checkbox-block label {
+    letter-spacing: 0.1rem;
+    padding: 0 0 0 1.4rem;
+    background: url("../img/checkbox-tire.png") no-repeat left center;
+    margin: 0.6em 0 0 0;
+}
+
+#tire-season .checkbox-block input:checked + label {
+    background: url("../img/checkbox-tire-checked.png") no-repeat left center;
 }
 
 /*....checkbox-block*/
 
 p[for="tire-season"] {
     display: inline-block;
-    width: 3.7rem;
+    margin: 0.4rem 0 0 0.3rem;
+    width: 3.9rem;
     vertical-align: top;
 }
 
@@ -407,71 +475,104 @@ p[for="tire-season"] {
     display: inline-block;
 }
 
-#tire-season label {
-    vertical-align: baseline;
-}
-
 /*==*/
 /*find-disk*/
 #find-disk {
-    float: right;
-    margin: 0 0 0 1rem;
-    width: 27rem;
+    flex-shrink: 0;
+    margin: -0.2rem 0 0 0.5rem;
+    width: 26.7rem;
 }
 
 #find-disk .header {
-    margin: 1rem 0 0 1rem;
+    margin: 0.3rem 0 0 1.2rem;
     font-size: 1.2rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
     color: #154468;
     text-align: left;
 }
 
 #find-disk-filter-block {
-    margin: 1rem 0 0 1rem;
+    margin: 0.5rem 0 0 0.9rem;
 }
 
 /*find-disk-left-side*/
 
 #find-disk-left-side {
     float: left;
-    width: 15rem;
+    width: 15.2rem;
     margin: 0 0 0 1rem;
 }
 
 #find-disk label {
     display: inline-block;
-    width: 7.0rem;
+    width: 8.6rem;
+    line-height: 0.9rem;
+    letter-spacing: 0.07rem;
 }
 
-#disk-diameter,
-#disk-place-diameter {
+#find-disk-left-side .dropdown-block:nth-child(2) label {
+    margin-top: -0.7rem;
+}
+
+#find-disk-left-side .dropdown-block:nth-child(3) label {
+    margin-top: -0.4rem;
+}
+
+#find-disk-left-side label span {
+    letter-spacing: 0.19rem;
+}
+
+#disk-diameter{
     width: 5.8rem;
+}
+#disk-place-diameter {
+    margin-top: -0.1rem;
+    width: 5.9rem;
 }
 
 #disk-hole-count {
-    width: 5rem;
+    margin-top: 0.2rem;
+    width: 5.1rem;
 }
 
 #find-disk-left-side .dropdown-block {
     margin: 0;
-    height: 3.5rem;
+    height: 2.7rem;
 }
 
 /*find-disk-right-side*/
 
 #find-disk-right-side {
     float: right;
-    margin: -2rem 0 2rem 1rem;
+    margin: -1.4rem 0 0 0;
+    width: 8rem;
 }
 
-label[for="disk-dco"] {
-    display: inline-block;
-    margin: 0 0 0.8rem 0;;
+#disk-dco {
+    margin: 0.1rem 0 0 0.2rem;
+    width: 5.9rem;
 }
 
-label[for="disk-et"] {
-    display: inline-block;
-    margin: 0.9rem 0 0.8rem 0;
+#disk-dco-block {
+    margin: -0.1rem 0 0.3rem 0;
+    line-height: 0.8rem;
+    height: 5.5rem;
+}
+
+#find-disk-right-side label span {
+    line-height: 0;
+    letter-spacing: 0.09rem;
+    font-family: Lucida, Arial, sans-serif;
+}
+
+#disk-et {
+    margin: 0.3rem 0 0 0.2rem;
+    width: 5.9rem;
+}
+
+#disk-et-label {
+    margin: 0.2rem 0 0.1rem 0;
 }
 
 /*content-container*/
@@ -481,15 +582,16 @@ label[for="disk-et"] {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    font-family: Lucida Arial sans-serif;
+    font-family: Lucida, Arial, sans-serif;
 }
 
 #content-container .header {
     line-height: 2.5rem;
-    padding: 0 0 0 3rem;
+    margin: 0 0 1.3rem 0;
+    padding: 0 0 0 2.7rem;
     border: 1px solid #b0b0b1;
     border-radius: 1.4rem;
-    box-shadow: 2px 4px 6px 0px #b0b0b1;
+    box-shadow: 2px 2px 3px 0 #b0b0b1;
     vertical-align: middle;
     font-size: 1.273rem;
     color: #114165;
@@ -498,22 +600,22 @@ label[for="disk-et"] {
 
 .sidebar-main-menu-item-container {
     position: relative;
-    margin: 1rem 0 1rem 0;
+    margin: 0 0 0 0;
 }
 
 .sidebar-main-menu-item-facade {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 8.5rem;
-    line-height: 2.5rem;
-    padding: 0 1rem 0 3rem;
+    left: 0.1rem;
+    width: 11.1rem;
+    line-height: 2.7rem;
+    padding: 0 1rem 0 2.7rem;
     border: 1px solid #b0b0b1;
-    border-radius: 1.4rem;
+    border-radius: 1.2rem;
     vertical-align: middle;
-    font-size: 1.273rem;
+    font-size: 1.4rem;
     color: #114165;
-    background: url("../img/circle.png") no-repeat 1% center;
+    background: url("../img/circle.png") no-repeat 2.3% 37%;
     z-index: 0;
 }
 
@@ -529,19 +631,21 @@ label[for="disk-et"] {
 /*katalog-sidebar*/
 #katalog-sidebar {
     order: 1;
-    flex-basis: 18.6rem;
+    flex-basis: 18.4rem;
     flex-grow: 0;
     flex-shrink: 0;
+    margin: 1px 0 0 -2px;
 }
 
 .submenu {
-    margin: 3rem 0 0 0; /*выполняет две функции: создаем высоту ...*/
+    margin: 2.8rem 0 1.3rem 0;
     height: 0;
     visibility: hidden;
 }
 
-.sidebar-main-menu-item:hover .submenu,
-.sidebar-main-menu-item.active .submenu {
+/*.sidebar-main-menu-item:hover .submenu,*/
+.sidebar-main-menu-item[active] .submenu {
+    margin: 2.5rem 0 0 0;
     height: 100%;
     visibility: visible;
 }
@@ -549,12 +653,12 @@ label[for="disk-et"] {
 .sidebar-submenu-item {
     background: url("../img/circle-menu-marker.png") no-repeat left center;
     padding: 0 0 0 1rem;
-    margin-left: 2rem;
+    margin-left: 2.4rem;
 }
 
 .sidebar-submenu-item a {
     font-size: 1.273rem;
-    line-height: 3rem;
+    line-height: 2.6rem;
     color: #465961;
     text-decoration: none;
 }
@@ -568,14 +672,20 @@ label[for="disk-et"] {
 
 /*brand-sidebar*/
 #brand-sidebar {
+    margin: -0.1rem 0 0 0;
     order: 3;
-    flex-basis: 18.6rem;
+    flex-basis: 18.5rem;
     flex-grow: 0;
     flex-shrink: 0;
 }
 
+#brand-sidebar .header {
+    font-size: 1.4rem;
+}
+
 #brand-sidebar .sidebar-main-menu-item-facade {
-    margin-left: 1.2rem;
+    margin-left: 1.5rem;
+    width: 9.6rem
 }
 
 .sidebar-main-menu-item {
@@ -583,35 +693,46 @@ label[for="disk-et"] {
 }
 
 .checked-submenu {
-    margin: 3rem 0 0 0;
+    margin: 2.8rem 0 1.3rem 0;
     height: 0;
     visibility: hidden;
 }
 
-.sidebar-main-menu-item:hover .checked-submenu,
-.sidebar-main-menu-item.active .checked-submenu {
+/*.sidebar-main-menu-item:hover .checked-submenu,*/
+.sidebar-main-menu-item[active] .checked-submenu {
     height: 100%;
     visibility: visible;
 }
 
 .sidebar-checked-submenu-item {
-    margin-left: 0.8rem;
+    margin-left: 1.4rem;
     font-size: 1.273rem;
     color: #465961;
-    height: 3rem;
+    height: 2.45rem;
+}
+
+.sidebar-checked-submenu-item input {
+    display: none;
 }
 
 .sidebar-checked-submenu-item label {
     line-height: 3rem;
+    padding: 0 0 0 2.4rem;
+    letter-spacing: 0.01rem;
+    background: url("../img/checkbox.png") no-repeat left center;
+}
+
+.sidebar-checked-submenu-item input:checked + label {
+    background: url("../img/checkbox-checked.png") no-repeat left center;
 }
 
 #submit {
-    margin: 1rem 0 0 2rem;
+    margin: 0.8rem 0 0 2.5rem;
     background: linear-gradient(to bottom, #1f6787, #0c3357);
-    border-radius: 5rem;
+    border-radius: 1.1rem;
     border: 1px solid #697b8b;
-    height: 2.4rem;
-    width: 8rem;
+    height: 2.6rem;
+    width: 8.2rem;
     font-size: 1.1rem;
     color: #e5e9ea;
     box-shadow: 1px 2px 4px 0 #bec0c1, 0 -1px 0 0 #dcdddf;
@@ -621,8 +742,8 @@ label[for="disk-et"] {
 /*goods-sidebar*/
 #goods-sidebar {
     order: 2;
-    margin: 0 6px;
-    padding: 15px 20px 10px 20px;
+    margin: -3px 8px -2px 9px;
+    padding: 5px 23px 14px 23px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -631,8 +752,9 @@ label[for="disk-et"] {
 }
 
 .goods-item {
-    width: 136px;
-    margin: 15px 0 10px 0;
+    font-family: Lucida, Arial, sans-serif;
+    width: 138px;
+    margin: 10px 0 17px 0;
 }
 
 .goods-item header p:nth-child(1) {
@@ -649,6 +771,7 @@ label[for="disk-et"] {
 
 .goods-item-field {
     position: relative;
+    margin: 0.3rem 0 0.2rem 0;
     height: 127px;
     background: white;
     border: 1px solid #a7b1b4;
@@ -665,16 +788,17 @@ label[for="disk-et"] {
 }
 
 .goods-item-price {
+    font-family: Arial, sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
+    font-style: italic;
     color: #114165;
     text-align: center;
 }
 
 /*brand-logos*/
 #brand-logos {
-    line-height: 60px;
-    height: 75px;
+    height: 92px;
     overflow: auto;
 }
 
@@ -685,7 +809,7 @@ label[for="disk-et"] {
 }
 
 #brand-logos-container img {
-    margin: 0 10px;
+    margin: 31px 2px 0 10px;
 }
 
 /*footer*/
@@ -697,9 +821,9 @@ footer {
     box-shadow: 0 -1px 0 0 #d3d4d8;
 }
 
-footer>a {
+footer > a {
     display: block;
-    margin-top: 2rem;
+    margin-top: 1.6rem;
     text-align: center;
     color: #7f4740;
     font-size: 1rem;
@@ -708,7 +832,7 @@ footer>a {
 
 #footer-menu {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.1rem;
     font-size: 1.2rem;
     color: #bec6c9;
 }
@@ -716,7 +840,7 @@ footer>a {
 #footer-menu a {
     color: #bec6c9;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.9rem;
 }
 
 #footer-menu a:first-child {
