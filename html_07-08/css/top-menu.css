@@ -1,0 +1,65 @@
+/*TOP MENU*/
+.top-menu-bar {
+    margin: 75px 0 150px 0;
+    font-family: league_gothicregular, sans-serif;
+    overflow: hidden;
+    line-height: 3.4rem; /*используем для смещения вверх*/
+}
+
+/*LOGO*/
+.top-menu-bar__logo {
+    line-height: 4.8rem;
+    font-size: 4.8rem;
+    float: left;
+}
+
+.top-menu-bar__logo div {
+    display: inline-block;
+}
+
+.logo__first-part {
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.3) 0 2px 2px;
+}
+
+.logo__second-part {
+    color: #000; /*закрашиваем самым темным - черным*/
+    background: rgba(255, 255, 255, 1); /*под буквами самый светлый - белый*/
+    mix-blend-mode: lighten; /*оставляем самое светлое. черное - отсекаем (делаем прозрачным). Получили дырку*/
+}
+
+.logo__second-part-back {
+    margin: 0 0 0 -0.8rem;
+    line-height: 3.8rem; /*сужаем, чтобы охватить весь диапозон градиента*/
+    background: linear-gradient(to bottom, #745083, #33263a); /*под дыркой будет виден градиент*/
+    mix-blend-mode: darken; /*фон у нас светлее букв, но темнее белого фона (в котором дырка) - поэтому отсекаем все светлее фона*/
+}
+
+/*MENU*/
+
+.top-menu-bar__top-menu {
+    float: right;
+    font-size: 2.4rem;
+}
+
+.top-menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0.7rem;
+    border-bottom: 2px solid transparent;
+    margin: 0 0 0 3.5rem;
+}
+
+.top-menu__item:last-child {
+    padding: 0 0 0 0.7rem;
+}
+
+.top-menu__item:hover {
+    border-bottom: 2px solid #edbfff;
+
+}
+
+.top-menu__item a {
+    color: white;
+    text-decoration: none;
+}
