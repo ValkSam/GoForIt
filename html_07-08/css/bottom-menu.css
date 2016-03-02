@@ -1,0 +1,40 @@
+/*BOTTOM MENU*/
+.bottom-menu-bar {
+    margin: 75px 0 150px 0;
+    font-family: league_gothicregular, sans-serif;
+    overflow: hidden;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 1) 1px 1px 0;
+}
+
+/*MENU*/
+
+.bottom-menu-bar__bottom-menu {
+    float: left;
+    font-size: 2rem;
+}
+
+.bottom-menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 4.0rem 0 0;
+}
+
+.bottom-menu__item:last-child {
+    padding: 0 0 0 0.7rem;
+}
+
+.bottom-menu__item a {
+    text-decoration: none;
+    color: white;
+}
+
+.designed-sight {
+    margin: 8px 7px 0 0;
+    font-family: OpenSans-light, Arial sans-serif;
+    float: right;
+}
+.designed-sight span{
+    font-family: OpenSans-extraBold, Arial sans-serif;
+    font-size: 1.2rem;
+}

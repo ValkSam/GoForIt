@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/top-menu.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/blurb.css">
+    <link rel="stylesheet" href="css/bottom-menu.css">
 </head>
 <body>
 
 <div class="page">
-    <header>
+    <header class="page-header">
         <div class="top-menu-bar">
             <div class="top-menu-bar__logo">
                 <div class="logo__first-part">PINGBULL</div>
@@ -32,191 +34,489 @@
                 </ul>
             </nav>
         </div>
-
-        <div class="carousel">
-            <!--carousel__container nedded for resolving two tasks:
-             - take the current slide in strip of slides: "overflow: hidden" is placed in carousel__container.
-             - not strict element with left/right arrows (carousel__outer-padding): carousel__outer-padding has absolute position relative to carousel but not carousel__container-->
-            <div class="carousel__container">
-                <!--invisible buttons for storing chosen slide-->
-                <input type="radio" checked class="carousel__hidden-radio" name="1" id="p1">
-                <input type="radio" class="carousel__hidden-radio" name="1" id="p2">
-                <input type="radio" class="carousel__hidden-radio" name="1" id="p3">
-                <input type="radio" class="carousel__hidden-radio" name="1" id="p4">
-                <input type="radio" class="carousel__hidden-radio" name="1" id="p5">
-                <!--holder for left/right arroows-->
-                <div class="carousel__outer-padding">
-                    <div class="carousel__right-arrow-container">
-                        <label for="p1" class="carousel__right-arrow for-slide-1"></label>
-                        <label for="p2" class="carousel__right-arrow for-slide-2"></label>
-                        <label for="p3" class="carousel__right-arrow for-slide-3"></label>
-                        <label for="p4" class="carousel__right-arrow for-slide-4"></label>
-                        <label for="p5" class="carousel__right-arrow for-slide-5"></label>
+        <div class="carousel-container">
+            <div class="carousel">
+                <!--carousel__container nedded for resolving two tasks:
+                 - take the current slide in strip of slides: "overflow: hidden" is placed in carousel__container.
+                 - not strict element with left/right arrows (carousel__outer-padding): carousel__outer-padding has absolute position relative to carousel but not carousel__container-->
+                <div class="carousel__container">
+                    <!--invisible buttons for storing chosen slide-->
+                    <input type="radio" checked class="carousel__hidden-radio" name="1" id="p1">
+                    <input type="radio" class="carousel__hidden-radio" name="1" id="p2">
+                    <input type="radio" class="carousel__hidden-radio" name="1" id="p3">
+                    <input type="radio" class="carousel__hidden-radio" name="1" id="p4">
+                    <!--holder for left/right arroows-->
+                    <div class="carousel__outer-padding">
+                        <div class="carousel__right-arrow-container">
+                            <label for="p1" class="carousel__right-arrow for-slide-1"></label>
+                            <label for="p2" class="carousel__right-arrow for-slide-2"></label>
+                            <label for="p3" class="carousel__right-arrow for-slide-3"></label>
+                            <label for="p4" class="carousel__right-arrow for-slide-4"></label>
+                        </div>
+                        <div class="carousel__left-arrow-container">
+                            <label for="p1" class="carousel__left-arrow for-slide-1"></label>
+                            <label for="p2" class="carousel__left-arrow for-slide-2"></label>
+                            <label for="p3" class="carousel__left-arrow for-slide-3"></label>
+                            <label for="p4" class="carousel__left-arrow for-slide-4"></label>
+                        </div>
                     </div>
-                    <div class="carousel__left-arrow-container">
-                        <label for="p1" class="carousel__left-arrow for-slide-1"></label>
-                        <label for="p2" class="carousel__left-arrow for-slide-2"></label>
-                        <label for="p3" class="carousel__left-arrow for-slide-3"></label>
-                        <label for="p4" class="carousel__left-arrow for-slide-4"></label>
-                        <label for="p5" class="carousel__left-arrow for-slide-5"></label>
-                    </div>
-                </div>
-                <!--holder for slides strip-->
-                <div class="carousel__strip"></div>
-                <div class="carousel__slide-place">
-                    <!--holder for slide which contains two parts:
-                    - left sided text
-                    - right sided image-->
-                    <div class="carousel__slide-block clearfix">
-                        <div class="carousel__text-side">
-                            <div class="carousel__text-container">
-                                <header>
-                                    <h1>Lorem Ipsum Doloride 1</h1>
+                    <!--holder for slides strip-->
+                    <div class="carousel__strip"></div>
+                    <div class="carousel__slide-place">
+                        <!--holder for slide which contains two parts:
+                        - left sided text
+                        - right sided image-->
+                        <div class="carousel__slide-block">
+                            <div class="carousel__text-side">
+                                <div class="carousel__text-container">
+                                    <header>
+                                        <h1>Lorem Ipsum Dolor</h1>
 
-                                    <h2>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
-                                </header>
-                                <div>
-                                    Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim
-                                    tincidunt
-                                    est,
-                                    et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum
-                                    euismod
-                                    lacus id semper. In odio nunc, imperdiet eget aliquam quis,
+                                        <h2>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
+                                    </header>
+                                    <div>
+                                        Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim
+                                        tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at
+                                        volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget
+                                        aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus
+                                        lectus lobortis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__img-side">
+                                <div id="phone-img-1">
+                                    <img src="img/phone.png" alt="phone was here">
+                                </div>
+                                <div id="play-img-1">
+                                    <img src="img/play.png" alt="play bution was here">
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel__img-side">
-                            <div id="phone-img-1">
-                                <img src="img/phone.png" alt="phone was here">
-                            </div>
-                            <div id="play-img-1">
-                                <img src="img/play.png" alt="play bution was here">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel__slide-block clearfix">
-                        <div class="carousel__text-side">
-                            <div class="carousel__text-container">
-                                <header>
-                                    <h1>Lorem Ipsum Doloride 2</h1>
+                        <div class="carousel__slide-block">
+                            <div class="carousel__text-side">
+                                <div class="carousel__text-container">
+                                    <header>
+                                        <h1>Lorem Ipsum Doloride 2</h1>
 
-                                    <h2>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
-                                </header>
-                                <div>
-                                    Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim
-                                    tincidunt
-                                    est,
-                                    et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum
-                                    euismod
-                                    lacus id semper. In odio nunc, imperdiet eget aliquam quis,
+                                        <h2>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
+                                    </header>
+                                    <div>
+                                        Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim
+                                        tincidunt
+                                        est,
+                                        et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi
+                                        elementum
+                                        euismod
+                                        lacus id semper. In odio nunc, imperdiet eget aliquam quis,
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__img-side">
+                                <div id="phone-img-2">
+                                    <img src="img/phone.png" alt="phone was here">
+                                </div>
+                                <div id="play-img-2">
+                                    <img src="img/play.png" alt="play bution was here">
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel__img-side">
-                            <div id="phone-img-2">
-                                <img src="img/phone.png" alt="phone was here">
-                            </div>
-                            <div id="play-img-2">
-                                <img src="img/play.png" alt="play bution was here">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel__slide-block clearfix">
-                        <div class="carousel__text-side">
-                            <div class="carousel__text-container">
-                                <header>
-                                    <h1>Lorem Ipsum Doloride 3</h1>
+                        <div class="carousel__slide-block">
+                            <div class="carousel__text-side">
+                                <div class="carousel__text-container">
+                                    <header>
+                                        <h1>Lorem Ipsum Doloride 3</h1>
 
-                                    <h2>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
-                                </header>
-                                <div>
-                                    Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim
-                                    tincidunt
-                                    est,
-                                    et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum
-                                    euismod
-                                    lacus id semper. In odio nunc, imperdiet eget aliquam quis,
+                                        <h2>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
+                                    </header>
+                                    <div>
+                                        Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim
+                                        tincidunt
+                                        est,
+                                        et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi
+                                        elementum
+                                        euismod
+                                        lacus id semper. In odio nunc, imperdiet eget aliquam quis,
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__img-side">
+                                <div id="phone-img-3">
+                                    <img src="img/phone.png" alt="phone was here">
+                                </div>
+                                <div id="play-img-3">
+                                    <img src="img/play.png" alt="play bution was here">
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel__img-side">
-                            <div id="phone-img-3">
-                                <img src="img/phone.png" alt="phone was here">
-                            </div>
-                            <div id="play-img-3">
-                                <img src="img/play.png" alt="play bution was here">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel__slide-block clearfix">
-                        <div class="carousel__text-side">
-                            <div class="carousel__text-container">
-                                <header>
-                                    <h1>Lorem Ipsum Doloride 4</h1>
+                        <div class="carousel__slide-block">
+                            <div class="carousel__text-side">
+                                <div class="carousel__text-container">
+                                    <header>
+                                        <h1>Lorem Ipsum Doloride 4</h1>
 
-                                    <h2>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
-                                </header>
-                                <div>
-                                    Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim
-                                    tincidunt
-                                    est,
-                                    et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum
-                                    euismod
-                                    lacus id semper. In odio nunc, imperdiet eget aliquam quis,
+                                        <h2>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
+                                    </header>
+                                    <div>
+                                        Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim
+                                        tincidunt
+                                        est,
+                                        et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi
+                                        elementum
+                                        euismod
+                                        lacus id semper. In odio nunc, imperdiet eget aliquam quis,
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__img-side">
+                                <div id="phone-img-4">
+                                    <img src="img/phone.png" alt="phone was here">
+                                </div>
+                                <div id="play-img-4">
+                                    <img src="img/play.png" alt="play bution was here">
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel__img-side">
-                            <div id="phone-img-4">
-                                <img src="img/phone.png" alt="phone was here">
-                            </div>
-                            <div id="play-img-4">
-                                <img src="img/play.png" alt="play bution was here">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel__slide-block clearfix">
-                        <div class="carousel__text-side">
-                            <div class="carousel__text-container">
-                                <header>
-                                    <h1>Lorem Ipsum Doloride 5</h1>
+                        <div class="carousel__slide-block">
+                            <div class="carousel__text-side">
+                                <div class="carousel__text-container">
+                                    <header>
+                                        <h1>Lorem Ipsum Doloride 5</h1>
 
-                                    <h2>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
-                                </header>
-                                <div>
-                                    Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim
-                                    tincidunt
-                                    est,
-                                    et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum
-                                    euismod
-                                    lacus id semper. In odio nunc, imperdiet eget aliquam quis,
+                                        <h2>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
+                                    </header>
+                                    <div>
+                                        Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim
+                                        tincidunt
+                                        est,
+                                        et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi
+                                        elementum
+                                        euismod
+                                        lacus id semper. In odio nunc, imperdiet eget aliquam quis,
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel__img-side">
+                                <div id="phone-img-5">
+                                    <img src="img/phone.png" alt="phone was here">
+                                </div>
+                                <div id="play-img-5">
+                                    <img src="img/play.png" alt="play bution was here">
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel__img-side">
-                            <div id="phone-img-5">
-                                <img src="img/phone.png" alt="phone was here">
-                            </div>
-                            <div id="play-img-5">
-                                <img src="img/play.png" alt="play bution was here">
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="carousel__navi-block">
-                    <div class="carousel__navi-label-place">
-                        <label class="carousel__navi-label" for="p1"></label>
-                        <label class="carousel__navi-label" for="p2"></label>
-                        <label class="carousel__navi-label" for="p3"></label>
-                        <label class="carousel__navi-label" for="p4"></label>
-                        <label class="carousel__navi-label" for="p5"></label>
+                    <div class="carousel__navi-block">
+                        <div class="carousel__navi-label-place">
+                            <label class="carousel__navi-label" for="p1"></label>
+                            <label class="carousel__navi-label" for="p2"></label>
+                            <label class="carousel__navi-label" for="p3"></label>
+                            <label class="carousel__navi-label" for="p4"></label>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </header>
+    <div class="sub-header">
+        <div class="blurb-container">
+            <div class="blurb-block">
+                <div class="blurb-block__left-side">
+                    <img class="blurb-block__icon pos-1" src="img/violet-bg-icons.png" alt="icon">
+                </div>
+                <div class="blurb-block__right-side">
+                    <div class="blurb-block__header">
+                        ABOUT OUR COMPANY
+                    </div>
+                    <div class="blurb-block__body">
+                        Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices
+                        posuere.
+                        Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque
+                        pulvinar.
+                        Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus
+                        ultricies
+                        erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum
+                        elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu
+                        lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non
+                        euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+                    </div>
+                    <a class="blurb-block__footer" href="#">READ MORE</a>
+                </div>
+            </div>
+            <div class="blurb-block-gap"></div>
+            <div class="blurb-block">
+                <div class="blurb-block__left-side">
+                    <img class="blurb-block__icon pos-2" src="img/violet-bg-icons.png" alt="icon">
+                </div>
+                <div class="blurb-block__right-side">
+                    <div class="blurb-block__header">
+                        ABOUT OUR COMPANY
+                    </div>
+                    <div class="blurb-block__body">
+                        Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices
+                        posuere.
+                        Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque
+                        pulvinar.
+                        Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus
+                        ultricies
+                        erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum
+                        elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu
+                        lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non
+                        euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+                    </div>
+                    <a class="blurb-block__footer" href="#">READ MORE</a>
+                </div>
+            </div>
+            <div class="blurb-block-gap"></div>
+            <div class="blurb-block">
+                <div class="blurb-block__left-side">
+                    <img class="blurb-block__icon pos-3" src="img/violet-bg-icons.png" alt="icon">
+                </div>
+                <div class="blurb-block__right-side">
+                    <div class="blurb-block__header">
+                        ABOUT OUR COMPANY
+                    </div>
+                    <div class="blurb-block__body">
+                        Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices
+                        posuere.
+                        Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque
+                        pulvinar.
+                        Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus
+                        ultricies
+                        erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum
+                        elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu
+                        lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non
+                        euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.
+                    </div>
+                    <a class="blurb-block__footer" href="#">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="clearfix">
+        <div class="testimonials">
+            <div class="carousel">
+                <div class="carousel__container">
+                    <input type="radio" checked class="carousel__hidden-radio" name="2" id="tp1">
+                    <input type="radio" class="carousel__hidden-radio" name="2" id="tp2">
+                    <input type="radio" class="carousel__hidden-radio" name="2" id="tp3">
+                    <input type="radio" class="carousel__hidden-radio" name="2" id="tp4">
 
+                    <div class="carousel__slide-place carousel__slide-place--testimonials">
+                        <div class="carousel__slide-block carousel__slide-block--testimonials">
+                            <div class="carousel__full-frame">
+                                <div class="carousel__text-container carousel__text-container--testimonials">
+                                    <header>
+                                        <h1>PingbulLer <span>starts here</span></h1>
+                                    </header>
+                                    <div>
+                                        "Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent
+                                        rhoncus
+                                        ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae
+                                        lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar
+                                        bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat
+                                        dignissim non eu nisl."
+                                    </div>
+                                    <img class="baloon" src="img/testimonials-baloon.png" alt="">
+                                    <img class="photo" src="img/testimonials-photo.png" alt="foto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__slide-block carousel__slide-block--testimonials">
+                            <div class="carousel__full-frame">
+                                <div class="carousel__text-container carousel__text-container--testimonials">
+                                    <header>
+                                        <h1>PingbulLer <span>starts here</span></h1>
+                                    </header>
+                                    <div>
+                                        "Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent
+                                        rhoncus
+                                        ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae
+                                        lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar
+                                        bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat
+                                        dignissim non eu nisl."
+                                    </div>
+                                    <img class="baloon" src="img/testimonials-baloon.png" alt="">
+                                    <img class="photo" src="img/testimonials-photo.png" alt="foto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__slide-block carousel__slide-block--testimonials">
+                            <div class="carousel__full-frame">
+                                <div class="carousel__text-container carousel__text-container--testimonials">
+                                    <header>
+                                        <h1>PingbulLer <span>starts here</span></h1>
+                                    </header>
+                                    <div>
+                                        "Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent
+                                        rhoncus
+                                        ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae
+                                        lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar
+                                        bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat
+                                        dignissim non eu nisl."
+                                    </div>
+                                    <img class="baloon" src="img/testimonials-baloon.png" alt="">
+                                    <img class="photo" src="img/testimonials-photo.png" alt="foto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__slide-block carousel__slide-block--testimonials">
+                            <div class="carousel__full-frame">
+                                <div class="carousel__text-container carousel__text-container--testimonials">
+                                    <header>
+                                        <h1>PingbulLer <span>starts here</span></h1>
+                                    </header>
+                                    <div>
+                                        "Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent
+                                        rhoncus
+                                        ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae
+                                        lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar
+                                        bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat
+                                        dignissim non eu nisl."
+                                    </div>
+                                    <img class="baloon" src="img/testimonials-baloon.png" alt="">
+                                    <img class="photo" src="img/testimonials-photo.png" alt="foto">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel__navi-block carousel__navi-block--testimonials">
+                        <div class="carousel__navi-label-place">
+                            <label class="carousel__navi-label carousel__navi-label--testimonials" for="tp1"></label>
+                            <label class="carousel__navi-label carousel__navi-label--testimonials" for="tp2"></label>
+                            <label class="carousel__navi-label carousel__navi-label--testimonials" for="tp3"></label>
+                            <label class="carousel__navi-label carousel__navi-label--testimonials" for="tp4"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="from-blog">
+            <div class="blurb-block blurb-block--from-blog">
+                <div class="blurb-block__right-side blurb-block__right-side--from-blog">
+                    <div class="blurb-block__header blurb-block__header--from-blog">
+                        RECENT UPDATES
+                    </div>
+                    <ul class="blurb-block__list-body">
+                        <li class="blurb-block__list-item">
+                            <img class="blurb-block__list-item-img" src="img/list-item-1.png" alt="img">
+
+                            <div class="blurb-block__list-item-text-block">
+                                <span class="blurb-block__list-item-first-line">
+                                    Nunc turpis neque feugiat eget
+                                </span>
+                                <br/>
+                                <span>
+                                    Posted by Admin on March 13 2012 in Recent News
+                                </span>
+                            </div>
+                        </li>
+                        <li class="blurb-block__list-item">
+                            <img class="blurb-block__list-item-img" src="img/list-item-2.png" alt="img">
+
+                            <div class="blurb-block__list-item-text-block">
+                                <span class="blurb-block__list-item-first-line">
+                                    Nunc turpis neque feugiat eget
+                                </span>
+                                <br/>
+                                <span>
+                                    Posted by Admin on March 13 2012 in Category
+                                </span>
+                            </div>
+                        </li>
+                        <li class="blurb-block__list-item">
+                            <img class="blurb-block__list-item-img" src="img/list-item-3.png" alt="img">
+
+                            <div class="blurb-block__list-item-text-block">
+                                <span class="blurb-block__list-item-first-line">
+                                    Nunc turpis neque feugiat eget
+                                </span>
+                                <br/>
+                                <span>
+                                    Posted by Admin on March 13 2012 in Blog Updates
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="blurb-block__footer blurb-block__footer--from-blog" href="#">READ MORE HERE</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="trade-mark-list">
+        <img src="img/tm-1.png" alt="TM was here" class="trade-mark-list-item" id="tm-1">
+        <img src="img/tm-2.png" alt="TM was here" class="trade-mark-list-item" id="tm-2">
+        <img src="img/tm-3.png" alt="TM was here" class="trade-mark-list-item" id="tm-3">
+        <img src="img/tm-4.png" alt="TM was here" class="trade-mark-list-item" id="tm-4">
+        <img src="img/tm-5.png" alt="TM was here" class="trade-mark-list-item" id="tm-5">
+        <img src="img/tm-6.png" alt="TM was here" class="trade-mark-list-item" id="tm-6">
+    </div>
+
+    <footer>
+        <div class="blurb-container blurb-container--footer">
+            <div class="blurb-block blurb-block--footer">
+                <div class="blurb-block__right-side blurb-block__right-side--footer">
+                    <div class="blurb-block__header blurb-block__header--footer">
+                        <img src="img/logo-footer.png" alt="logo was here">
+                    </div>
+                    <div class="blurb-block__body blurb-block__body--footer">
+                        Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices
+                        posuere.
+                        Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque
+                        pul-
+                    </div>
+                </div>
+            </div>
+            <div class="blurb-block-gap blurb-block-gap--footer">
+            </div>
+            <div class="blurb-block blurb-block--footer">
+                <div class="blurb-block__right-side blurb-block__right-side--footer">
+                    <div class="blurb-block__header blurb-block__header--footer">
+                        RECENT COMMENTS
+                    </div>
+                    <div class="blurb-block__body blurb-block__body--footer">
+                        Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices
+                        posuere.
+                        Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque
+                        pulvinar.
+                        Quisque urna risus, mattis pulvinar bibendum in, venenatis quis
+                    </div>
+                </div>
+            </div>
+            <div class="blurb-block-gap blurb-block-gap--footer">
+            </div>
+            <div class="blurb-block blurb-block--footer">
+                <div class="blurb-block__right-side blurb-block__right-side--footer">
+                    <div class="blurb-block__header blurb-block__header--footer">
+                        NEWS CATEGORIES
+                    </div>
+                    <div class="blurb-block__body blurb-block__body--footer">
+                        Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices
+                        posuere.
+                        Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque
+                        pulvinar.
+                        Quisque urna risus, mattis pulvinar bibendum in, venenatis quis
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-menu-bar">
+            <nav class="bottom-menu-bar__bottom-menu">
+                <ul>
+                    <li class="bottom-menu__item"><a href="#">HOME</a></li>
+                    <li class="bottom-menu__item"><a href="#">ABOUT</a></li>
+                    <li class="bottom-menu__item"><a href="#">BLOG</a></li>
+                    <li class="bottom-menu__item"><a href="#">PRODUCTS</a></li>
+                    <li class="bottom-menu__item"><a href="#">LOREM IPSUM</a></li>
+                    <li class="bottom-menu__item"><a href="#">DOLOR SIT AMET</a></li>
+                </ul>
+            </nav>
+            <div class="designed-sight">
+                Designed by <span>Pingbull AS</span>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>

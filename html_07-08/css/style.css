@@ -5,7 +5,10 @@
 }
 
 html {
-    background: url("../img/bg.png") no-repeat 50% top;
+    background: url("../img/bg.png") no-repeat 50% top,
+    url("../img/body-top-bg.png") no-repeat 50% 845px,
+    url("../img/trade-marks-bg.png") no-repeat 50% 1674px,
+    url("../img/footer-bg.png") no-repeat 50% 1795px;
     font-size: 10px;
 }
 
@@ -14,11 +17,50 @@ html {
     width: 80%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0);
-    border: 1px solid red;
-    box-sizing: border-box;
+    /*border: 1px solid red;*/
+    /*box-sizing: border-box;*/
 }
 
+/*MAIN*/
 
+.page-header{
+    margin: 0 0 135px 0;
+}
+.sub-header{
+    margin: 0 0 69px 0;
+}
+main {
+    background-color: #f9f9f9;
+    padding: 100px 0 73px 0;
+    /*border: 1px solid red;*/
+    /*box-sizing: border-box;*/
 
+}
+.testimonials{
+    float: left;
+    width: 47%;
+    /*border: 1px solid green;*/
+    /*box-sizing: border-box;*/
+}
+/*FROM-BLOG*/
+.from-blog{
+    float: right;
+    width: 47.0%;
+    /*border: 1px solid magenta;*/
+    /*box-sizing: border-box;*/
+}
 
+/*TRADE-MARKS*/
+.trade-mark-list{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 64px 97px 64px;
+    height: 122px;
 
+}
+.trade-mark-list-item{
+    flex-shrink: 0;
+    margin: auto;
+}

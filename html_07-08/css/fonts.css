@@ -13,6 +13,20 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: "OpenSans-light";
+    src: url("../fonts/OpenSans-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans-extraBold";
+    src: url("../fonts/OpenSans-ExtraBold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 /*
 @font-face {
     font-family: 'league_gothicregular';
