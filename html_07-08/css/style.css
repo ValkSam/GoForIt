@@ -13,6 +13,7 @@ html {
 }
 
 .page {
+    /*max-width: 768px;*/
     max-width: 960px;
     margin: auto;
     background-color: rgba(255, 255, 255, 0);
@@ -26,11 +27,15 @@ html {
     margin: 0 0 137px 0;
 }
 
+.top-menu-bar__left-aligned-top-menu{
+    position: absolute;
+    visibility: hidden;
+}
+
 .sub-header{
     margin: 0 0 69px 0;
 }
 main {
-    background-color: #f9f9f9;
     padding: 100px 0 73px 0;
     /*border: 1px solid red;*/
     /*box-sizing: border-box;*/

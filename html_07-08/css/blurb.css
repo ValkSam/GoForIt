@@ -7,7 +7,6 @@
     justify-content: space-between;
     align-items: stretch;
 
-
     /*border: 1px solid blue;*/
     /*box-sizing: border-box;*/
 }
@@ -130,18 +129,19 @@
 
 .blurb-block__list-item-img {
     position: absolute;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     bottom: 0;
     margin: auto 0;
 }
 
 .blurb-block__list-item-text-block {
     float: left;
-    margin: 0 0 0 14.1%;
+    /*margin: 0 0 0 14.1%;*/
+    margin: 0 0 0 66px;
 }
 
-.blurb-block__list-item-text-block-inner{
+.blurb-block__list-item-text-block-inner {
     display: inline-block;
     line-height: 1.4;
     vertical-align: middle;
@@ -172,7 +172,16 @@
     margin: 0 23px 0 0;
 }
 
+.blurb-block__footer--from-blog-768 {
+    visibility: hidden;
+}
+
 /*FOOTER*/
+
+.blurb-container--footer-768 {
+    position: absolute;
+    visibility: hidden;
+}
 
 .blurb-container--footer {
     height: inherit;
