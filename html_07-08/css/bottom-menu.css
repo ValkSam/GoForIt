@@ -1,27 +1,33 @@
 /*BOTTOM MENU*/
 .bottom-menu-bar {
+    width: 100%;
+    position: relative;
     margin: 75px 0 150px 0;
     font-family: league_gothicregular, sans-serif;
     overflow: hidden;
     color: white;
-    text-shadow: rgba(0, 0, 0, 1) 1px 1px 0;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 0;
 }
 
 /*MENU*/
 
 .bottom-menu-bar__bottom-menu {
-    float: left;
+    position: absolute;
+    left:0;
+    right: 0;
     font-size: 2rem;
 }
 
 .bottom-menu__item {
+    float: left;
+    padding: 0 1% 0.2rem 1%;
     display: inline-block;
-    vertical-align: middle;
-    padding: 0 4.0rem 0 0;
+    margin: 0 2.3% 0 0;
+    letter-spacing: 0.04rem;
 }
 
-.bottom-menu__item:last-child {
-    padding: 0 0 0 0.7rem;
+.bottom-menu__item:first-child {
+    padding: 0 1% 0 0;
 }
 
 .bottom-menu__item a {
@@ -29,12 +35,12 @@
     color: white;
 }
 
-.designed-sight {
+.designed-sighn {
     margin: 8px 7px 0 0;
     font-family: OpenSans-light, Arial sans-serif;
     float: right;
 }
-.designed-sight span{
+.designed-sighn span{
     font-family: OpenSans-extraBold, Arial sans-serif;
     font-size: 1.2rem;
 }

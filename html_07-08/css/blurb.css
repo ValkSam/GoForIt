@@ -97,7 +97,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 .blurb-block__icon.pos-1 {
@@ -116,23 +116,32 @@
 .blurb-block__list-body {
     height: 210px;
     overflow: hidden;
-    margin: 0 0 27px 0;
+    margin: 0 0 22px 0;
 }
 
 .blurb-block__list-item {
+    position: relative;
     font-family: OpenSans-light, Arial sans-serif;
     font-size: 1.6rem;
     color: #454545;
-    height: 65px;
-    line-height: 74px;
+    height: 66px; /*must be equals to line-height*/
+    line-height: 66px;
 }
 
 .blurb-block__list-item-img {
-    margin: 6px 14px 0 0;
-    vertical-align: middle;
+    position: absolute;
+    left:0;
+    top:0;
+    bottom: 0;
+    margin: auto 0;
 }
 
 .blurb-block__list-item-text-block {
+    float: left;
+    margin: 0 0 0 14.1%;
+}
+
+.blurb-block__list-item-text-block-inner{
     display: inline-block;
     line-height: 1.4;
     vertical-align: middle;
@@ -141,7 +150,6 @@
 .blurb-block__list-item-first-line {
     font-family: OpenSans-extraBold, Arial sans-serif;
     line-height: 1rem;
-    /*vertical-align: middle;*/
 }
 
 .blurb-block--from-blog {
@@ -155,7 +163,7 @@
 .blurb-block__header--from-blog {
     color: #454545;
     text-shadow: none;
-    margin: 0 0 0 0;
+    margin: 0 0 0.5rem 0;
 }
 
 .blurb-block__footer--from-blog {

@@ -1,9 +1,9 @@
 /*TOP MENU*/
 .top-menu-bar {
+    position: relative;
     margin: 66px 0 134px 0;
     font-family: league_gothicregular, sans-serif;
     overflow: hidden;
-    /*line-height: 3.1rem; !*используем для смещения вверх*!*/
 }
 
 /*LOGO*/
@@ -39,22 +39,24 @@
 /*MENU*/
 
 .top-menu-bar__top-menu {
-    float: right;
+    position: absolute;
+    width: 100%;
+    left:0;
+    right: 0;
     font-size: 2.4rem;
     margin: 0.7rem 0 0 0;
-    text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 0px;
+    text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 0;
 }
 
 .top-menu__item {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 0.7rem 0.2rem 0.7rem;
+    float: right;
+    padding: 0 1% 0.2rem 1%;
     border-bottom: 2px solid transparent;
-    margin: 0 0 0 3.3rem;
+    margin: 0 0 0 3.34%;
 }
 
-.top-menu__item:last-child {
-    padding: 0 0 0 0.7rem;
+.top-menu__item:first-child {
+    padding: 0 0 0 1%;
 }
 
 .top-menu__item:hover {
