@@ -10,39 +10,38 @@
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/blurb.css">
     <link rel="stylesheet" href="css/bottom-menu.css">
-    <link rel="stylesheet" href="css/media960.css">
+    <link rel="stylesheet" href="css/media480.css">
     <link rel="stylesheet" href="css/media768.css">
 </head>
 <body>
 
 <div class="page">
     <header class="page-header">
-        <div class="top-menu-bar">
-            <div class="top-menu-bar__logo">
+        <div class="menu-bar">
+            <div class="menu-bar__logo">
                 <div class="logo__first-part">PINGBULL</div>
                 <div class="logo__second-part-back">
                     <div class="logo__second-part">ER</div>
                 </div>
             </div>
-
-            <nav class="top-menu-bar__left-aligned-top-menu">
+            <nav class="menu-bar__left-aligned-top-menu">
                 <ul>
-                    <li class="top-menu-bar__item top-menu-bar__left-aligned-item"><a href="#">HOME</a></li>
-                    <li class="top-menu-bar__item top-menu-bar__left-aligned-item"><a href="#">ABOUT</a></li>
-                    <li class="top-menu-bar__item top-menu-bar__left-aligned-item"><a href="#">BLOG</a></li>
-                    <li class="top-menu-bar__item top-menu-bar__left-aligned-item"><a href="#">PRODUCTS</a></li>
-                    <li class="top-menu-bar__item top-menu-bar__left-aligned-item"><a href="#">LOREM IPSUM</a></li>
-                    <li class="top-menu-bar__item top-menu-bar__left-aligned-item"><a href="#">DOLOR SIT AMET</a></li>
+                    <li class="menu-bar__item menu-bar__left-aligned-item"><a href="#">HOME</a></li>
+                    <li class="menu-bar__item menu-bar__left-aligned-item"><a href="#">ABOUT</a></li>
+                    <li class="menu-bar__item menu-bar__left-aligned-item"><a href="#">BLOG</a></li>
+                    <li class="menu-bar__item menu-bar__left-aligned-item"><a href="#">PRODUCTS</a></li>
+                    <li class="menu-bar__item menu-bar__left-aligned-item"><a href="#">LOREM IPSUM</a></li>
+                    <li class="menu-bar__item menu-bar__left-aligned-item"><a href="#">DOLOR SIT AMET</a></li>
                 </ul>
             </nav>
-            <nav class="top-menu-bar__right-aligned-top-menu">
+            <nav class="menu-bar__right-aligned-top-menu">
                 <ul>
-                    <li class="top-menu-bar__item top-menu-bar__right-aligned-item"><a href="#">DOLOR SIT AMET</a></li>
-                    <li class="top-menu-bar__item top-menu-bar__right-aligned-item"><a href="#">LOREM IPSUM</a></li>
-                    <li class="top-menu-bar__item top-menu-bar__right-aligned-item"><a href="#">PRODUCTS</a></li>
-                    <li class="top-menu-bar__item top-menu-bar__right-aligned-item"><a href="#">BLOG</a></li>
-                    <li class="top-menu-bar__item top-menu-bar__right-aligned-item"><a href="#">ABOUT</a></li>
-                    <li class="top-menu-bar__item top-menu-bar__right-aligned-item"><a href="#">HOME</a></li>
+                    <li class="menu-bar__item menu-bar__right-aligned-item"><a href="#">DOLOR SIT AMET</a></li>
+                    <li class="menu-bar__item menu-bar__right-aligned-item"><a href="#">LOREM IPSUM</a></li>
+                    <li class="menu-bar__item menu-bar__right-aligned-item"><a href="#">PRODUCTS</a></li>
+                    <li class="menu-bar__item menu-bar__right-aligned-item"><a href="#">BLOG</a></li>
+                    <li class="menu-bar__item menu-bar__right-aligned-item"><a href="#">ABOUT</a></li>
+                    <li class="menu-bar__item menu-bar__right-aligned-item"><a href="#">HOME</a></li>
                 </ul>
             </nav>
         </div>
@@ -72,10 +71,18 @@
                             <label for="p4" class="carousel__left-arrow for-slide-4"></label>
                         </div>
                     </div>
-                    <!--holder for slides strip-->
+                    <!--holder for slides strip. strip is decorate band of gray color-->
                     <div class="carousel__strip"></div>
+                    <!--slide-place is the holder of slids
+                    slide-place has unbounded width
+                    but because
+                       - desplay: flex
+                       - slide-block:width=100%
+                       - carousel__container overflow: hidden
+                    it is like frame of only one (current) slide-block-->
                     <div class="carousel__slide-place">
-                        <!--holder for slide which contains two parts:
+                        <!--slide-block is the holder for slide.
+                         Slide contains two parts:
                         - left sided text
                         - right sided image-->
                         <div class="carousel__slide-block">

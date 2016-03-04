@@ -16,7 +16,8 @@
     width: 100%; /*it's need for chrome*/
     height: 100%; /*it's need for chrome*/
     /*padding: 80px 0 50px 0; !*px rather % need for chrome*!*/
-
+    /*flex-shrink: 0;*/
+    /*flex-wrap: wrap;*/
     /*border: 1px solid white;*/
     /*box-sizing: border-box;*/
 }

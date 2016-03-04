@@ -12,12 +12,13 @@
 .carousel__slide-place {
     position: relative;
     margin: 30px 0 90px 0;
-    display: flex;
-    flex-flow: row;
-    /*justify-content: flex-start;*/
+    display: flex; !important;
+    flex-flow: row; !important;
+    flex-wrap: nowrap; !important;
     transition: all ease-in-out;
     transition-duration: 1s;
 }
+
 
 .carousel__slide-block {
     width: 100%;
@@ -25,16 +26,24 @@
     float: left;
     /*border: 1px solid yellow;*/
     /*box-sizing: border-box;*/
-    height: 400px;
+
+    /*here*/
+    height: 430px; /*430 = 400 + 30. 30 is the place for ability top-shift image*/
+    margin-top: -30px; /*the place for ability top-shift of image placed in img-side*/
+    overflow: hidden;  /*it's needed for extreme shrink of the window*/
 }
 
 .carousel__text-side {
     float: left;
     position: relative;
     width: 50%;
-    line-height: 400px;
+    line-height: 400px; /*for vertical-align: middle; of text-container*/
+    overflow: hidden;
     /*border: 1px solid green;*/
     /*box-sizing: border-box;*/
+
+    /*here*/
+    margin-top: 30px; /*compensation of .carousel__slide-block margin-top: -30px*/
 }
 
 .carousel__text-container {
@@ -73,13 +82,16 @@
     width: 43%;
     /*border: 1px solid blue;*/
     /*box-sizing: border-box;*/
+
+    /*here*/
+    margin-top: 30px; /*compensation of .carousel__slide-block margin-top: -30px*/
 }
 
 #phone-img-1,
 #phone-img-2,
 #phone-img-3,
 #phone-img-4 {
-    margin: -17px 4px 0 0;
+    margin: -17px 4px 0 0; /*limit of top-shifting is 30px*/
     text-align: center;
 }
 
@@ -242,14 +254,16 @@
     z-index: -1;
 }
 
-/*CAROUSEL IN MAIN*/
+
+/*MODIFICATIONS ======================================================*/
+/*CAROUSEL IN MAIN ===================================================*/
 
 .carousel__slide-place--testimonials {
     margin: 0 0 0 0;
 }
 
 .carousel__slide-block--testimonials {
-    height: 295px;
+    height: 325px;
 }
 
 .carousel__full-frame {
@@ -258,6 +272,9 @@
     line-height: 295px;
     overflow: hidden;
 
+    /*here*/
+    margin-top: 30px; /*compensation of .carousel__slide-block margin-top: -30px*/
+
     /*border: 1px solid yellow;*/
     /*box-sizing: border-box;*/
 }
@@ -265,7 +282,7 @@
 .carousel__text-container--testimonials {
     position: relative;
     height: 295px;
-    padding: 1px 2.3rem 0 63px;
+    padding: 0 2.3rem 0 63px;
     z-index: 0;
     line-height: 1.5;
 }

@@ -5,15 +5,11 @@
 }
 
 html {
-    background: url("../img/bg.png") no-repeat 50% top,
-    url("../img/body-top-bg.png") no-repeat 50% 845px,
-    url("../img/trade-marks-bg.png") no-repeat 50% 1674px,
-    url("../img/footer-bg.png") no-repeat 50% 1795px;
+    background: url("../img/background960.png") no-repeat 50% top;
     font-size: 10px;
 }
 
 .page {
-    /*max-width: 768px;*/
     max-width: 960px;
     margin: auto;
     background-color: rgba(255, 255, 255, 0);
@@ -27,7 +23,7 @@ html {
     margin: 0 0 137px 0;
 }
 
-.top-menu-bar__left-aligned-top-menu{
+.menu-bar__left-aligned-top-menu{
     position: absolute;
     visibility: hidden;
 }

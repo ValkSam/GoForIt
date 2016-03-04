@@ -1,5 +1,5 @@
 /*TOP MENU*/
-.top-menu-bar {
+.menu-bar {
     position: relative;
     margin: 66px 0 134px 0;
     font-family: league_gothicregular, sans-serif;
@@ -7,14 +7,14 @@
 }
 
 /*LOGO*/
-.top-menu-bar__logo {
+.menu-bar__logo {
     float: left;
     line-height: 4.8rem;
     font-size: 4.8rem;
     letter-spacing: -0.04rem;
 }
 
-.top-menu-bar__logo div {
+.menu-bar__logo div {
     display: inline-block;
 }
 
@@ -39,23 +39,23 @@
 /*MENU*/
 
 /*general*/
-.top-menu-bar__item {
+.menu-bar__item {
     font-size: 2.4rem;
     text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 0;
 }
 
-.top-menu-bar__item:hover {
+.menu-bar__item:hover {
     border-bottom: 2px solid #edbfff;
 
 }
 
-.top-menu-bar__item a {
+.menu-bar__item a {
     color: white;
     text-decoration: none;
 }
 
 /*right*/
-.top-menu-bar__right-aligned-top-menu {
+.menu-bar__right-aligned-top-menu {
     position: absolute;
     width: 100%;
     left:0;
@@ -63,32 +63,32 @@
     margin: 0.7rem 0 0 0;
 }
 
-.top-menu-bar__right-aligned-item {
+.menu-bar__right-aligned-item {
     float: right;
     padding: 0 1% 0.2rem 1%;
     border-bottom: 2px solid transparent;
     margin: 0 0 0 3.34%;
 }
 
-.top-menu-bar__right-aligned-item:first-child {
+.menu-bar__right-aligned-item:first-child {
     padding: 0 0 0 1%;
 }
 
 /*left*/
-.top-menu-bar__left-aligned-top-menu{
+.menu-bar__left-aligned-top-menu{
     float: left;
     width: 100%;
     margin: 0.7rem 0 0 0;
 }
 
-.top-menu-bar__left-aligned-item {
+.menu-bar__left-aligned-item {
     float: left;
     padding: 0 1% 0.2rem 1%;
     border-bottom: 2px solid transparent;
     margin: 0 3.34% 0 0;
 }
 
-.top-menu-bar__left-aligned-item:first-child {
+.menu-bar__left-aligned-item:first-child {
     padding: 0 1% 0 0;
 }
 
