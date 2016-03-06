@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/blurb.css">
     <link rel="stylesheet" href="css/bottom-menu.css">
-    <link rel="stylesheet" href="css/media480.css">
     <link rel="stylesheet" href="css/media768.css">
+    <link rel="stylesheet" href="css/media480.css">
 </head>
 <body>
 
@@ -43,6 +43,54 @@
                     <li class="menu-bar__item menu-bar__right-aligned-item"><a href="#">ABOUT</a></li>
                     <li class="menu-bar__item menu-bar__right-aligned-item"><a href="#">HOME</a></li>
                 </ul>
+            </nav>
+            <nav class="menu-bar__center-aligned-top-menu">
+                <table class="menu-bar__items-list">
+                    <tr>
+                        <td class="menu-bar__center-aligned-item-wrapper">
+                            <a class="menu-bar__item menu-bar__center-aligned-item menu-bar__center-aligned-item--dropdown-container"
+                               href="#">HOME
+                                <nav class="menu-bar__center-aligned-top-menu menu-bar__center-aligned-top-menu--dropdown">
+                                    <div class="shaper">
+                                        <table class="menu-bar__center-aligned-items-list menu-bar__center-aligned-items-list--dropdown">
+                                            <tr>
+                                                <td class="empty-item"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="menu-bar__center-aligned-item-wrapper"><a
+                                                        class="menu-bar__item menu-bar__center-aligned-item menu-bar__center-aligned-item--dropdown"
+                                                        href="#">ABOUT</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="menu-bar__center-aligned-item-wrapper"><a
+                                                        class="menu-bar__item menu-bar__center-aligned-item menu-bar__center-aligned-item--dropdown"
+                                                        href="#">BLOG</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="menu-bar__center-aligned-item-wrapper"><a
+                                                        class="menu-bar__item menu-bar__center-aligned-item menu-bar__center-aligned-item--dropdown"
+                                                        href="#">PRODUCTS</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="menu-bar__center-aligned-item-wrapper"><a
+                                                        class="menu-bar__item menu-bar__center-aligned-item menu-bar__center-aligned-item--dropdown"
+                                                        href="#">LOREM
+                                                    IPSUM</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="menu-bar__center-aligned-item-wrapper"><a
+                                                        class="menu-bar__item menu-bar__center-aligned-item menu-bar__center-aligned-item--dropdown"
+                                                        href="#">DOLOR
+                                                    SIT AMET</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </nav>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
             </nav>
         </div>
         <div class="carousel-container">
@@ -311,7 +359,7 @@
     </div>
     <main class="clearfix">
         <div class="testimonials">
-            <div class="carousel">
+            <div class="carousel carousel--testimonials">
                 <div class="carousel__container">
                     <input type="radio" checked class="carousel__hidden-radio" name="2" id="tp1">
                     <input type="radio" class="carousel__hidden-radio" name="2" id="tp2">
@@ -574,14 +622,16 @@
         </div>
         <div class="bottom-menu-bar">
             <nav class="bottom-menu-bar__bottom-menu">
-                <ul>
-                    <li class="bottom-menu__item"><a href="#">HOME</a></li>
-                    <li class="bottom-menu__item"><a href="#">ABOUT</a></li>
-                    <li class="bottom-menu__item"><a href="#">BLOG</a></li>
-                    <li class="bottom-menu__item"><a href="#">PRODUCTS</a></li>
-                    <li class="bottom-menu__item"><a href="#">LOREM IPSUM</a></li>
-                    <li class="bottom-menu__item"><a href="#">DOLOR SIT AMET</a></li>
-                </ul>
+                <div class="center-aligner">
+                    <ul>
+                        <li class="bottom-menu-bar__item"><a href="#">HOME</a></li>
+                        <li class="bottom-menu-bar__item"><a href="#">ABOUT</a></li>
+                        <li class="bottom-menu-bar__item"><a href="#">BLOG</a></li>
+                        <li class="bottom-menu-bar__item"><a href="#">PRODUCTS</a></li>
+                        <li class="bottom-menu-bar__item"><a href="#">LOREM IPSUM</a></li>
+                        <li class="bottom-menu-bar__item"><a href="#">DOLOR SIT AMET</a></li>
+                    </ul>
+                </div>
             </nav>
             <div class="designed-sighn">
                 Designed by <span>Pingbull AS</span>

@@ -1,13 +1,11 @@
-@media (max-width: 7680px) {
+@media (max-width: 768px) {
     html {
         background: url("../img/background768.png") no-repeat 50% top;
     }
 
     .page {
-        max-width: 728px;
+        max-width: 768px;
         width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
         margin: auto;
         background-color: rgba(255, 255, 255, 0);
     }
@@ -33,6 +31,8 @@
 
     .menu-bar {
         margin-bottom: 44px;
+        margin-left: 2.5%;
+        /*margin-left: 20px;*/
     }
 
     /*carousel redraw*/
@@ -49,7 +49,7 @@
         margin-top: -25px;
         margin-bottom: 0;
         font-size: 4.8rem;
-        letter-spacing: -0.06rem;
+        letter-spacing: -0.02rem;
     }
 
     .carousel__text-container header h2 {
@@ -66,7 +66,7 @@
     .carousel__text-container div {
         font-size: 1.6rem;
         letter-spacing: -0.04rem;
-        line-height: 1.7;
+        line-height: 1.65;
         /**/
         height: 100px;
         /*width: 270px;*/
@@ -88,9 +88,15 @@
         bottom: 63px;
     }
 
+    .carousel {
+        left: 0;
+        width: 95%;
+        padding: 0 2.5%;
+    }
+
     .carousel__outer-padding {
-        left: -3%;
-        width: 106%;
+        left: 0;
+        width: 100%;
     }
 
     .carousel__left-arrow-container {
@@ -114,6 +120,25 @@
         margin: 0 0 178px 0;
     }
 
+    .blurb-container {
+        margin-left: 3.5%;
+        width: 93%;
+        height: 196px;
+    }
+
+
+    .blurb-block__icon {
+        margin-top: 1px;
+    }
+
+    .blurb-block-gap {
+        width: 25%;
+    }
+
+    .blurb-block__right-side {
+        width: 78.7%;
+    }
+
     .blurb-block__header {
         font-size: 2.4rem;
         margin-bottom: 0.4rem;
@@ -126,12 +151,12 @@
         margin-left: 1.1rem;
     }
 
-    .blurb-container {
-        height: 196px;
+    /*testimonials redraw*/
+    .testimonials {
+        margin-left: 1.2%;
+        margin-bottom: 49px;
     }
 
-
-    /*testimonials redraw*/
     .carousel__text-container--testimonials header h1 {
         font-size: 2.5rem;
         margin-top: 27px;
@@ -165,7 +190,11 @@
 
     /*from-blog redraw*/
     .from-blog {
-        width: 45.7%;
+        width: 46%;
+    }
+
+    .blurb-block__right-side--from-blog {
+        width: 100%;
     }
 
     .blurb-block__header--from-blog {
@@ -186,30 +215,39 @@
     }
 
     .blurb-block__footer--from-blog-768 {
-        margin-right: 4px;
         visibility: visible;
+        margin-right: 26px;
         color: #454545;
         text-shadow: none;
         letter-spacing: -0.04rem;
     }
 
+    main {
+        padding: 100px 0 23px 0;
+    }
+
     /*trade-marks redraw*/
     .trade-mark-list {
-        margin-left: -20px;
-        margin-right: -20px;
+        margin-left: 0;
+        margin-right: 0;
         margin-bottom: 102px;
-        /*margin: 0 64px 97px 64px;*/
     }
 
     /*fotter redraw*/
     .blurb-container--footer-768 {
         position: inherit;
         visibility: visible;
+        margin-left: 2.6%;
+        width: 94.8%;
     }
 
     .blurb-container--footer {
         position: absolute;
         visibility: hidden;
+    }
+
+    .blurb-block__right-side--footer {
+        width: 100%;
     }
 
     .blurb-block__header--footer {
@@ -225,20 +263,24 @@
     }
 
     .blurb-block-gap--footer {
-        width: 30.2%;
+        width: 34.2%;
     }
 
     /*bottom-menu redraw*/
     .bottom-menu-bar {
-        margin: 144px 0 150px 0;
+        margin: 146px 0 150px 0;
     }
 
-    .bottom-menu__item {
-        margin-right: 3.7%;
+    .bottom-menu-bar__bottom-menu {
+        left:20px;
+    }
+
+    .bottom-menu-bar__item {
+        margin-right: 3.5%;
     }
 
     .designed-sighn {
-        margin: 56px 1px 0 0;
+        margin: 56px 21px 0 0;
         letter-spacing: 0.05rem;
     }
 

@@ -1,5 +1,6 @@
 /*CAROUSEL*/
 
+
 .carousel {
     width: 100%;
     position: relative;
@@ -12,13 +13,15 @@
 .carousel__slide-place {
     position: relative;
     margin: 30px 0 90px 0;
-    display: flex; !important;
-    flex-flow: row; !important;
-    flex-wrap: nowrap; !important;
+    display: flex;
+!important;
+    flex-flow: row;
+!important;
+    flex-wrap: nowrap;
+!important;
     transition: all ease-in-out;
     transition-duration: 1s;
 }
-
 
 .carousel__slide-block {
     width: 100%;
@@ -30,7 +33,7 @@
     /*here*/
     height: 430px; /*430 = 400 + 30. 30 is the place for ability top-shift image*/
     margin-top: -30px; /*the place for ability top-shift of image placed in img-side*/
-    overflow: hidden;  /*it's needed for extreme shrink of the window*/
+    overflow: hidden; /*it's needed for extreme shrink of the window*/
 }
 
 .carousel__text-side {
@@ -183,7 +186,6 @@
     display: block;
 }
 
-
 .carousel__outer-padding {
     position: absolute;
     left: -12.5%;
@@ -245,15 +247,14 @@
 .carousel__strip {
     position: absolute;
     top: 0;
-    left: -75%;
-    width: 250%;
+    left: -175%;
+    right: -175%;
     bottom: 0;
     height: 400px;
     margin: 30px 0 0 0;
     background: rgba(0, 0, 0, 0.2);
     z-index: -1;
 }
-
 
 /*MODIFICATIONS ======================================================*/
 /*CAROUSEL IN MAIN ===================================================*/
@@ -333,7 +334,7 @@
     z-index: -1;
 }
 
-.carousel__navi-block--testimonials{
+.carousel__navi-block--testimonials {
     width: 95%;
     margin: 0 0 0 0;
 }

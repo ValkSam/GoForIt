@@ -11,6 +11,7 @@ html {
 
 .page {
     max-width: 960px;
+    width: 100%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0);
     /*border: 1px solid red;*/
@@ -28,14 +29,19 @@ html {
     visibility: hidden;
 }
 
+.menu-bar__center-aligned-top-menu{
+    position: absolute;
+    visibility: hidden;
+}
+
 .sub-header{
     margin: 0 0 69px 0;
 }
+
 main {
     padding: 100px 0 73px 0;
     /*border: 1px solid red;*/
     /*box-sizing: border-box;*/
-
 }
 .testimonials{
     float: left;
