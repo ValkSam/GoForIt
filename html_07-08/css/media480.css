@@ -171,24 +171,25 @@
     #phone-img-2,
     #phone-img-3,
     #phone-img-4 {
-        margin-top: -9px;
-        margin-right: 0;
-    }
-
-    #phone-img-1 img,
-    #phone-img-2 img,
-    #phone-img-3 img,
-    #phone-img-4 img {
-        height: 290px;
-        width: auto;
+        right: 3.0%;
+        margin: -9px 0 0 0;
     }
 
     #play-img-1,
     #play-img-2,
     #play-img-3,
     #play-img-4 {
-        left: 80px;
-        bottom: 16px;
+        top: 35.7%;
+        left: 22.0%;
+    }
+
+    #phone-img-1 img,
+    #phone-img-2 img,
+    #phone-img-3 img,
+    #phone-img-4 img {
+        max-height: 290px;
+        width: 100%;
+        max-width: 187px
     }
 
     #play-img-1 img,

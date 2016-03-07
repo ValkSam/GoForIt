@@ -73,19 +73,24 @@
         overflow: hidden;
     }
 
+    .carousel__img-side {
+        width: 60%;
+    }
+
     #phone-img-1,
     #phone-img-2,
     #phone-img-3,
     #phone-img-4 {
-        margin: -22px 14px 0 0;
+        right: 7.4%;
+        margin: -23px 0 0 0;
     }
 
     #play-img-1,
     #play-img-2,
     #play-img-3,
     #play-img-4 {
-        left: 62px;
-        bottom: 63px;
+        top: 149px;
+        left: 56.8%;
     }
 
     .carousel {
