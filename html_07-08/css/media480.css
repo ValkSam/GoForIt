@@ -144,21 +144,21 @@
         margin-left: 5%;
     }
 
-    .carousel__text-container header h1 {
+    .carousel__text-container h1 {
         font-size: 3.6rem;
         margin-top: -5px;
         margin-bottom: -3px;
         letter-spacing: -0.04rem;
     }
 
-    .carousel__text-container header h2 {
+    .carousel__text-container h2 {
         font-size: 1.8rem;
         letter-spacing: -0.01rem;
         margin: 0 0 0.4rem 0;
         white-space: nowrap;
     }
 
-    .carousel__text-container div {
+    .carousel__text-container .text-body {
         position: absolute;
         visibility: hidden;
     }
@@ -278,7 +278,7 @@
         line-height: 1.5;
     }
 
-    .carousel__text-container--testimonials header h1 {
+    .carousel__text-container--testimonials h1 {
         font-size: 3rem;
         margin-top: 20px;
         width: 100%;
@@ -287,12 +287,12 @@
         letter-spacing: -0.01rem;
     }
 
-    .carousel__text-container--testimonials header span {
+    .carousel__text-container--testimonials span {
         font-size: 3rem;
         letter-spacing: 0.02rem;
     }
 
-    .carousel__text-container--testimonials div {
+    .carousel__text-container--testimonials .text-body {
         position: inherit;
         visibility: visible;
     }

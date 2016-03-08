@@ -17,12 +17,9 @@
 .carousel__slide-place {
     position: relative;
     margin: 30px 0 90px 0;
-    display: flex;
-!important;
-    flex-flow: row;
-!important;
-    flex-wrap: nowrap;
-!important;
+    display: flex !important;
+    flex-flow: row !important;
+    flex-wrap: nowrap !important;
     transition: all ease-in-out;
     transition-duration: 1s;
     z-index: -1; /*for ability to top-shift navi block*/
@@ -60,7 +57,7 @@
     line-height: normal;
 }
 
-.carousel__text-container header h1 {
+.carousel__text-container h1 {
     margin: -1.2rem 0 -1.0rem 0;
     font-size: 6rem;
     font-family: league_gothicregular, Arial sans-serif;
@@ -68,7 +65,7 @@
     letter-spacing: -0.03rem;
 }
 
-.carousel__text-container header h2 {
+.carousel__text-container h2 {
     font-size: 3.2rem;
     font-family: league_gothicregular, Arial sans-serif;
     color: #edbfff;
@@ -76,7 +73,7 @@
     margin: 0 0 0.1rem 0;
 }
 
-.carousel__text-container div {
+.carousel__text-container .text-body {
     font-size: 1.8rem;
     font-family: OpenSans-light, Arial sans-serif;
     color: #ffffff;
@@ -299,7 +296,7 @@
     line-height: 1.5;
 }
 
-.carousel__text-container--testimonials header h1 {
+.carousel__text-container--testimonials h1 {
     font-family: league_gothicregular, Arial sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
@@ -307,14 +304,14 @@
     margin: 2.2rem 0 0.1rem 0;
 }
 
-.carousel__text-container--testimonials header span {
+.carousel__text-container--testimonials span {
     font-family: league_gothicregular, Arial sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
     color: #edbfff;
 }
 
-.carousel__text-container--testimonials div {
+.carousel__text-container--testimonials .text-body {
     font-family: OpenSans-light, Arial sans-serif;
     font-size: 1.6rem;
     color: #454545;
