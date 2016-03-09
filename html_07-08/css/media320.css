@@ -1,6 +1,6 @@
 @media (max-width: 320px) {
     html {
-        background: url("../img/background320.png") no-repeat 50% top;
+        background: url("../img/background320full.png") no-repeat 50% top;
     }
 
     .page {
@@ -165,6 +165,8 @@
         margin-left: 20px;
         margin-right: 20px;
         margin-bottom: 233px;
+
+        height: 122px;
     }
 
     .trade-mark-list-item {
@@ -172,6 +174,11 @@
     }
 
     /*fotter redraw*/
+
+    footer {
+        background: none;
+    }
+
     .blurb-container--footer-768 {
         position: absolute;
         visibility: hidden;
@@ -181,7 +188,18 @@
     /*bottom-menu redraw*/
     .bottom-menu-bar {
         margin: 0 0 0 0;
+
+        height: 202px;
+        padding-top: 0;
+        background: inherit;
     }
+
+    /*margin: 80px 0 86px 0;*/
+
+    /*margin: 33px 0 0 0;
+    height: 202px;
+    padding-top: 47px;
+    background: url("../img/background480-bottom.png") no-repeat 50% top;*/
 
     .bottom-menu-bar__bottom-menu {
         position: absolute;
