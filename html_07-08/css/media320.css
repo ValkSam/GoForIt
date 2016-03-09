@@ -53,6 +53,7 @@
     .carousel__img-side {
         visibility: hidden;
         position: absolute;
+        left: -99999px;
     }
 
     .carousel__navi-block {
@@ -89,8 +90,9 @@
     }
 
     .carousel--testimonials {
-        width: 100%;
+        width: 94%;
         padding-left: 6%;
+        padding-right: 0;
     }
 
     .carousel__slide-place--testimonials {
@@ -134,6 +136,10 @@
         left: 20px;
     }
 
+    .carousel__navi-block--testimonials {
+        width: 94%;
+    }
+
     /*from-blog redraw*/
     .blurb-block__right-side--from-blog {
         width: 100%;
@@ -169,6 +175,7 @@
     .blurb-container--footer-768 {
         position: absolute;
         visibility: hidden;
+        left: -99999px;
     }
 
     /*bottom-menu redraw*/
@@ -179,6 +186,7 @@
     .bottom-menu-bar__bottom-menu {
         position: absolute;
         visibility: hidden;
+        left: -99999px;
     }
 
 }

@@ -6,7 +6,7 @@
     .page {
         max-width: 768px;
         width: 100%;
-        margin: auto;
+        margin: 0 auto;
         background-color: rgba(255, 255, 255, 0);
     }
 
@@ -14,14 +14,13 @@
     .menu-bar__right-aligned-top-menu {
         position: absolute;
         visibility: hidden;
+        left: -99999px;
     }
 
     .menu-bar__left-aligned-top-menu {
         position: inherit;
         visibility: visible;
-    }
-
-    .menu-bar__left-aligned-top-menu {
+        left: 0;
         margin: 2.8rem 0 0 0;
     }
 
@@ -32,10 +31,15 @@
     .menu-bar {
         margin-bottom: 44px;
         margin-left: 2.5%;
-        /*margin-left: 20px;*/
     }
 
     /*carousel redraw*/
+
+    .carousel__strip {
+        left: 0;
+        right: 0;
+    }
+
     .carousel__text-side {
         width: 40%;
     }
@@ -69,7 +73,6 @@
         line-height: 1.65;
         /**/
         height: 100px;
-        /*width: 270px;*/
         overflow: hidden;
     }
 
@@ -215,7 +218,6 @@
 
     .blurb-block__footer--from-blog {
         visibility: hidden;
-
     }
 
     .blurb-block__footer--from-blog-768 {
@@ -239,7 +241,7 @@
 
     /*fotter redraw*/
     .blurb-container--footer-768 {
-        position: inherit;
+        position: relative;
         visibility: visible;
         margin-left: 2.6%;
         width: 94.8%;
@@ -248,6 +250,7 @@
     .blurb-container--footer {
         position: absolute;
         visibility: hidden;
+        left: -99999px;
     }
 
     .blurb-block__right-side--footer {

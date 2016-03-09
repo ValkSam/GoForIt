@@ -9,6 +9,9 @@ html {
     font-size: 10px;
 }
 
+body {
+}
+
 .page {
     max-width: 960px;
     width: 100%;
@@ -27,11 +30,13 @@ html {
 .menu-bar__left-aligned-top-menu{
     position: absolute;
     visibility: hidden;
+    left: -99999px;
 }
 
 .menu-bar__center-aligned-top-menu{
     position: absolute;
     visibility: hidden;
+    left: -99999px;
 }
 
 .sub-header{

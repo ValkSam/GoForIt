@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Title</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -49,7 +50,8 @@
                 <table class="menu-bar__items-list">
                     <tr>
                         <td class="menu-bar__center-aligned-item-wrapper">
-                            <div class="menu-bar__item menu-bar__center-aligned-item menu-bar__center-aligned-item--dropdown-container"><a href="#">HOME</a>
+                            <div class="menu-bar__item menu-bar__center-aligned-item menu-bar__center-aligned-item--dropdown-container">
+                                <a href="#">HOME</a>
                                 <nav class="menu-bar__center-aligned-top-menu menu-bar__center-aligned-top-menu--dropdown">
                                     <div class="shaper">
                                         <table class="menu-bar__center-aligned-items-list menu-bar__center-aligned-items-list--dropdown">
@@ -120,7 +122,9 @@
                         </div>
                     </div>
                     <!--holder for slides strip. strip is decorate band of gray color-->
+
                     <div class="carousel__strip"></div>
+
                     <!--slide-place is the holder of slids
                     slide-place has unbounded width
                     but because
@@ -128,6 +132,7 @@
                        - slide-block:width=100%
                        - carousel__container overflow: hidden
                     it is like frame of only one (current) slide-block-->
+
                     <div class="carousel__slide-place">
                         <!--slide-block is the holder for slide.
                          Slide contains two parts:

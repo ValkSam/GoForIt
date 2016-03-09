@@ -26,16 +26,19 @@
     .menu-bar__right-aligned-top-menu {
         position: absolute;
         visibility: hidden;
+        left: -99999px;
     }
 
     .menu-bar__left-aligned-top-menu {
         position: absolute;
         visibility: hidden;
+        left: -99999px;
     }
 
     .menu-bar__center-aligned-top-menu {
         position: inherit;
         visibility: visible;
+        left: 0;
         z-index: 1; /*bring all menu item with dropdown menu to top*/
     }
 
@@ -50,6 +53,7 @@
 
     .menu-bar__center-aligned-item-wrapper:hover .menu-bar__center-aligned-top-menu--dropdown {
         visibility: visible;
+        left: -99px;
     }
 
     .menu-bar__center-aligned-items-list--dropdown {
@@ -82,11 +86,11 @@
     .menu-bar__center-aligned-top-menu--dropdown {
         position: absolute;
         top: -23px;
-        left: -99px;
         width: 244px;
         z-index: -1; /*shift dropdown menu to back relative to "HOME"-menu item*/
         margin: 10px 0 10px 0;
         visibility: hidden;
+        left: -99999px;
     }
 
     .shaper {
@@ -123,7 +127,6 @@
 
     .carousel__strip {
         height: 246px;
-        z-index: -2; /*for ability to top-shift navi block*/
     }
 
     .carousel__slide-place {
@@ -161,6 +164,7 @@
     .carousel__text-container .text-body {
         position: absolute;
         visibility: hidden;
+        left: -99999px;
     }
 
     .carousel__img-side {
@@ -295,6 +299,7 @@
     .carousel__text-container--testimonials .text-body {
         position: inherit;
         visibility: visible;
+        left: 0;
     }
 
     .carousel__text-container--testimonials .baloon {
@@ -337,6 +342,7 @@
 
     .blurb-block__footer--from-blog-768 {
         visibility: visible;
+        left: 0;
         margin-right: 32px;
         color: #454545;
         text-shadow: none;
@@ -371,6 +377,7 @@
     .blurb-container--footer-768 {
         position: inherit;
         visibility: visible;
+        left: 0;
 
         margin-left: 0;
         width: 100%;
@@ -379,6 +386,7 @@
     .blurb-container--footer {
         position: absolute;
         visibility: hidden;
+        left: -99999px;
     }
 
     .blurb-block--footer {

@@ -195,9 +195,11 @@
 
 .carousel__outer-padding {
     position: absolute;
+
     left: -12.5%;
-    margin: 30px 0 0 0;
     width: 125%;
+
+    margin: 30px 0 0 0;
     height: 400px;
     z-index: -1; /*for ability to top-shift navi block*/
     /*border: 1px solid magenta;*/
@@ -227,7 +229,12 @@
 
 .carousel__left-arrow-container {
     position: absolute;
-    width: 10%;
+
+
+    /*width: 10%;*/
+
+
+
     height: 100%;
     left: 0;
     /*border: 1px solid green;*/
