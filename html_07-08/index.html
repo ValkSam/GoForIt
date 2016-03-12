@@ -12,8 +12,17 @@
     <link rel="stylesheet" href="css/blurb.css">
     <link rel="stylesheet" href="css/bottom-menu.css">
     <link rel="stylesheet" href="css/media768.css">
+    <!--[if IE 9]>
+    <link href="css/media-ie-960.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
     <link rel="stylesheet" href="css/media480.css">
+    <!--[if IE 9]>
+    <link href="css/media-ie-480.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
     <link rel="stylesheet" href="css/media320.css">
+    <!--[if IE 9]>
+    <link href="css/media-ie-320.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
 </head>
 <body>
 
@@ -308,7 +317,8 @@
         <div class="blurb-container">
             <div class="blurb-block">
                 <div class="blurb-block__left-side">
-                    <img class="blurb-block__icon pos-1" src="img/violet-bg-icons.png" alt="icon">
+                    <div class="blurb-block__icon pos-1"></div>
+                    <!--<img class="blurb-block__icon pos-1" src="img/violet-bg-icons.png" alt="icon">-->
                 </div>
                 <div class="blurb-block__right-side">
                     <div class="blurb-block__header">
@@ -332,7 +342,8 @@
             <div class="blurb-block-gap"></div>
             <div class="blurb-block">
                 <div class="blurb-block__left-side">
-                    <img class="blurb-block__icon pos-2" src="img/violet-bg-icons.png" alt="icon">
+                    <div class="blurb-block__icon pos-2"></div>
+                    <!--<img class="blurb-block__icon pos-2" src="img/violet-bg-icons.png" alt="icon">-->
                 </div>
                 <div class="blurb-block__right-side">
                     <div class="blurb-block__header">
@@ -356,7 +367,8 @@
             <div class="blurb-block-gap"></div>
             <div class="blurb-block">
                 <div class="blurb-block__left-side">
-                    <img class="blurb-block__icon pos-3" src="img/violet-bg-icons.png" alt="icon">
+                    <div class="blurb-block__icon pos-3"></div>
+                    <!--<img class="blurb-block__icon pos-3" src="img/violet-bg-icons.png" alt="icon">-->
                 </div>
                 <div class="blurb-block__right-side">
                     <div class="blurb-block__header">
@@ -538,12 +550,24 @@
         </div>
     </main>
     <section class="trade-mark-list">
-        <img src="img/tm-1.png" alt="TM was here" class="trade-mark-list-item" id="tm-1">
-        <img src="img/tm-2.png" alt="TM was here" class="trade-mark-list-item" id="tm-2">
-        <img src="img/tm-3.png" alt="TM was here" class="trade-mark-list-item" id="tm-3">
-        <img src="img/tm-4.png" alt="TM was here" class="trade-mark-list-item" id="tm-4">
-        <img src="img/tm-5.png" alt="TM was here" class="trade-mark-list-item" id="tm-5">
-        <img src="img/tm-6.png" alt="TM was here" class="trade-mark-list-item" id="tm-6">
+        <div class="trade-mark-list-item">
+            <img src="img/tm-1.png" alt="TM was here">
+        </div>
+        <div class="trade-mark-list-item">
+            <img src="img/tm-2.png" alt="TM was here">
+        </div>
+        <div class="trade-mark-list-item">
+            <img src="img/tm-3.png" alt="TM was here">
+        </div>
+        <div class="trade-mark-list-item">
+            <img src="img/tm-4.png" alt="TM was here">
+        </div>
+        <div class="trade-mark-list-item">
+            <img src="img/tm-5.png" alt="TM was here">
+        </div>
+        <div class="trade-mark-list-item">
+            <img src="img/tm-6.png" alt="TM was here">
+        </div>
     </section>
     <footer>
         <div class="blurb-container blurb-container--footer">

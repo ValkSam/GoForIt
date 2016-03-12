@@ -243,6 +243,7 @@
     .blurb-container--footer-768 {
         position: relative;
         visibility: visible;
+        left: 0;
         margin-left: 2.6%;
         width: 94.8%;
     }
@@ -275,7 +276,7 @@
 
     /*bottom-menu redraw*/
     .bottom-menu-bar {
-        margin: 146px 0 150px 0;
+        margin: 146px 0 87px 0;
     }
 
     .bottom-menu-bar__bottom-menu {

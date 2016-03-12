@@ -70,6 +70,18 @@
         height: 38px;
         line-height: 40px;
         vertical-align: middle;
+        -webkit-box-shadow: 0 1px 0 0 #36283e,
+        0 2px 0 0 #523e5a,
+        -1px 0 0 0 #3c2f44,
+        -2px 0 0 0 #101a20;
+        -moz-box-shadow: 0 1px 0 0 #36283e,
+        0 2px 0 0 #523e5a,
+        -1px 0 0 0 #3c2f44,
+        -2px 0 0 0 #101a20;
+        -o-box-shadow: 0 1px 0 0 #36283e,
+        0 2px 0 0 #523e5a,
+        -1px 0 0 0 #3c2f44,
+        -2px 0 0 0 #101a20;
         box-shadow: 0 1px 0 0 #36283e,
         0 2px 0 0 #523e5a,
         -1px 0 0 0 #3c2f44,
@@ -79,6 +91,12 @@
     .empty-item {
         background: rgba(72, 59, 78, 0.5);
         height: 46px;
+        -webkit-box-shadow: 0 1px 0 0 #36283e,
+        0 2px 0 0 #523e5a;
+        -moz-box-shadow: 0 1px 0 0 #36283e,
+        0 2px 0 0 #523e5a;
+        -o-box-shadow: 0 1px 0 0 #36283e,
+        0 2px 0 0 #523e5a;
         box-shadow: 0 1px 0 0 #36283e,
         0 2px 0 0 #523e5a;
     }
@@ -97,6 +115,18 @@
         overflow: hidden;
         width: 100%;
         border: 1px solid #3c2f44;
+        -webkit-box-shadow: -1px -1px 0 0 #0f191f,
+        -1px 1px 0 0 #0f191f,
+        1px -1px 0 0 #0f191f,
+        1px 1px 0 0 #0f191f;
+        -moz-box-shadow: -1px -1px 0 0 #0f191f,
+        -1px 1px 0 0 #0f191f,
+        1px -1px 0 0 #0f191f,
+        1px 1px 0 0 #0f191f;
+        -o-box-shadow: -1px -1px 0 0 #0f191f,
+        -1px 1px 0 0 #0f191f,
+        1px -1px 0 0 #0f191f,
+        1px 1px 0 0 #0f191f;
         box-shadow: -1px -1px 0 0 #0f191f,
         -1px 1px 0 0 #0f191f,
         1px -1px 0 0 #0f191f,
@@ -427,7 +457,7 @@
         /*margin: 80px 0 86px 0;*/
 
         margin: 33px 0 0 0;
-        height: 202px;
+        height: 155px;
         padding-top: 47px;
         background: url("../img/background480-bottom.png") no-repeat 50% top;
     }

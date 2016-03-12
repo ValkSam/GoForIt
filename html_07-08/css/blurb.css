@@ -88,23 +88,26 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    object-fit: none;
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: 6px;
+    /*margin-top: 6px;*/
+    /*object-fit: none; !*for variant with img tag*!*/
 }
 
 .blurb-block__icon.pos-1 {
-    object-position: 0 0;
+    /*object-position: 0 0;*/ /*for variant with img tag*/
+    background: url("../img/violet-bg-icons.png") 0 0;
 }
 
 .blurb-block__icon.pos-2 {
-    object-position: -30px 0;
+    /*object-position: -30px 0;*/
+    background: url("../img/violet-bg-icons.png") -30px 0;
 }
 
 .blurb-block__icon.pos-3 {
-    object-position: -60px 0;
+    /*object-position: -60px 0;*/
+    background: url("../img/violet-bg-icons.png") -60px 0;
 }
 
 /*FROM-BLOG*/
@@ -176,6 +179,7 @@
 .blurb-container--footer-768 {
     position: absolute;
     visibility: hidden;
+    left: -99999px;
 }
 
 .blurb-container--footer {

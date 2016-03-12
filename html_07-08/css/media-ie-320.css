@@ -1,0 +1,30 @@
+@media (max-width: 320px) {
+    /*carousel*/
+    .carousel__slide-place {
+        height: 246px;;
+    }
+
+    .testimonials,
+    .from-blog{
+        max-width: 320px;
+    }
+
+    /*trade-mark*/
+    main {
+        height: 600px;
+    }
+
+    .trade-mark-list {
+        width: 100%;
+        margin: 0;
+        height: 366px;
+    }
+
+    .trade-mark-list-item {
+        width: 48%;
+        margin: 0;
+    }
+}
+
+
+

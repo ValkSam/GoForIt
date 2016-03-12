@@ -1,0 +1,64 @@
+@media (max-width: 480px) {
+    .menu-bar {
+        text-align: center;
+    }
+
+    .menu-bar__logo {
+        display: inline-block;
+        width: 160px;
+        background: url("../img/pingbullerlogo.png") no-repeat 0 0;
+    }
+
+    .menu-bar__center-aligned-top-menu {
+        height: 30px;
+        position: relative;
+    }
+
+    .menu-bar__items-list {
+        position: absolute;
+        width: 100%;
+    }
+
+    .menu-bar__center-aligned-top-menu--dropdown {
+        display: none;
+    }
+
+    .menu-bar__center-aligned-item--dropdown-container {
+        height: 30px;
+        width: 36px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .menu-bar__center-aligned-item-wrapper:hover .menu-bar__center-aligned-top-menu--dropdown {
+        display: block;
+        top: -43px;
+        left: -105px;
+    }
+
+    /*carousel*/
+    .carousel__slide-place {
+        height: 281px;;
+    }
+
+    /*trade-mark*/
+    .trade-mark-list {
+        width: 100%;
+        margin: 0;
+    }
+
+    .trade-mark-list-item {
+        width: 32%;
+        margin: 0;
+    }
+
+    /*footer*/
+    .blurb-block--footer {
+        margin-left: 4%;
+        margin-right: 4%;
+        width: 92%;
+        height: 159px;
+        margin-bottom: 26px;
+    }
+}
+

@@ -1,0 +1,83 @@
+/*logo*/
+
+.menu-bar__logo div{
+    opacity: 0;
+}
+.menu-bar__logo {
+    background: url("../img/pingbullerlogo.png") no-repeat;
+}
+
+/*carousel*/
+
+.carousel__slide-place{
+    height: 400px;;
+}
+
+.carousel__slide-block {
+    display: none;
+}
+
+.carousel__slide-block:first-child {
+    display: block;
+}
+
+
+#p1:checked ~ .carousel__slide-place,
+#p2:checked ~ .carousel__slide-place,
+#p3:checked ~ .carousel__slide-place,
+#p4:checked ~ .carousel__slide-place{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+#tp1:checked ~ .carousel__slide-place,
+#tp2:checked ~ .carousel__slide-place,
+#tp3:checked ~ .carousel__slide-place,
+#tp4:checked ~ .carousel__slide-place{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*blurb*/
+.blurb-block-gap, .blurb-block-gap--footer{
+    float: left;
+    display: block;
+    width: 10%;
+    height: 1px;
+}
+
+.blurb-block {
+    float: left;
+    width: 25%;
+}
+
+.blurb-block--from-blog{
+    width: 100%;
+}
+
+/*testimonials*/
+
+main {
+    display: inline-block;
+}
+
+.carousel__slide-place--testimonials{
+    height: auto;
+}
+/*trade-mark*/
+.trade-mark-list{
+    line-height: 122px;
+
+}
+.trade-mark-list-item{
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*footer*/
+.blurb-container--footer {
+    height: 208px;
+}
