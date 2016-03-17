@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+.question-form {
+    width: 50%;
+    margin: 1rem auto 0 auto;
+    padding: 1rem 0 0 0;
+    font-size: 1.3rem;
+    background: #e2e2e3;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.question-form__title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.question-form__main {
+    width: 70%;
+    margin: auto ;
+    margin-bottom: 2rem;
+    padding: 5%;
+    background: #ebebec;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.question-form__task{
+    margin: 0 0 1rem 0;
+}
+
+.question-form__variant {
+    margin: 0.5rem 0 0 2rem;
+    font-size: 1.1rem;
+}
+
+.question-form__footer{
+    position: relative;
+    height: 100%;
+}
+.question-form__submit{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    width: 18rem;
+    margin: auto;
+    height: 3rem;
+    font-size: 1.2rem;
+    background: greenyellow;
+    border-radius: 5px;
+}
