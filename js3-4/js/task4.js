@@ -120,7 +120,7 @@
 
             attr.forEach(function (attrItem) {
                 var attrPair = attrItem.split("=");
-                element.setAttribute(attrPair[0], attrPair[1] ? attrPair[1] : ''); //учитываем атрибуты типа hidden, required
+                element.setAttribute(attrPair[0].trim(), attrPair[1].trim() ? attrPair[1].trim() : ''); //учитываем атрибуты типа hidden, required
             });
 
             element.innerHTML = text;
