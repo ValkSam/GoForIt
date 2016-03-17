@@ -196,10 +196,13 @@
         };
     }
 
-    var elem = new DomElement();
+
+    //создание DOM
+
+    var elem;
 
     //Form
-    elem.reset();
+    elem = new DomElement();
     elem.setTag('form');
     elem.setClazz('question-form');
     elem.setAttr('action=#');
@@ -283,8 +286,7 @@
 
     //... Блок вопросов
 
-
-    elem.reset();
+    elem.reset(); //можем переиспользовать
     elem.setTag('footer');
     elem.setClazz('question-form__footer');
     elem.setParent(form);
@@ -298,4 +300,5 @@
     elem.addAttr('value=Проверить мои результаты');
     elem.setParent(footer);
     elem.createAndPlaceElement();
+
 })();
