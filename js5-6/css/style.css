@@ -1,0 +1,136 @@
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: black;
+}
+
+body[data-color=Blue] {
+    background: blue;
+}
+
+body[data-color=Black] {
+    background: black;
+}
+
+body[data-color=Silver] {
+    background: silver;
+}
+
+body[data-color=Green] {
+    background: green;
+}
+
+body[data-color=Orange] {
+    background: orange;
+}
+
+/*top-menu*/
+
+.top-menu-bar {
+    font-size: 1.5rem;
+    height: 2rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.top-menu-bar__sizer-menu {
+    float: left;
+}
+
+.top-menu-bar__color-menu {
+    float: right;
+}
+
+.top-menu-bar__item {
+    float: left;
+    text-decoration: underline;
+    color: white;
+}
+
+.top-menu-bar__splitter {
+    float: left;
+    color: gray;
+    margin: 0 1rem 0 1rem;
+}
+
+
+.top-menu-bar__item[data-active] {
+    display: block;
+    text-decoration: none;
+}
+
+/*timer-panel*/
+
+.timer-panel {
+    text-align: center;
+}
+
+.timer-panel__digit-timer {
+    font-size: 8.5rem;
+    color: red;
+}
+
+.timer-panel__digit-timer[data-size=Small] {
+    font-size: 3rem;
+}
+
+.timer-panel__digit-timer[data-size=Medium] {
+    font-size: 5.5rem;
+}
+
+.timer-panel__digit-timer[data-size=Large] {
+    font-size: 8.5rem;
+}
+
+.timer-panel__digit-timer[data-size=X-Large] {
+    font-size: 15rem;
+}
+
+/*control-panel*/
+
+.control-panel {
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.timer-panel__button {
+    display: inline-block;
+    font-size: 4rem;
+    background: #c7c7c7;
+    height: 5rem;
+    line-height: 5rem;
+    vertical-align: middle;
+    color: black;
+    padding: 0 1rem 0 1rem;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    outline: none;
+}
+
+/*split-log*/
+
+.splitlog-panel {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 24rem;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    overflow: scroll;
+    padding: 1rem 0 0 0;
+}
+
+.splitlog-panel__item {
+    color: #8c8c8c;
+    font-size: 3rem;
+    bottom: 0;
+}
