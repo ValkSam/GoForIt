@@ -67,6 +67,18 @@ body[data-color=Orange] {
     text-decoration: none;
 }
 
+.top-menu-bar__msec-menu{
+    position: absolute;
+    width: 10rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.top-menu-bar__item--msec{
+    float: none;
+}
+
 /*timer-panel*/
 
 .timer-panel {
