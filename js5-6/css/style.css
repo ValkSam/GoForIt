@@ -134,10 +134,10 @@ body[data-color=Orange] {
     left: 0;
     right: 0;
     top: 24rem;
-    bottom: 0;
+    bottom: 3.2rem;
     margin: auto;
     text-align: center;
-    overflow: scroll;
+    overflow: auto;
     padding: 1rem 0 0 0;
 }
 
@@ -145,4 +145,15 @@ body[data-color=Orange] {
     color: #8c8c8c;
     font-size: 3rem;
     bottom: 0;
+}
+
+/*footer*/
+footer {
+    position: absolute;
+    background: #e1e1e1;
+    font-size: 1.4rem;
+    height: 3rem;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
 }
