@@ -27,7 +27,7 @@ html {
 body {
 }
 
-#page {
+.page {
     background: white;
     width: 1000px;
     min-width: 1000px;
@@ -35,16 +35,16 @@ body {
     padding: 1.4rem 0 0 0;
 }
 
-#container {
+.container {
     margin: 0 4.5%;
 }
 
-#topline {
+.topline {
     margin: 3px 0 2px 7px;
     line-height: 2.3rem;
 }
 
-#telephone {
+.telephone {
     float: left;
     letter-spacing: 0.05rem;
     font-size: 1.8rem;
@@ -54,7 +54,7 @@ body {
     margin: 0.4rem 1.4rem 0 0;
 }
 
-#login-form {
+.login-form {
     position: relative;
     display: inline-block;
     height: 2.5rem;
@@ -69,7 +69,7 @@ body {
     width: 49.5rem;
 }
 
-#auth-block {
+.auth-block {
     display: inline-block;
     position: absolute;
     width: 48rem;
@@ -79,11 +79,11 @@ body {
     line-height: 2rem;
 }
 
-#login-form input, button:focus {
+.login-form input, button:focus {
     outline: none;
 }
 
-#login-form input {
+.login-form input {
     width: 10.8rem;
     margin: 0 0.5rem 0 0;
     padding: 0 0 0 0.3rem;
@@ -95,7 +95,7 @@ body {
     font-size: 1.09rem;
 }
 
-#login, #login-form span {
+.login, .login-form span {
     margin: 0 0.1rem 0 0;
     padding: 0;
     border: none;
@@ -104,7 +104,7 @@ body {
     font-size: 1.09rem;
 }
 
-#registration {
+.registration {
     margin: 0 1.8rem 0 0;
     padding: 0;
     color: white;
@@ -112,19 +112,19 @@ body {
     letter-spacing: -0.03rem;
 }
 
-#forgottenpassword {
+.forgottenpassword {
     margin: 0 1rem 0 0;
     color: #bfbfbf;
     font-size: 1.2rem;
     letter-spacing: -0.01rem;
 }
 
-#navi-container {
+.navi-container {
     float: right;
     margin: 0 0.8rem 0 0;
 }
 
-#navi-button-container {
+.navi-button-container {
     display: inline-block;
     vertical-align: middle;
     width: 7.4rem;
@@ -137,7 +137,7 @@ body {
     line-height: 1.8rem;
 }
 
-#navi-button-container a {
+.navi-button-container a {
     color: #bdc4c7;
     text-decoration: none;
     padding: 0;
@@ -145,35 +145,31 @@ body {
     background: rgba(0, 0, 0, 0);
 }
 
-#navi-button-home {
+.navi-button-home {
     float: left;
     margin-left: 8px;
 }
 
-#navi-middle-button-container {
+.navi-middle-button-container {
     overflow: hidden;
 }
 
-#navi-button-tree {
+.navi-button-tree {
     display: inline-block;
     text-align: center;
     width: 100%;
 }
 
-#navi-button-mail {
+.navi-button-mail {
     float: right;
     margin-right: 11px;
 }
 
-#navi-form button:focus {
-    outline: none;
-}
-
-#zazor {
+.zazor {
     margin: 0 0 4px 0;
 }
 
-#menu-bar {
+.menu-bar {
     background: linear-gradient(to bottom, rgba(80, 88, 96, 0.65) 0%, rgba(58, 64, 70, 0.68) 9%, rgba(21, 23, 25, 0.69) 11%, rgba(1, 1, 1, 1) 99%, rgba(1, 1, 1, 1) 100%);
     border: 1px solid #0d1642;
     border-radius: 4px;
@@ -181,7 +177,7 @@ body {
     line-height: 3.1rem;
 }
 
-#koshyk {
+.koshyk {
     float: right;
     width: 22.6rem;
     font-family: Arial, sans-serif;
@@ -199,22 +195,22 @@ body {
     color: #0d5a8f;
 }
 
-#goods-count-text {
+.goods-count-text {
     margin: 0 0 0 2.8rem;
     text-align: left;
 }
 
-#goods-count {
+.goods-count {
     width: 1.9rem;
     text-align: left;
 }
 
-#goods-cost {
+.goods-cost {
     width: 5.7rem;
     text-align: right;
 }
 
-#menu {
+.menu {
     float: right;
     margin: 0 6.0rem 0 0;
     font-size: 1.4em;
@@ -223,10 +219,10 @@ body {
     color: #b1bcc0;
 }
 
-#menu ul {
+.menu ul {
 }
 
-#menu li {
+.menu li {
     display: inline-block;
     padding: 0 1.0rem 0 1.0rem;
     line-height: 2.2rem;
@@ -234,14 +230,14 @@ body {
     border-radius: 1.5rem;
 }
 
-#menu li:hover {
+.menu li:hover {
     background: linear-gradient(to bottom, #1f6787, #0d3458);
     border: 1px solid #0c3357;
     box-shadow: 0 1px 0 0 #092036;
 }
 
 /*filter-form-container*/
-#filter-form-container {
+.filter-form-container {
     margin: 1.3rem 0.5rem 1.8rem 0.4rem;
     display: flex;
     flex-flow: row;
@@ -249,14 +245,14 @@ body {
     height: 13.3rem;
 }
 
-#filter-form-container form {
+.filter-form-container form {
     position: relative;
     border: 1px solid #b0b0b1;
     border-radius: 19px;
     box-shadow: 2px 4px 4px 0 #b0b0b1;
 }
 
-#filter-form-container label {
+.filter-form-container label {
     vertical-align: middle;
     font-size: 1rem;
     color: black;
@@ -294,13 +290,13 @@ body {
 }
 
 /*find-po-avto*/
-#find-po-avto {
+.find-po-avto {
     flex-shrink: 0;
     margin: 0 0 0 0;
     width: 41.3rem;
 }
 
-#find-po-avto .header {
+.find-po-avto .header {
     padding: 0.0rem 0.8rem 0.1rem 0.5rem;
     letter-spacing: 0.15rem;
     font-weight: bolder;
@@ -309,18 +305,18 @@ body {
     text-align: center;
 }
 
-#find-po-avto-filter-block {
+.find-po-avto-filter-block {
     margin: -2rem 0 0 0;
 }
 
 /*find-po-avto-disk-side*/
-#find-po-avto-disk-side {
+.find-po-avto-disk-side {
     float: left;
     width: 18rem;
     margin: 0.1rem 0 0 1.6rem;
 }
 
-#find-po-avto-disk-side .header {
+.find-po-avto-disk-side .header {
     padding: 0 0 0.1rem 0.1rem;
     letter-spacing: 0.12rem;
     font-size: 1rem;
@@ -328,19 +324,19 @@ body {
     margin: 0.9rem 0 0.5rem 0.4rem;
 }
 
-#find-po-avto-disk-side label {
+.find-po-avto-disk-side label {
     width: 7.4rem;
 }
 
-#find-po-avto-disk-side .dropdown-block:nth-child(2) label {
+.find-po-avto-disk-side .dropdown-block:nth-child(2) label {
     margin: 0.4rem 0 0 0;
 }
 
-#find-po-avto-disk-side .dropdown-block:nth-child(4) label {
+.find-po-avto-disk-side .dropdown-block:nth-child(4) label {
     margin: 0.1rem 0 0 0.1rem;
 }
 
-#find-po-avto-disk-side .dropdown-block:nth-child(5) label {
+.find-po-avto-disk-side .dropdown-block:nth-child(5) label {
     margin: 0.3rem 0 0 0;
 }
 
@@ -356,13 +352,13 @@ body {
 }
 
 /*find-po-avto-tire-side*/
-#find-po-avto-tire-side {
+.find-po-avto-tire-side {
     float: right;
     width: 18rem;
     margin: 0 1.2rem 0 0;
 }
 
-#find-po-avto-tire-side .header {
+.find-po-avto-tire-side .header {
     padding: 0 0.6rem 0.1rem 0;
     letter-spacing: 0.12rem;
     font-size: 1rem;
@@ -371,16 +367,16 @@ body {
     margin: 0.8rem 0 0.5rem 0;
 }
 
-#find-po-avto-tire-side label {
+.find-po-avto-tire-side label {
     margin: 0.1rem 0 0 0;
     width: 7.4rem;
 }
 
-#find-po-avto-tire-side .dropdown-block:nth-child(2) label {
+.find-po-avto-tire-side .dropdown-block:nth-child(2) label {
     margin: 0.7rem 0 0 0;
 }
 
-#find-po-avto-tire-side .dropdown-block:nth-child(5) label {
+.find-po-avto-tire-side .dropdown-block:nth-child(5) label {
     margin: 0.3rem 0 0 0;
 }
 
@@ -399,7 +395,7 @@ body {
     width: 5.9rem;
 }
 
-#filter-form-container .submit {
+.filter-form-container .submit {
     display: inline-block;
     position: absolute;
     bottom: 0.8rem;
@@ -416,13 +412,13 @@ body {
 
 /*==*/
 /*find-tire*/
-#find-tire {
+.find-tire {
     flex-shrink: 0;
     margin: -0.1rem 0 0 1.1rem;
     width: 19.3rem;
 }
 
-#find-tire .header {
+.find-tire .header {
     margin: 0.2rem 0 0 1rem;
     font-size: 1.2rem;
     font-weight: bolder;
@@ -431,11 +427,11 @@ body {
     text-align: left;
 }
 
-#find-tire-filter-block {
+.find-tire-filter-block {
     margin: 0.6rem 0 0 1.2rem;
 }
 
-#find-tire-filter-block label {
+.find-tire-filter-block label {
     display: inline-block;
     margin: 0.8rem 0 0 0;
     width: 4.4rem;
@@ -468,47 +464,47 @@ body {
 }
 
 /*.checkbox-block ...*/
-#tire-season .checkbox-block {
+.tire-season .checkbox-block {
     height: 1.4rem;
 }
 
-#tire-season .checkbox-block input {
+.tire-season .checkbox-block input {
     display: none;
 }
 
-#tire-season .checkbox-block label {
+.tire-season .checkbox-block label {
     letter-spacing: 0.1rem;
     padding: 0 0 0 1.4rem;
     background: url("../img/checkbox-tire.png") no-repeat left center;
     margin: 0.6em 0 0 0;
 }
 
-#tire-season .checkbox-block input:checked + label {
+.tire-season .checkbox-block input:checked + label {
     background: url("../img/checkbox-tire-checked.png") no-repeat left center;
 }
 
 /*....checkbox-block*/
 
-#tire-season-label {
+.tire-season-label {
     display: inline-block;
     margin: 0.4rem 0 0 0.3rem;
     width: 3.9rem;
     vertical-align: top;
 }
 
-#tire-season {
+.tire-season {
     display: inline-block;
 }
 
 /*==*/
 /*find-disk*/
-#find-disk {
+.find-disk {
     flex-shrink: 0;
     margin: -0.2rem 0 0 0.5rem;
     width: 26.7rem;
 }
 
-#find-disk .header {
+.find-disk .header {
     margin: 0.3rem 0 0 1.14rem;
     font-size: 1.2rem;
     font-weight: bolder;
@@ -517,11 +513,11 @@ body {
     text-align: left;
 }
 
-#find-disk-filter-block {
+.find-disk-filter-block {
     margin: 0.5rem 0 0 0.9rem;
 }
 
-#find-disk-filter-block .dropdown-block label {
+.find-disk-filter-block .dropdown-block label {
     font-family: Lucida, Arial, sans-serif;
     font-size: 1rem;
     width: 8.8rem;
@@ -532,30 +528,30 @@ body {
 
 /*find-disk-left-side*/
 
-#find-disk-left-side {
+.find-disk-left-side {
     float: left;
     width: 15.2rem;
     margin: 0 0 0 1rem;
 }
 
-#find-disk-left-side label span {
+.find-disk-left-side label span {
     font-size: 0.9rem;
     letter-spacing: 0.04rem;
 }
 
-#find-disk-left-side .dropdown-block:nth-child(1) label {
+.find-disk-left-side .dropdown-block:nth-child(1) label {
     margin-top: 0.2rem;
 }
 
-#find-disk-left-side .dropdown-block:nth-child(2) label {
+.find-disk-left-side .dropdown-block:nth-child(2) label {
     margin-top: -0.7rem;
 }
 
-#find-disk-left-side .dropdown-block:nth-child(3) label {
+.find-disk-left-side .dropdown-block:nth-child(3) label {
     margin-top: -0.4rem;
 }
 
-#find-disk-left-side .dropdown-block:nth-child(3) label span {
+.find-disk-left-side .dropdown-block:nth-child(3) label span {
     line-height: 1rem;
 }
 
@@ -573,14 +569,14 @@ body {
     width: 5.1rem;
 }
 
-#find-disk-left-side .dropdown-block {
+.find-disk-left-side .dropdown-block {
     margin: 0;
     height: 2.7rem;
 }
 
 /*find-disk-right-side*/
 
-#find-disk-right-side {
+.find-disk-right-side {
     float: right;
     margin: -1.4rem 0 0 0;
     width: 8rem;
@@ -591,20 +587,20 @@ body {
     width: 5.9rem;
 }
 
-#disk-dco-block {
+.disk-dco-block {
     margin: -0.1rem 0 0.3rem 0;
     line-height: 0.8rem;
     height: 5.5rem;
 }
 
-#disk-dco-block p span {
+.disk-dco-block p span {
     font-family: Lucida, Arial, sans-serif;
     line-height: 0.8rem;
     font-size: 0.8rem;
     letter-spacing: 0.07rem;
 }
 
-#disk-dco-block #disk-dco-label {
+.disk-dco-block .disk-dco-label {
     margin: 0 0 0 0;
     letter-spacing: 0;
 }
@@ -614,12 +610,12 @@ body {
     width: 5.9rem;
 }
 
-#disk-et-block #disk-et-label {
+#disk-et-label {
     margin: 0.2rem 0 0.1rem 0.1rem;
     letter-spacing: 0;
 }
 
-#disk-et-block #disk-et-label span {
+#disk-et-label span {
     letter-spacing: 0.05rem;
 }
 
@@ -634,7 +630,7 @@ body {
 }
 
 /*content-container*/
-#content-container {
+.content-container {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -643,7 +639,7 @@ body {
     font-family: Lucida, Arial, sans-serif;
 }
 
-#content-container .header {
+.content-container .header {
     line-height: 2.5rem;
     margin: 0 0 1.3rem 0;
     padding: 0 0 0 2.7rem;
@@ -686,7 +682,7 @@ body {
 }
 
 /*katalog-sidebar*/
-#katalog-sidebar {
+.katalog-sidebar {
     order: 1;
     flex-basis: 18.4rem;
     flex-grow: 0;
@@ -730,7 +726,7 @@ body {
 }
 
 /*brand-sidebar*/
-#brand-sidebar {
+.brand-sidebar {
     margin: -0.1rem 0 0 0;
     order: 3;
     flex-basis: 18.5rem;
@@ -738,12 +734,12 @@ body {
     flex-shrink: 0;
 }
 
-#brand-sidebar .header {
+.brand-sidebar .header {
     font-size: 1.4rem;
     padding: 0 0 0 3.1rem;
 }
 
-#brand-sidebar .sidebar-main-menu-item-facade {
+.brand-sidebar .sidebar-main-menu-item-facade {
     margin-left: 1.5rem;
     width: 9.6rem
 }
@@ -803,7 +799,7 @@ body {
 }
 
 /*goods-sidebar*/
-#goods-sidebar {
+.goods-sidebar {
     order: 2;
     margin: -3px 8px -2px 9px;
     padding: 5px 23px 14px 23px;
@@ -860,18 +856,18 @@ body {
 }
 
 /*brand-logos*/
-#brand-logos {
+.brand-logos {
     height: 92px;
     overflow: auto;
 }
 
-#brand-logos-container {
+.brand-logos-container {
     padding-top: 8px;
     text-align: center;
     vertical-align: middle;
 }
 
-#brand-logos-container img {
+.brand-logos-container img {
     margin: 31px 2px 0 10px;
     vertical-align: middle;
 }
@@ -894,19 +890,19 @@ footer > a {
     text-decoration: none;
 }
 
-#footer-menu {
+.footer-menu {
     text-align: center;
     margin-top: 1.1rem;
     font-size: 1.2rem;
     color: #bec6c9;
 }
 
-#footer-menu a {
+.footer-menu a {
     color: #bec6c9;
     text-decoration: none;
     padding: 0.9rem;
 }
 
-#footer-menu a:first-child {
+.footer-menu a:first-child {
     color: #52abcb;
 }

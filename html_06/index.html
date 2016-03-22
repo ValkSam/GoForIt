@@ -7,47 +7,47 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="page">
-    <div id="container">
+<div class="page">
+    <div class="container">
         <header>
-            <div id="topline">
-                <div id="telephone">
+            <div class="topline">
+                <div class="telephone">
                     <span id="phone-icon"></span>(044)123-45-67 (044)567-89-10
                 </div>
-                <form id="login-form" action="#" method="get">
-                    <div id="auth-block">
-                        <span id="man-icon"></span>
+                <form class="login-form" action="#" method="get">
+                    <div class="auth-block">
+                        <!--<span id="man-icon"></span>-->
                         <input type="text" name="login" placeholder="логин">
                         <input type="password" name="password" placeholder="пароль">
-                        <button id="login" type="submit">вход</button>
+                        <button class="login" type="submit">вход</button>
                         <span>|</span>
-                        <a id="registration" href="#">регистрация</a>
-                        <a id="forgottenpassword" href="#">забыли пароль?</a>
+                        <a class="registration" href="#">регистрация</a>
+                        <a class="forgottenpassword" href="#">забыли пароль?</a>
                     </div>
                 </form>
-                <nav id="navi-container">
-                    <div id="navi-button-container">
-                        <a id="navi-button-home" href="#"><img src="img/home.png" alt="H"></a>
-                        <a id="navi-button-mail" href="#"><img src="img/letter.png" alt="M"></a>
+                <nav class="navi-container">
+                    <div class="navi-button-container">
+                        <a class="navi-button-home" href="#"><img src="img/home.png" alt="H"></a>
+                        <a class="navi-button-mail" href="#"><img src="img/letter.png" alt="M"></a>
 
-                        <div id="navi-middle-button-container">
-                            <a id="navi-button-tree" href="#"><img src="img/map.png" alt="T"></a>
+                        <div class="navi-middle-button-container">
+                            <a class="navi-button-tree" href="#"><img src="img/map.png" alt="T"></a>
                         </div>
                     </div>
                 </nav>
             </div>
-            <div id="zazor">
+            <div class="zazor">
                 <img src="img/zazor.png" alt="">
             </div>
         </header>
-        <section id="menu-bar" class="clearfix">
-            <div id="koshyk">
-                <span id="goods-count-text" class="text">товаров:</span>
-                <span id="goods-count" class="digit">0</span>
+        <section class="menu-bar clearfix">
+            <div class="koshyk">
+                <span class="goods-count-text text">товаров:</span>
+                <span class="goods-count digit">0</span>
                 <span class="text">на сумму:</span>
-                <span id="goods-cost" class="digit">0,00 грн.</span>
+                <span class="goods-cost digit">0,00 грн.</span>
             </div>
-            <nav id="menu">
+            <nav class="menu">
                 <ul>
                     <li>О КОМПАНИИ</li>
                     <li>ОПЛАТА</li>
@@ -57,13 +57,13 @@
                 </ul>
             </nav>
         </section>
-        <section id="filter-form-container" class="clearfix">
-            <form id="find-po-avto" action="#">
+        <section class="filter-form-container clearfix">
+            <form class="find-po-avto" action="#">
                 <div class="header">
                     Поиск по автомобилю
                 </div>
-                <div id="find-po-avto-filter-block" class="clearfix">
-                    <div id="find-po-avto-disk-side">
+                <div class="find-po-avto-filter-block clearfix">
+                    <div class="find-po-avto-disk-side">
                         <p class="header">
                             Диски:
                         </p>
@@ -94,7 +94,7 @@
                         </div>
                     </div>
 
-                    <div id="find-po-avto-tire-side">
+                    <div class="find-po-avto-tire-side">
                         <p class="header">
                             Шины:
                         </p>
@@ -128,11 +128,11 @@
                 <input class="submit" type="submit" value="поиск...">
             </form>
 
-            <form id="find-tire" action="#">
+            <form class="find-tire" action="#">
                 <div class="header">
                     поиск шин
                 </div>
-                <div id="find-tire-filter-block" class="clearfix">
+                <div class="find-tire-filter-block clearfix">
                     <div class="dropdown-block">
                         <label for="tire-size-1">Размер:</label>
                         <select name="tire-size-1" id="tire-size-1">
@@ -153,10 +153,10 @@
                         </select>
                     </div>
 
-                    <div id="tire-season-block">
-                        <p id="tire-season-label">Сезон:</p>
+                    <div>
+                        <p class="tire-season-label">Сезон:</p>
 
-                        <div id="tire-season">
+                        <div class="tire-season">
                             <div class="checkbox-block">
                                 <input type="checkbox" id="tire-summer" name="tire-summer">
                                 <label for="tire-summer">лето</label>
@@ -175,12 +175,12 @@
                 <input class="submit" type="submit" value="поиск...">
             </form>
 
-            <form id="find-disk" action="#">
+            <form class="find-disk" action="#">
                 <div class="header">
                     поиск дисков
                 </div>
-                <div id="find-disk-filter-block" class="clearfix">
-                    <div id="find-disk-left-side">
+                <div class="find-disk-filter-block clearfix">
+                    <div class="find-disk-left-side">
                         <div class="dropdown-block">
                             <label for="disk-diameter">Диаметр <span>диска:</span></label>
                             <select name="disk-diameter" id="disk-diameter">
@@ -201,10 +201,10 @@
                         </div>
                     </div>
 
-                    <div id="find-disk-right-side">
-                        <div id="disk-dco-block" class="dropdown-block">
+                    <div class="find-disk-right-side">
+                        <div class="disk-dco-block dropdown-block">
                             <div>
-                                <label id="disk-dco-label" for="disk-dco">ДЦО</label>
+                                <label class="disk-dco-label" for="disk-dco">ДЦО</label>
                                 <!--<br/><span>(диаметр<br/>центрального<br/>отверстия):</span></label>-->
                                 <p><span>(диаметр</span></p>
 
@@ -216,7 +216,7 @@
                                 <option value="12">12</option>
                             </select>
                         </div>
-                        <div id="disk-et-block" class="dropdown-block">
+                        <div class="disk-et-block dropdown-block">
                             <div>
                                 <label id="disk-et-label" for="disk-et">ET <br/><span>(вылет диска):</span></label>
                             </div>
@@ -232,8 +232,8 @@
                 <input class="submit" type="submit" value="поиск...">
             </form>
         </section>
-        <section id="content-container">
-            <aside id="katalog-sidebar">
+        <section class="content-container">
+            <aside class="katalog-sidebar">
                 <div class="header">
                     <span></span>КАТАЛОГ ПРОДУКЦИИ:
                 </div>
@@ -277,7 +277,7 @@
                 </ul>
             </aside>
 
-            <aside id="brand-sidebar">
+            <aside class="brand-sidebar">
                 <div class="header">
                     <span></span>БРЕНДЫ:
                 </div>
@@ -328,7 +328,7 @@
                 </form>
             </aside>
 
-            <main id="goods-sidebar">
+            <main class="goods-sidebar">
                 <figure class="goods-item">
                     <figcaption>
                         <p>Goodyear</p>
@@ -448,8 +448,8 @@
                 </figure>
             </main>
         </section>
-        <section id="brand-logos">
-            <div id="brand-logos-container">
+        <section class="brand-logos">
+            <div class="brand-logos-container">
                 <img src="img/brand-logo8.png" alt="brand-logo was here">
                 <img src="img/brand-logo7.png" alt="brand-logo was here">
                 <img src="img/brand-logo6.png" alt="brand-logo was here">
@@ -461,7 +461,7 @@
             </div>
         </section>
         <footer>
-            <nav id="footer-menu">
+            <nav class="footer-menu">
                 <a href="#">О компании</a>
                 |
                 <a href="#">Доставка</a>
