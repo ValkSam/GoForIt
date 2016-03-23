@@ -5,7 +5,7 @@ splitTimer.interval = 1;
 
 /*init control-panel buttons*/
 
-function clickEventHandler() {
+function clickTimerPanelButtonEventHandler() {
     if (this.getAttribute('value') == 'Start') {
         this.setAttribute('value', 'Stop');
         splitTimer.start(function (timer) {
@@ -46,9 +46,9 @@ function clickEventHandler() {
 
 [].forEach.call(document.querySelectorAll('.timer-panel__button'), function (element) {
     if (element.addEventListener) {
-        element.addEventListener('click', clickEventHandler);
+        element.addEventListener('click', clickTimerPanelButtonEventHandler);
     } else {
-        element.attachEvent('onclick', clickEventHandler)
+        element.attachEvent('onclick', clickTimerPanelButtonEventHandler);  //вообще не планируется поддержка IE8-
     }
 });
 
@@ -76,4 +76,6 @@ function clickEventHandler() {
         }
     })
 });
+
+
 
