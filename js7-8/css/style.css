@@ -1,0 +1,117 @@
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+}
+
+.tab-container {
+    font-size: 1.4rem;
+    width: 30rem;
+    margin: 10rem auto;
+    background: white;
+    border: 1px solid #9c9c9d;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.tab-container__tab-list {
+    padding: 5px 5px 0 5px;
+    border-radius: 5px;
+    border: 1px solid #9c9c9d;
+    background: #c7c7c7;
+}
+
+.tab-container__tab-list-item {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid #9c9c9d;
+    border-bottom: none;
+    background: #ebebec;
+}
+
+.tab-container__tab-list-item[active] {
+    padding-bottom: 1.1rem;
+    background: white;
+    margin-bottom: -1px;
+}
+
+.tab-container__page-list {
+    padding: 10px 15px;
+}
+
+.tab-container__page-list-item {
+    display: none;
+}
+
+.tab-container__page-list-item[active] {
+    display: block;
+}
+
+/***********************************/
+/*FORM*/
+/***********************************/
+
+.form-help{
+    border: 2px solid #808080;
+    border-radius: 4px;
+    padding: 2%;
+}
+
+.form-help__input-block{
+    margin: 0 0 10px 0;
+}
+
+.form-help__label{
+    display: inline-block;
+    width: 30%;
+    box-sizing: content-box;
+}
+
+.form-help__input{
+    display: inline-block;
+    width: 50%;
+    box-sizing: content-box;
+    margin: 0 0 0 0;
+}
+
+.form-help__help-button {
+    border: none;
+    border-radius: 4px;
+    height: 20px;
+}
+
+.form-help__tip{
+    position: absolute;
+    margin-left: 10px;
+    padding: 6px;
+    border: 1px solid #aeaeaf;
+    border-radius: 4px;
+    width: 230px;
+    display: none;
+    background: white;
+}
+
+.form-help__tip[active]{
+    display: inline-block;
+}
+
+footer {
+    position: absolute;
+    background: #e1e1e1;
+    font-size: 1.4rem;
+    height: 3rem;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
