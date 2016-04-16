@@ -4,7 +4,7 @@ $(function () {
         tabClickHandler.apply($('.tab-container__tab-list-item[active]'));
         /**/
         $('.form-help__input').mouseover(displayTip).mouseleave(displayTip);
-        $('.form-help__help-button').click(displayTip);
+        $('.form-help__help-button').on('click', displayTip);
         /*центрируем tip по высоте*/
         var inputHeight = $('.form-help__input').outerHeight();
         var tipHeight = $('.form-help__tip').outerHeight();
