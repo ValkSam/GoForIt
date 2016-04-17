@@ -55,7 +55,8 @@ $(function () {
     });
 
     var options = {
-        transitionEffect: 'fading'
+        transitionEffect: 'fading',
+        maxHeight: 450
     };
 
     $('.pgwSlideshow').pgwSlideshow(options);
