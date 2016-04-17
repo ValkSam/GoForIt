@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pgwslideshow.css">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/jquery.ddslick.js"></script>
+    <script src="js/pgwslideshow.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.color.js"></script>-->
+
+</head>
+<body data-color=Black>
+<div class="page">
+    <!--DROPDOWN PLUGIN ddSlick-->
+    <div class="payment-select-wrapper clearfix">
+        <ul class="top-menu">
+            <li class="top-menu__item top-menu__item-top-level">
+                <div>Пункт 1</div>
+                <ul class="top-menu__submenu top-menu__submenu-level1">
+                    <li class="top-menu__item top-menu__item-sub1-level">
+                        <div>Подпункт 1</div>
+                        <ul class="top-menu__submenu top-menu__submenu-level2">
+                            <li class="top-menu__item top-menu__item-sub2-level">
+                                <div>Под1-под-пункт 1</div>
+                            </li>
+                            <li class="top-menu__item top-menu__item-sub2-level">
+                                <div>Под1-под-пункт 2</div>
+                            </li>
+                            <li class="top-menu__item top-menu__item-sub2-level">
+                                <div>Под1-под-пункт 3</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top-menu__item top-menu__item-sub1-level">
+                        <div>Подпункт 2</div>
+                        <ul class="top-menu__submenu top-menu__submenu-level2">
+                            <li class="top-menu__item top-menu__item-sub2-level">
+                                <div>Под2-под-пункт 1</div>
+                            </li>
+                            <li class="top-menu__item top-menu__item-sub2-level">
+                                <div>Под2-под-пункт 2</div>
+                            </li>
+                            <li class="top-menu__item top-menu__item-sub2-level">
+                                <div>Под2-под-пункт 3</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="top-menu__item top-menu__item-top-level">
+                <div>Пункт 2</div>
+                <ul class="top-menu__submenu top-menu__submenu-level1">
+                    <li class="top-menu__item top-menu__item-sub1-level">
+                        <div>Подпункт 1</div>
+                        <ul class="top-menu__submenu top-menu__submenu-level2">
+                            <li class="top-menu__item top-menu__item-sub2-level">
+                                <div>Под1-под-пункт 1</div>
+                            </li>
+                            <li class="top-menu__item top-menu__item-sub2-level">
+                                <div>Под1-под-пункт 2</div>
+                            </li>
+                            <li class="top-menu__item top-menu__item-sub2-level">
+                                <div>Под1-под-пункт 3</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top-menu__item top-menu__item-sub1-level">
+                        <div>Подпункт 2</div>
+                        <ul class="top-menu__submenu top-menu__submenu-level2">
+                            <li class="top-menu__item top-menu__item-sub2-level">
+                                <div>Под2-под-пункт 1</div>
+                            </li>
+                            <li class="top-menu__item top-menu__item-sub2-level">
+                                <div>Под2-под-пункт 2</div>
+                            </li>
+                            <li class="top-menu__item top-menu__item-sub2-level">
+                                <div>Под2-под-пункт 3</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="payment-selector">
+            <select class="payment-select" id="payment-select" name="nameSelect">
+            </select>
+        </div>
+    </div>
+
+    <!--CAROUSEL PLUGIN PgwSlideshow -->
+    <ul class="pgwSlideshow">
+        <li id="pizza-1"><img src="img/1-1.png" data-large-src="img/1-2.png"></li>
+        <li id="pizza-2"><img src="img/2-1.png" data-large-src="img/2-2.png"></li>
+        <li id="pizza-3"><img src="img/3-1.png" data-large-src="img/3-2.png"></li>
+        <li id="pizza-4"><img src="img/4-1.png" data-large-src="img/4-2.png"></li>
+        <li id="pizza-5"><img src="img/5-1.png" data-large-src="img/5-2.png"></li>
+    </ul>
+
+    <form id="enter-form" action="#">
+        <div class="checkbox-wrapper clearfix">
+            <!--CUSTOM CHECKBOX using js-->
+            <div class="filling-selector">
+                <div class="checkbox-title">
+                    Добавки
+                </div>
+                <div class="checkbox-block">
+                    <span class="checkbox-block__checkbox"><input name="salami" type="checkbox" checked/></span>
+                    <label class="checkbox-block__label">Колбаса</label>
+                </div>
+                <div class="checkbox-block">
+                    <span class="checkbox-block__checkbox"><input id="bacon" name="bacon" type="checkbox"/></span>
+                    <label class="checkbox-block__label" for="bacon">Сало</label>
+                </div>
+                <div class="checkbox-block">
+                    <span class="checkbox-block__checkbox"><input id="jam" name="jam" type="checkbox"/></span>
+                    <label class="checkbox-block__label" for="jam">Варенье</label>
+                </div>
+            </div>
+            <!--CUSTOM CHECKBOX using css-->
+            <div class="drink-selector">
+                <div class="checkbox-title">
+                    Запивки
+                </div>
+                <div class="checkbox-css-block">
+                    <input class="checkbox-css-block__checkbox" id="beer" name="beer" type="checkbox"/>
+                    <label class="checkbox-css-block__label" for="beer">Пиво</label>
+                </div>
+                <div class="checkbox-css-block">
+                    <input class="checkbox-css-block__checkbox" id="vodka" name="vodka" type="checkbox"
+                           checked/>
+                    <label class="checkbox-css-block__label" for="vodka">Водка</label>
+                </div>
+                <div class="checkbox-css-block">
+                    <input class="checkbox-css-block__checkbox" id="yogurt" name="yogurt" type="checkbox"/>
+                    <label class="checkbox-css-block__label" for="yogurt">Йогурт</label>
+                </div>
+            </div>
+        </div>
+        <div class="button-wrapper">
+            <button type="submit">Оформить заказ</button>
+        </div>
+    </form>
+
+    <footer>
+        <a href="https://github.com/ValkSam/GoForIt/tree/master/js9-10">source on github</a>
+    </footer>
+</div>
+
+</body>
+
+</html>
