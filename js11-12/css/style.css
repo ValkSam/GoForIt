@@ -1,0 +1,42 @@
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    background: #aeaeaf;
+}
+
+/**/
+footer {
+    position: fixed;
+    background: #e1e1e1;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.carousel-container-wrapper {
+    text-align: center;
+}
+
+.my-choice-title{
+    display: block;
+    margin: 20px;
+    font-size: 2rem;
+    color: white;
+}
+
+.my-choice {
+    display: inline-block;
+}
+
+
+
+
