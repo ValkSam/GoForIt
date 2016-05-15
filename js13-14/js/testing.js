@@ -23,6 +23,10 @@ function testing(options) {
 
     initTesting();
 
+    return this;
+
+    /*-------------------------------------*/
+
     function initTesting() {
         var $testingContaner = $('#' + settings.testingContainerId);
         $testingContaner.empty();
@@ -137,4 +141,6 @@ function testing(options) {
             settings.afterCheckResult(result);
         }
     }
+
+
 }

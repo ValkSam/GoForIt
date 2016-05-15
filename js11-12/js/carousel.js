@@ -26,7 +26,6 @@ function ciclicCarousel(options) {
     var settings = $.extend(defaults, options);
     var $carouselContainer = $('.carousel-container').css('display', 'inline-block');
 
-
     var $img;
     var $lastImg;
     var imgWidth = 0;
@@ -104,6 +103,10 @@ function ciclicCarousel(options) {
         $img.on('click', {src: e}, settings.onclick);
         $itemsContainer.append($item);
     });
+
+    return this;
+
+    /*-------------------------------------*/
 
     function reSetImgWidth() {
         if (imgWidth < $(this).prop('width')) {
