@@ -1,3 +1,5 @@
+"use strict";
+
 $(function () {
     $('.pixabay-search__button').on('click', pixabaySearch);
 
