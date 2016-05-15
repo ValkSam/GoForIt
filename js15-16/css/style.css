@@ -1,0 +1,82 @@
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    background: #f3f3f4;
+}
+
+/**/
+footer {
+    position: fixed;
+    background: #e1e1e1;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.pixabay-search__wrapper{
+    width: 100%;
+    line-height: 50px;
+    background: #e3e3e3;
+}
+
+.pixabay-search__logo{
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+
+.pixabay-search__input-wrapper{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+}
+
+.pixabay-search__input{
+    height: 40px;
+    width: 100%;
+    left: 0;
+    right: 40px;
+    padding: 0 40px 0 5px;
+}
+.pixabay-search__button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -40px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0 auto 100%;
+    background: #6292e9;
+}
+
+.pixabay-search__button span{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("../img/nav_logo242.png") no-repeat -107px -55px;
+}
+
+/*result*/
+
+.pixabay-result-wrapper{
+    padding: 10px;
+}
+
+.pixabay-result__item{
+    display: inline-block;
+    margin: 0 5px 5px 0;
+}
