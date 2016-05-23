@@ -1,0 +1,119 @@
+$testimony_title_font: 'Ubuntu', sans_serif, serif;
+$testimony_title_font_size: 2rem;
+$testimony_title_font_weight: 500;
+$testimony_title_font_color: #2a2b2e;
+/**/
+$testimony_text_font: Arial serif;
+$testimony_text_font_size: 1.3rem;
+$testimony_text_font_line-height: 2rem;
+$testimony_text_font_color: #8a8a8a;
+/**/
+$testimony_footer_font: 'Ubuntu', sans_serif, serif;
+$testimony_footer_font_size: 1.3rem;
+$testimony_footer_font_color: #2a2b2e;
+$testimony_footer_hover_font_color: #248cec;
+/**/
+@mixin blurb-block__header-icon($shift) {
+  background: url("../img/testimony-sprite.png") $shift 0 no-repeat;
+  width: 32px;
+  height: 32px;
+  margin: 0 0 14px 0;
+}
+
+.sub-header {
+  margin: 0 0 85px 0;
+  text-align: left;
+}
+
+.blurb-container {
+  display: flex;
+  height: 180px;
+  width: 100%; /*it's need for chrome*/
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.blurb-block {
+  flex-grow: 0;
+  width: 100%; /*it's need for chrome*/
+  height: 100%; /*it's need for chrome*/
+}
+
+.blurb-block-gap {
+  flex-grow: 0;
+  width: 10%;
+}
+
+.blurb-block__left-side {
+  float: left;
+  position: relative;
+  font-family: $testimony_title_font;
+  font-size: 9rem;
+  color: #ced2e1;
+  width: 30%;
+  height: 100%;
+  margin: -15px 0 0 0;
+}
+
+.blurb-block__right-side {
+  position: relative;
+  float: right;
+  width: 66%;
+  height: 100%;
+}
+
+.blurb-block__header {
+  font-family: $testimony_title_font;
+  font-size: $testimony_title_font_size;
+  font-weight: $testimony_title_font_weight;
+  color: $testimony_title_font_color;
+  margin: 0 0 25px 0;
+}
+
+.blurb-block__body {
+  height: 55px;
+  overflow: hidden;
+  line-height: $testimony_text_font_line-height;
+  font-family: $testimony_text_font;
+  font-size: $testimony_text_font_size;
+  color: $testimony_text_font_color;
+}
+
+.blurb-block__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  font-family: $testimony_footer_font;
+  font-size: $testimony_footer_font_size;
+  color: $testimony_footer_font_color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blurb-block__footer:hover {
+  color: $testimony_footer_hover_font_color;
+}
+
+.blurb-block__icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.blurb-block__header-icon-first {
+  @include blurb-block__header-icon(0);
+}
+
+.blurb-block__header-icon-middle {
+  @include blurb-block__header-icon(-32px);
+}
+
+.blurb-block__header-icon-last {
+  @include blurb-block__header-icon(-64px);
+}

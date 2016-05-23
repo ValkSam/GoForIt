@@ -1,0 +1,109 @@
+$page_width: 80%;
+$links_trip_width: (100% / $page_width) * 100%;
+$links_trip_height: 320px;
+$links_background_color: #2a2d32;
+/**/
+$links_title_font: 'Ubuntu', sans_serif, serif;
+$links_title_size: 1.6rem;
+$links_title_color: #ffffff;
+/**/
+$links_item_font: Arial, sans_serif, serif;
+$links_item_size: 1.3rem;
+$links_item_line_height: 3.5rem;
+$links_item_color: #d7d7d7;
+$links_item_hover_color: #248cec;
+$links_item_border: 1px solid $links_item_color;
+/**/
+$links_footer_info_line_height: 6.3rem;
+$links_footer_info_background_color: #35383c;
+
+.footer-links {
+  width: $links_trip_width;
+  margin: 0 0 0 (-($links_trip_width - 100%)/2);
+  padding: 40px 0 0 ($links_trip_width - 100%)/2;
+  background: $links_background_color;
+  height: $links_trip_height;
+}
+
+.footer-links__wrapper{
+  width: $page_width;
+}
+
+.footer-links__block{
+  float: left;
+  width: 20%;
+  margin: 0 0 0 6%;
+}
+
+.footer-links__block:first-child{
+  margin: 0 0 0 0;
+}
+
+.footer-links__title{
+  font-family: $links_title_font;
+  font-size: $links_title_size;
+  color: $links_title_color;
+  margin: 0 0 35px 0;
+}
+
+.footer-links__item{
+  border-bottom: $links_item_border;
+  cursor: pointer;
+}
+
+.footer-links__item:last-child{
+  border: none;
+}
+
+.footer-links__item a {
+  text-decoration: none;
+  font-family: $links_item_font;
+  font-size: $links_item_size;
+  color: $links_item_color;
+  line-height: $links_item_line_height;
+}
+
+.footer-links__item a:hover{
+  color: $links_item_hover_color;
+}
+
+.footer-info{
+  width: $links_trip_width;
+  margin: 0 0 63px (-($links_trip_width - 100%)/2);
+  padding: 0 0 0 ($links_trip_width - 100%)/2;
+  background: $links_footer_info_background_color;
+  height:  $links_footer_info_line_height;
+  font-family: $links_item_font;
+  font-size: $links_item_size;
+  color: $links_item_color;
+}
+
+.footer-info__wrapper{
+  position: relative;
+  width: $page_width;
+}
+
+.footer-info__item{
+  float: left;
+  line-height: $links_footer_info_line_height;
+  margin: 0 0 0 0;
+}
+
+.footer-info__item i{
+  font-size: $links_item_size * 1.3;
+  margin: 0 10px 0 0;
+}
+
+.footer-info__item:last-child{
+  float: right;
+}
+
+footer {
+  position: fixed;
+  background: #e1e1e1;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  width: $page_width;
+  bottom: 0;
+  text-align: center;
+}

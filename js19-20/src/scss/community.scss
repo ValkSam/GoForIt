@@ -1,0 +1,101 @@
+$community_title_font: 'Ubuntu', sans_serif, serif;
+$community_title_font_size: 2.4rem;
+$community_title_font_weight: 500;
+$community_title_font_color: #2a2d32;
+$community_title_hover_font_color: #248cec;
+/**/
+$community_news_title_font: 'Ubuntu', sans_serif, serif;
+$community_news_title_font_size: 1.6rem;
+$community_news_title_font_weight: 500;
+$community_news_title_font_color: #2a2d32;
+$community_news_title_hover_font_color: #248cec;
+/**/
+$community_news_text_font: Arial, sans_serif, serif;
+$community_news_text_font_size: 1.3rem;
+$community_news_text_font_weight: 100;
+$community_news_text_font_color: #8a8a8a;
+
+.community {
+  height: 450px;
+  margin: 0 0 110px 0;
+}
+
+.community__title{
+  font-family: $community_title_font;
+  font-size: $community_title_font_size;
+  font-weight: $community_title_font_weight;
+  color: $community_title_font_color;
+  margin: 0 0 45px 0;
+}
+
+.community__news {
+  float: left;
+  width: 48%;
+  padding: 0 0 0 0;
+}
+
+.community__news-item{
+  margin: 0 0 30px 0;
+}
+
+.community__news-item-img {
+  position: relative;
+  float: left;
+  margin: 0 5% 0 0;
+}
+
+.calendar {
+  position: absolute;
+  text-align: center;
+  font-family: $community_title_font;
+  font-size: 1.8rem;
+  width: 40px;
+  top: 20px;
+  left: -20px;
+}
+
+.calendar-top {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #248cec;
+  color: white;
+}
+.calendar-bottom {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #f4b60d;
+  color: #2a2b2e;
+}
+
+
+.community__news-item-body {
+
+}
+
+.community__news-item-body-title {
+  font-family: $community_news_title_font;
+  font-size: $community_news_title_font_size;
+  font-weight: $community_news_title_font_weight;
+  color: $community_news_title_font_color;
+  margin: 0 0 30px 0;
+  cursor: pointer;
+}
+
+.community__news-item-body-title:hover {
+  color: $community_news_title_hover_font_color;
+}
+
+.community__news-item-body-text{
+  font-family: $community_news_text_font;
+  font-size: $community_news_text_font_size;
+  font-weight: $community_news_text_font_weight;
+  color: $community_news_text_font_color;
+}
+
+.community__banners{
+  float: right;
+  width: 48%;
+  padding: 0 0 0 0;
+}

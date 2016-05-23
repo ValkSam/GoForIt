@@ -1,0 +1,31 @@
+$socfont            :'sociconregular';
+$header-height      :104px;
+$ref_color          :#248cec;
+$ref_size           :1.5rem;
+
+
+.header__wrapper {
+    position: relative;
+}
+
+.header__logo-wrapper {
+    float: left;
+    line-height: $header_height;
+}
+.header__logo{
+    vertical-align: middle;
+}
+
+.header__nav-wrapper {
+    float: right;
+}
+
+.header__nav-item {
+    font-family: $socfont;
+    font-size: $ref_size;
+    line-height: $header_height;
+    color: $ref_color;
+    text-decoration: none;
+    margin: 0 0 0 $ref_size;
+    cursor: pointer;
+}

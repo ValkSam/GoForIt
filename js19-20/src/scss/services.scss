@@ -1,0 +1,51 @@
+$page_width: 80%;
+$services_trip_width: (100% / $page_width) * 100%;
+$services_trip_height: 500px;
+$services_background_color: #2a2d32;
+/**/
+$services_title_font: 'Ubuntu', sans_serif, serif;
+$services_title_size: 2.4rem;
+$services_title_color: #ffffff;
+/**/
+$services_item_font: 'Ubuntu', sans_serif, serif;
+$services_item_size: 1.6rem;
+$services_item_color: #ffffff;
+
+.services {
+  width: $services_trip_width;
+  margin: 0 0 63px (-($services_trip_width - 100%)/2);
+  padding: 40px 0 0 ($services_trip_width - 100%)/2;
+  background: $services_background_color;
+  height: $services_trip_height;
+  text-align: left;
+}
+
+.services-wrapper {
+  width: $page_width;
+}
+
+.services__title {
+  font-family: $services_title_font;
+  font-size: $services_title_size;
+  color: $services_title_color;
+  margin: 0 0 55px 0;
+}
+
+.services__item-wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.services__item {
+  display: inline-block;
+  flex-grow: 0;
+  font-family: $services_item_font;
+  font-size: $services_item_size;
+  color: $services_item_color;
+  text-align: center;
+}
+
+.services__item-field {
+  margin: 0 0 30px 0;
+}

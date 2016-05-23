@@ -1,0 +1,100 @@
+/**/
+/**/
+/**/
+.sub-header {
+  margin: 0 0 85px 0;
+  text-align: left; }
+
+.blurb-container {
+  display: flex;
+  height: 180px;
+  width: 100%;
+  /*it's need for chrome*/
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: stretch; }
+
+.blurb-block {
+  flex-grow: 0;
+  width: 100%;
+  /*it's need for chrome*/
+  height: 100%;
+  /*it's need for chrome*/ }
+
+.blurb-block-gap {
+  flex-grow: 0;
+  width: 10%; }
+
+.blurb-block__left-side {
+  float: left;
+  position: relative;
+  font-family: "Ubuntu", sans_serif, serif;
+  font-size: 9rem;
+  color: #ced2e1;
+  width: 30%;
+  height: 100%;
+  margin: -15px 0 0 0; }
+
+.blurb-block__right-side {
+  position: relative;
+  float: right;
+  width: 66%;
+  height: 100%; }
+
+.blurb-block__header {
+  font-family: "Ubuntu", sans_serif, serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #2a2b2e;
+  margin: 0 0 25px 0; }
+
+.blurb-block__body {
+  height: 55px;
+  overflow: hidden;
+  line-height: 2rem;
+  font-family: Arial serif;
+  font-size: 1.3rem;
+  color: #8a8a8a; }
+
+.blurb-block__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  font-family: "Ubuntu", sans_serif, serif;
+  font-size: 1.3rem;
+  color: #2a2b2e;
+  text-decoration: none;
+  cursor: pointer; }
+
+.blurb-block__footer:hover {
+  color: #248cec; }
+
+.blurb-block__icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.blurb-block__header-icon-first {
+  background: url("../img/testimony-sprite.png") 0 0 no-repeat;
+  width: 32px;
+  height: 32px;
+  margin: 0 0 14px 0; }
+
+.blurb-block__header-icon-middle {
+  background: url("../img/testimony-sprite.png") -32px 0 no-repeat;
+  width: 32px;
+  height: 32px;
+  margin: 0 0 14px 0; }
+
+.blurb-block__header-icon-last {
+  background: url("../img/testimony-sprite.png") -64px 0 no-repeat;
+  width: 32px;
+  height: 32px;
+  margin: 0 0 14px 0; }
+
+/*# sourceMappingURL=testimony.css.map */

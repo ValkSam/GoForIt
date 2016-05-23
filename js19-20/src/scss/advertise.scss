@@ -1,0 +1,14 @@
+.advertise{
+  margin: 0 0 90px 0;
+}
+
+.advertise-wrapper{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.advertise_item{
+  justify-content: space-between;
+  flex-grow: 0;
+}

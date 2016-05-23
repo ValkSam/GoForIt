@@ -1,0 +1,86 @@
+$main_menu_font: 'Ubuntu Condensed', sans_serif, serif;
+$main_menu_font_size: 1.4rem;
+$main_menu_font_color: #ffffff;
+$main_menu_font_hover_color: #886d21;
+$main_menu_height: 58px;
+$main_menu_width: 112px;
+$main_menu_color: #2a2d32;
+$main_menu_active_color: #248cec;
+/**/
+$main_menu_searcher_height: 40px;
+$main_menu_searcher_width: (240/1160)*100%;
+$main_menu_searcher_button_width: $main_menu_searcher_height;
+$main_menu_searcher_color: #35383c;
+$main_menu_searcher_border_weight: 1px;
+$main_menu_searcher_border: $main_menu_searcher_border_weight solid black;
+$main_menu_searcher_font_color: #5d6063;
+
+.main-menu__wrapper {
+  background: $main_menu_color;
+  line-height: $main_menu_height;
+  width: 100%;
+  margin: 0 0 35px 0;
+}
+
+.main-menu__list {
+  float: left;
+  font-family: $main_menu_font;
+  font-size: $main_menu_font_size;
+}
+
+.main-menu__item {
+  display: inline-block;
+  vertical-align: middle;
+  width: $main_menu_width;
+  color: $main_menu_font_color;
+  text-align: center;
+  border: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.main-menu__item.active {
+  background: $main_menu_active_color;
+}
+
+.main-menu__item:hover {
+  color: $main_menu_font_hover_color;
+}
+
+.main-menu__searcher-container {
+  position: relative;
+  float: right;
+  margin: 0 10px 0 0;
+  width: $main_menu_searcher_width;
+}
+
+.main-menu__searcher-wrapper {
+  position: relative;
+  float: right;
+  margin: 0 10px 0 0;
+  width: $main_menu_searcher_width;
+}
+
+.main-menu__searcher-input {
+  height: $main_menu_searcher_height;
+  width: 100%;
+  background: $main_menu_searcher_color;
+  outline: none;
+  border: $main_menu_searcher_border;
+  box-sizing: content-box;
+}
+
+.main-menu__searcher-button {
+  position: absolute;
+  width: $main_menu_searcher_button_width;
+  height: $main_menu_searcher_button_width;
+  margin: auto 0 auto 100%;
+  left: -$main_menu_searcher_border_weight - $main_menu_searcher_button_width;
+  top: -1px;
+  bottom: 1px;
+  background: $main_menu_searcher_color;
+  outline: none;
+  border: none;
+}

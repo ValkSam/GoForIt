@@ -1,0 +1,36 @@
+/**/
+/**/
+.services {
+  width: 125%;
+  margin: 0 0 63px -12.5%;
+  padding: 40px 0 0 12.5%;
+  background: #2a2d32;
+  height: 500px;
+  text-align: left; }
+
+.services-wrapper {
+  width: 80%; }
+
+.services__title {
+  font-family: "Ubuntu", sans_serif, serif;
+  font-size: 2.4rem;
+  color: #ffffff;
+  margin: 0 0 55px 0; }
+
+.services__item-wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between; }
+
+.services__item {
+  display: inline-block;
+  flex-grow: 0;
+  font-family: "Ubuntu", sans_serif, serif;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-align: center; }
+
+.services__item-field {
+  margin: 0 0 30px 0; }
+
+/*# sourceMappingURL=services.css.map */

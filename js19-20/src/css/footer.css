@@ -1,0 +1,80 @@
+/**/
+/**/
+/**/
+.footer-links {
+  width: 125%;
+  margin: 0 0 0 -12.5%;
+  padding: 40px 0 0 12.5%;
+  background: #2a2d32;
+  height: 320px; }
+
+.footer-links__wrapper {
+  width: 80%; }
+
+.footer-links__block {
+  float: left;
+  width: 20%;
+  margin: 0 0 0 6%; }
+
+.footer-links__block:first-child {
+  margin: 0 0 0 0; }
+
+.footer-links__title {
+  font-family: "Ubuntu", sans_serif, serif;
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin: 0 0 35px 0; }
+
+.footer-links__item {
+  border-bottom: 1px solid #d7d7d7;
+  cursor: pointer; }
+
+.footer-links__item:last-child {
+  border: none; }
+
+.footer-links__item a {
+  text-decoration: none;
+  font-family: Arial, sans_serif, serif;
+  font-size: 1.3rem;
+  color: #d7d7d7;
+  line-height: 3.5rem; }
+
+.footer-links__item a:hover {
+  color: #248cec; }
+
+.footer-info {
+  width: 125%;
+  margin: 0 0 63px -12.5%;
+  padding: 0 0 0 12.5%;
+  background: #35383c;
+  height: 6.3rem;
+  font-family: Arial, sans_serif, serif;
+  font-size: 1.3rem;
+  color: #d7d7d7; }
+
+.footer-info__wrapper {
+  position: relative;
+  width: 80%; }
+
+.footer-info__item {
+  float: left;
+  line-height: 6.3rem;
+  margin: 0 0 0 0; }
+
+.footer-info__item i {
+  font-size: 1.69rem;
+  margin: 0 10px 0 0; }
+
+.footer-info__item:last-child {
+  float: right; }
+
+footer {
+  position: fixed;
+  background: #e1e1e1;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  width: 80%;
+  bottom: 0;
+  text-align: center; }
+
+/*# sourceMappingURL=footer.css.map */

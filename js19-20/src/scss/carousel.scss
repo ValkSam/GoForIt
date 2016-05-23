@@ -1,0 +1,23 @@
+$slide-height: 470px;
+
+.carousel__wrapper{
+  text-align: center;
+  margin: 0 0 65px 0;
+}
+
+.carousel__slide-wrapper{
+  height: $slide-height;
+  overflow: hidden;
+}
+
+.carousel__slide {
+  height: $slide-height;
+}
+
+.carousel__paginator-wrapper{
+  margin: -20px 0 0 0;
+}
+.carousel__paginator-button{
+  display: inline-block;
+  margin: 0 5px;
+}

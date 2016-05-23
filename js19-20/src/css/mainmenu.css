@@ -1,0 +1,63 @@
+/**/
+.main-menu__wrapper {
+  background: #2a2d32;
+  line-height: 58px;
+  width: 100%;
+  margin: 0 0 35px 0; }
+
+.main-menu__list {
+  float: left;
+  font-family: "Ubuntu Condensed", sans_serif, serif;
+  font-size: 1.4rem; }
+
+.main-menu__item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 112px;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  list-style-type: none;
+  cursor: pointer; }
+
+.main-menu__item.active {
+  background: #248cec; }
+
+.main-menu__item:hover {
+  color: #886d21; }
+
+.main-menu__searcher-container {
+  position: relative;
+  float: right;
+  margin: 0 10px 0 0;
+  width: 20.68966%; }
+
+.main-menu__searcher-wrapper {
+  position: relative;
+  float: right;
+  margin: 0 10px 0 0;
+  width: 20.68966%; }
+
+.main-menu__searcher-input {
+  height: 40px;
+  width: 100%;
+  background: #35383c;
+  outline: none;
+  border: 1px solid black;
+  box-sizing: content-box; }
+
+.main-menu__searcher-button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: auto 0 auto 100%;
+  left: -41px;
+  top: -1px;
+  bottom: 1px;
+  background: #35383c;
+  outline: none;
+  border: none; }
+
+/*# sourceMappingURL=mainmenu.css.map */
