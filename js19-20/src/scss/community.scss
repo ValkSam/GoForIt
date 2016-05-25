@@ -14,6 +14,7 @@ $community_news_text_font: Arial, sans_serif, serif;
 $community_news_text_font_size: 1.3rem;
 $community_news_text_font_weight: 100;
 $community_news_text_font_color: #8a8a8a;
+$community_news_text_span_font_color: #0187f4;
 
 .community {
   height: 450px;
@@ -92,6 +93,16 @@ $community_news_text_font_color: #8a8a8a;
   font-size: $community_news_text_font_size;
   font-weight: $community_news_text_font_weight;
   color: $community_news_text_font_color;
+}
+
+.community__news-item-body-subtitle{
+  font-family: $community_news_text_font;
+  font-size: $community_news_text_font_size;
+  line-height: 3rem;
+}
+
+.community__news-item-body-subtitle span{
+  color: $community_news_text_span_font_color;
 }
 
 .community__banners{

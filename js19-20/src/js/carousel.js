@@ -8,7 +8,6 @@ $(function(){
     $('.carousel__paginator-button').on('click', function(){
         var $currIdx = $(this).index();
         var shift = -$slideWidth*$currIdx+'px';
-        console.log(shift);
         $('.carousel__slide-wrapper:first').css({'margin-left':shift});
     });
 });

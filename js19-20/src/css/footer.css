@@ -59,6 +59,9 @@
 .footer-info__item {
   float: left;
   line-height: 6.3rem;
+  margin: 0 0 0 1rem; }
+
+.footer-info__item:first-child {
   margin: 0 0 0 0; }
 
 .footer-info__item i {

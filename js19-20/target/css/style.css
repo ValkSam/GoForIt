@@ -96,7 +96,7 @@ footer {
 
 .accordion dd,
 .accordion__panel {
-  background-color: #eee;
+  background-color: #ffffff;
   font-size: 1.3em;
   line-height: 1.5em;
 }
@@ -107,7 +107,13 @@ footer {
 
 .accordion {
   position: relative;
-  background-color: #eee;
+  background-color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.accordion .accordion-content {
+  font-size: 1.3rem;
+  color: #8a8a8a;
 }
 
 .container {
@@ -121,7 +127,7 @@ footer {
   background-color: #ffffff;
   text-align: left;
   font-weight: 700;
-  padding: 2em;
+  padding: 1.5rem;
   display: block;
   text-decoration: none;
   color: #2a2d32;
@@ -353,6 +359,14 @@ footer {
   font-weight: 100;
   color: #8a8a8a; }
 
+.community__news-item-body-subtitle {
+  font-family: Arial, sans_serif, serif;
+  font-size: 1.3rem;
+  line-height: 3rem; }
+
+.community__news-item-body-subtitle span {
+  color: #0187f4; }
+
 .community__banners {
   float: right;
   width: 48%;
@@ -428,6 +442,9 @@ footer {
 .footer-info__item {
   float: left;
   line-height: 6.3rem;
+  margin: 0 0 0 1rem; }
+
+.footer-info__item:first-child {
   margin: 0 0 0 0; }
 
 .footer-info__item i {

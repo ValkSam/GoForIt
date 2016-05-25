@@ -86,6 +86,10 @@ $links_footer_info_background_color: #35383c;
 .footer-info__item{
   float: left;
   line-height: $links_footer_info_line_height;
+  margin: 0 0 0 1rem;
+}
+
+.footer-info__item:first-child{
   margin: 0 0 0 0;
 }
 

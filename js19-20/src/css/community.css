@@ -64,6 +64,14 @@
   font-weight: 100;
   color: #8a8a8a; }
 
+.community__news-item-body-subtitle {
+  font-family: Arial, sans_serif, serif;
+  font-size: 1.3rem;
+  line-height: 3rem; }
+
+.community__news-item-body-subtitle span {
+  color: #0187f4; }
+
 .community__banners {
   float: right;
   width: 48%;
