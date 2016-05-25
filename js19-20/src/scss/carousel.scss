@@ -3,15 +3,20 @@ $slide-height: 470px;
 .carousel__wrapper{
   text-align: center;
   margin: 0 0 65px 0;
+  width: 100%;
+  overflow: hidden;
+  height: $slide-height;
 }
 
 .carousel__slide-wrapper{
   height: $slide-height;
+  width: 99999px;
   overflow: hidden;
+  Transition: all 1s;
 }
 
 .carousel__slide {
-  height: $slide-height;
+  float: left;
 }
 
 .carousel__paginator-wrapper{

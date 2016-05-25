@@ -264,14 +264,19 @@ footer {
 
 .carousel__wrapper {
   text-align: center;
-  margin: 0 0 65px 0; }
+  margin: 0 0 65px 0;
+  width: 100%;
+  overflow: hidden;
+  height: 470px; }
 
 .carousel__slide-wrapper {
   height: 470px;
-  overflow: hidden; }
+  width: 99999px;
+  overflow: hidden;
+  Transition: all 1s; }
 
 .carousel__slide {
-  height: 470px; }
+  float: left; }
 
 .carousel__paginator-wrapper {
   margin: -20px 0 0 0; }
