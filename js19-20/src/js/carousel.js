@@ -4,6 +4,7 @@
 "use_strict";
 $(function(){
     var $slideWidth = $('.carousel__slide:first').prop('width');
+    $('.carousel__paginator-button:first').attr('checked', true);
     $('.carousel__paginator-button').on('click', function(){
         var $currIdx = $(this).index();
         var shift = -$slideWidth*$currIdx+'px';
