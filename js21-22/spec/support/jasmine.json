@@ -1,0 +1,14 @@
+{
+  "spec_dir": "spec",
+  "spec_files": [
+    "**/*[tT]est.js"
+  ],
+  "helpers": [
+    "helpers/**/*.js"
+  ],
+  "externals": [
+    "https://code.jquery.com/jquery-1.12.0.min.js"
+  ],
+  "stopSpecOnExpectationFailure": false,
+  "random": false
+}
